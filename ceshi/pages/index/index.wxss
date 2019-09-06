@@ -1,0 +1,450 @@
+/**index.wxss**/
+swiper ,swiper-item image{
+width: 100%;
+height: 456rpx;
+}
+.wx-swiper-dots{
+  position:absolute;
+}
+.wx-swiper-dots.wx-swiper-dots-horizontal{
+  margin-bottom: 50rpx;
+}
+.mainbox{
+  position: absolute;
+  width: 100%;
+  background:rgba(255,255,255,1);
+  height: 422rpx;
+  margin-top:-42rpx; 
+  border-radius: 15rpx 15rpx 0rpx 0rpx;
+}
+.maylove{
+  background-color: #FFC56C;
+  height: 76rpx;
+  margin: 4rpx 32rpx;
+  border-radius: 5rpx;
+  text-align: center;
+}
+.box{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+margin-top: 30rpx;
+
+}
+.pic{
+  width: 22%;
+  height: 92rpx;
+  text-align: center;
+
+}
+.pic image{
+width: 92rpx;
+height: 92rpx;
+}
+.font{
+  font-size: 24rpx;
+}
+.two{
+  margin-top: 68rpx;
+}
+.car{
+float: left;
+font-size: 20rpx;
+text-align: center;
+margin: 24rpx 356rpx 20rpx 152rpx;
+}
+.addcar{
+float: right;
+font-size: 20rpx;
+color: white;
+margin: 22rpx 20rpx 22rpx 0rpx;
+}
+.lovecar{
+position: absolute;
+font-size: 32rpx;
+text-align: center;
+margin: 16rpx 20rpx;
+}
+.starstore{
+  width: 100%;
+  height: 700rpx;
+  /* 修改为244rpx */
+  background:rgba(255,255,255,1);
+  margin-top: 380rpx;
+}
+.storetitle{
+  float: left;
+  margin-top:12rpx;
+  margin-left: 20rpx; 
+  width: 232rpx;
+  height: 48rpx; 
+  background-color: rgb(255,228,121);
+  border-top-right-radius:48rpx;
+}
+.title{
+  font-size: 28rpx;
+  margin-top: 4rpx;
+  margin-left: 10rpx;
+  line-height:40rpx;
+ }
+ .store{
+   width: 280rpx;
+   height: 160rpx;
+   display:inline-block;
+   margin-left:6rpx; 
+   overflow-x:scroll; 
+
+  }
+ .store image{
+   width: 280rpx;
+  height: 160rpx;
+  position: absolute;
+ }
+ .storebox{
+   position: absolute;
+   margin-top: 72rpx;
+   height: 580rpx;
+   /* 修改为160rpx */
+   width: 858rpx;
+   margin-left:14rpx; 
+   overflow-x:scroll; 
+ }
+ .storename{
+   font-size: 20rpx;
+   text-align: center;
+ }
+ .look{
+   font-size: 16rpx;
+   text-align: center;
+   font-family:PingFangSC;
+   font-weight:400;
+   color:rgba(0,0,0,1);
+   line-height:22rpx;
+ }
+ .storeinf{
+   position: absolute;
+   background:rgba(255,255,255,0.5);
+   width: 280rpx;
+   margin-top: 56rpx;
+ }  
+.apppic{
+  width: 100%;
+  height: 160rpx;
+}
+.apppic image{
+width: 100%;
+height: 100%;
+}
+.more image{
+  height: 22rpx;
+  width: 12rpx;
+  float:  right;
+  margin-top:6rpx; 
+}
+.goodstitle{
+  height: 48rpx;
+  width: 264rpx;
+  background-color: rgb(255,228,121);
+  margin-left:20rpx; 
+  border-top-right-radius:50rpx;
+  position: absolute;
+  margin-top: 12rpx;
+}
+.goodgoodstitle{
+  position: absolute;
+  font-size: 28rpx;
+  width: 224rpx;
+  height: 36rpx;
+  margin:6rpx 30rpx 6rpx 10rpx; 
+}
+.more{
+float: right;
+margin-top: 20rpx;
+margin-right: 48rpx;
+width: 70rpx;
+}
+.fonts{
+  font-size: 24rpx;
+  position: absolute;
+}
+.goodgoodsbox{
+background:rgba(255,255,255,1); 
+height:544rpx;
+width: 100%;
+position: relative;
+}
+.usergoodsbigpic{
+  position: absolute;
+  margin: 70rpx 20rpx 206rpx 20rpx;
+  width: 710rpx;
+  height: 268rpx;
+}
+.usergoodsbigpic image{
+  height: 100%;
+  width: 100%;
+}
+.usergoodsbottompic{
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 344rpx 20rpx 10rpx 20rpx;
+}
+.inf{
+  width: 352rpx;
+  height: 188rpx;
+}
+.inf image{
+  width: 100%;
+  height: 100%;
+}
+.three{
+  margin-left: 6rpx;
+}
+.hotgoodstuijian_title{
+font-size:36rpx;
+width: 180rpx;
+height: 50rpx;
+}
+.hotgoodstuijian{
+  width: 100%;
+  height: 76rpx;
+}
+.hotgoodstuijian image{
+  width: 8rpx;
+  height: 18rpx;
+  margin-top:16rpx; 
+}
+.hotgoodstuijian_box{
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 50rpx;
+  width: 216rpx;
+  margin: 12rpx 278rpx 14rpx 276rpx; 
+  text-align: center;
+}
+.goodsinf{
+  width: 100%;
+  height: 244rpx;
+}
+.goodspic{
+  width: 192rpx;
+  height: 220rpx;
+  position: absolute;
+  margin: 12rpx 538rpx 12rpx 20rpx;
+}
+.goodspic image{
+  width: 100%;
+  height: 100%;
+}
+.goodsname{
+position: absolute;
+width:486rpx;
+height:80rpx;
+font-size:28rpx;
+font-family:PingFangSC;
+overflow:hidden; 
+text-overflow:ellipsis; 
+margin: 12rpx 28rpx 152rpx 236rpx;
+}
+.biaoqian{
+  width: 410rpx;
+  height: 62rpx;
+  position: absolute;
+  margin-left: 236rpx;
+  margin-top: 92rpx;
+}
+.biaoqian_title{
+height:28rpx;
+font-size:20rpx;
+color:rgba(0,0,0,1);
+background:rgba(216,216,216,1);
+border-radius:12rpx;
+text-align: center;
+float: left;
+margin-left:8rpx; 
+margin-top: 4rpx;
+text-indent: 6rpx;
+padding-right:6rpx; 
+}
+.buy{
+float: right;
+height:34rpx;
+font-size:24rpx;
+margin-top: 106rpx; 
+margin-right:10rpx; 
+}
+.disc{
+  font-size:24rpx; 
+  position: absolute;
+  margin-left: 236rpx;
+  margin-top:198rpx; 
+  overflow: hidden; 
+  height: 34rpx;
+}
+.moneyuse{
+position: absolute;
+height:44rpx;
+font-size:32rpx;
+color:rgba(253,0,0,1);
+line-height:44rpx;
+margin: 154rpx 390rpx 46rpx 236rpx;
+}
+.moneynotuse{
+position: absolute;
+height:34rpx;
+font-size:24rpx;
+color:rgba(0,0,0,1);
+line-height:34rpx;
+margin: 162rpx 258rpx 48rpx 380rpx;
+text-decoration:line-through rgba(0,0,0,1);
+}
+.service{
+height:26rpx;
+border-radius:12rpx;
+border:2rpx solid rgba(253,0,0,1);
+font-size:20rpx;
+color:rgba(253,0,0,1);
+text-align: center;
+float: left;
+margin-left:4rpx; 
+text-indent: 8rpx;
+padding-right:8rpx; 
+}
+.servicebox{
+position: absolute;
+height: 30rpx;
+width: 220rpx;
+margin-top: 168rpx;
+margin-left: 526rpx;
+overflow: hidden;
+}
+
+
+/* 卡片式轮播 */
+
+swiper .a-swiper-dot {
+	display: inline-block;
+	width: 16rpx;
+	height: 16rpx;
+	background: rgba(0, 0, 0, .3);
+	border-radius: 50%;
+	vertical-align: middle;
+}
+
+swiper.square-dot .wx-swiper-dot {
+	background-color: var(--white);
+	opacity: 0.4;
+	width: 10rpx;
+	height: 10rpx;
+	border-radius: 20rpx;
+	margin: 0 8rpx !important;
+}
+
+swiper.square-dot .wx-swiper-dot.wx-swiper-dot-active {
+	opacity: 1;
+	width: 30rpx;
+}
+swiper.round-dot .wx-swiper-dot {
+	width: 10rpx;
+	height: 10rpx;
+	position: relative;
+	margin: 4rpx 8rpx !important;
+}
+swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active::after {
+	content: "";
+	position: absolute;
+	width: 10rpx;
+	height: 10rpx;
+	top: 0rpx;
+	left: 0rpx;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	background-color: var(--white);
+	border-radius: 20rpx;
+}
+swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
+	width: 18rpx;
+	height: 18rpx;
+}
+.card-swiper {
+	height: 420rpx !important;
+}
+
+.card-swiper swiper-item {
+	width: 610rpx !important;
+	left: 70rpx;
+	box-sizing: border-box;
+	padding: 40rpx 0rpx 70rpx;
+	overflow: initial;
+}
+
+.card-swiper swiper-item .swiper-item {
+	width: 100%;
+	display: block;
+	height: 100%;
+	border-radius: 10rpx;
+	transform: scale(0.9);
+	transition: all 0.2s ease-in 0s;
+	overflow: hidden;
+}
+
+.card-swiper swiper-item.cur .swiper-item {
+	transform: none;
+	transition: all 0.2s ease-in 0s;
+}
+.screen-swiper image,
+.screen-swiper video,
+.swiper-item image,
+.swiper-item video {
+	width: 100%;
+	display: block;
+	height: 100%;
+	margin: 0;
+	pointer-events: none;
+}
+.bg-video {
+	position: relative;
+}
+
+.bg-video video {
+	display: block;
+	height: 100%;
+	width: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	z-index: 0;
+	pointer-events: none;
+}
+.tower-swiper .tower-item .swiper-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 6rpx;
+	overflow: hidden;
+}
+.card-swiper swiper-item {
+	width: 610rpx !important;
+	left: 70rpx;
+	box-sizing: border-box;
+	padding: 40rpx 0rpx 70rpx;
+	overflow: initial;
+}
+
+.card-swiper swiper-item .swiper-item {
+	width: 100%;
+	display: block;
+	height: 100%;
+	border-radius: 10rpx;
+	transform: scale(0.9);
+	transition: all 0.2s ease-in 0s;
+	overflow: hidden;
+}
+
+.card-swiper swiper-item.cur .swiper-item {
+	transform: none;
+	transition: all 0.2s ease-in 0s;
+}

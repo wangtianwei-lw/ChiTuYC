@@ -1,0 +1,207 @@
+<!--index.wxml首页-->
+<!-- 头部轮播图 -->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}"  indicator-color="white"
+  indicator-active-color="RGB(255,91,47)">
+  <block wx:for="{{imgUrls}}" wx:key="key">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 中间图片按钮 -->
+<view class="mainbox">
+    <view class="maylove">
+         <view class="lovecar love">我的爱车</view>
+         <view class="car love">车牌号</view>
+         <view class="addcar love">立即添加</view>
+    </view>
+
+    <view class="box">
+
+      <view class="pic">
+        <image src="/images/home_menu_one.png"></image>
+        <view class="font">爱车保养</view>
+      </view>
+
+      <view class="pic">
+        <image src="/images/home_menu_two.png"></image>
+        <view class="font">轮胎更换</view>
+      </view>
+
+      <view class="pic">
+        <image src="/images/home_menu_three.png"></image>
+        <view class="font">汽车维修</view>
+      </view>
+
+      <view class="pic">
+        <image src="/images/home_menu_four.png"></image>
+        <view class="font">品牌机油</view>
+      </view>
+ 
+      <view class="pic two">
+        <image src="/images/home_menu_five.png"></image>
+        <view class="font">保险</view>
+      </view>
+
+      <view class="pic two">
+        <image src="/images/home_menu_six.png"></image>
+        <view class="font">道路救援</view>
+      </view>
+
+      <view class="pic two">
+        <image src="/images/home_menu_seven.png"></image>
+        <view class="font">洗车</view>
+      </view>
+
+      <view class="pic two">
+        <image src="/images/home_menu_eight.png"></image>
+        <view class="font">加油</view>
+      </view>
+
+    </view>
+
+</view>
+<!-- 星级店铺 -->
+<view class="starstore">
+
+ <view class="storetitle">
+  <view class="title">
+  星级店铺推荐
+  </view>
+ </view>
+
+ <view class="storebox">
+
+<swiper class="card-swiper {{DotStyle?'square-dot':'round-dot'}}" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper">
+  <swiper-item wx:for="{{swiperList}}" wx:key class="{{cardCur==index?'cur':''}}">
+    <view class="swiper-item">
+      <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+      <!-- <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video> -->
+    </view>
+  </swiper-item>
+</swiper>
+
+  <view class="store">
+   <image  src="http://image-chitu.test.upcdn.net/chitu/storImg/20190703144931691.jpg">
+   </image>
+   <view class="storeinf">
+    <view class="storename">赤兔养车红涛汽车快修年检测试测试测试测试</view>
+    <view class="look">立即查看</view>
+   </view>
+  </view>
+
+  <view class="store">
+   <image  src="http://image-chitu.test.upcdn.net/chitu/storImg/20190703144931691.jpg">
+   </image>
+   <view class="storeinf">
+    <view class="storename">赤兔养车红涛汽车快修年检</view>
+    <view class="look">立即查看</view>
+   </view>
+  </view>
+
+  <view class="store">
+   <image  src="http://image-chitu.test.upcdn.net/chitu/storImg/20190703144931691.jpg">
+   </image>
+   <view class="storeinf">
+    <view class="storename">赤兔养车红涛汽车快修年检</view>
+    <view class="look">立即查看</view>
+   </view>
+  </view>
+
+ </view>
+
+</view>
+<!-- app中间图片 -->
+<view class="apppic">
+ <image src="http://image-chitu.test.upcdn.net/chitu/bannerImg/20190328174340011.png">
+ </image>
+</view>
+
+<!-- 用户好评产品推荐 -->
+<view class="goodgoodsbox">
+
+  <view class="usergoodstitle">
+
+    <view class="goodstitle">
+     <view class="goodgoodstitle">用户好评产品推荐</view>
+    </view>
+
+    <view class="more">
+     <view class="fonts">更多</view>
+     <image src="/images/arrow_right_pic.png"></image>
+    </view>
+
+  </view>
+
+  <view class="usergoodsbigpic">
+   <image src="http://image-chitu.test.upcdn.net/chitu/bannerImg/20190430193701202.jpg"></image>
+  </view>
+
+  <view class="usergoodsbottompic">
+
+   <view class="inf">
+    <image src="http://image-chitu.test.upcdn.net/chitu/bannerImg/20190418173804797.jpg">
+    </image>
+   </view>
+  
+   <view class="inf three">
+    <image src="http://image-chitu.test.upcdn.net/chitu/bannerImg/20190430195608559.jpg"></image>
+   </view>
+
+  </view>
+
+</view>
+
+<!-- 热门推荐 -->
+<view class="hotgoodbox">
+
+  <view class="hotgoodstuijian">
+    <view class="hotgoodstuijian_box">
+     <image class="pic_left" src="/images/arrow_left_fill.png"></image>
+     <view class="hotgoodstuijian_title">热门推荐</view>
+     <image class="pic_right" src="/images/arrow_right_fill.png"></image>
+    </view>
+  </view>
+
+  <view class="goodsinf">
+    
+    <view class="goodspic">
+    <image   src="http://image-chitu.test.upcdn.net/chitu/goodsImg/20190529135451798.jpg">
+    </image>
+    </view>
+
+    <view class="goodsname"> 
+    赤兔通统一润滑油(含机油+机滤+工时)+++++++++++++++++++++++++++++++++++++++++++++++++
+    </view>
+
+    <view class="buy">
+    已售1110
+    </view>  
+    <view class="biaoqian">
+     <view class="biaoqian_title">矿物质机油</view>
+     <view class="biaoqian_title">矿物质机油</view>
+     <view class="biaoqian_title">矿物质机油</view>
+     <view class="biaoqian_title">矿物质机油</view>
+     <view class="biaoqian_title">矿物质机油</view>
+     <view class="biaoqian_title">矿物</view>     
+    </view>
+    
+     <view class="moneyuse">￥138.00</view>
+
+     <view class="moneynotuse">￥178.00</view>
+
+     <view class="servicebox">
+      <view class="service">安装服务</view>
+      <view class="service">安装服务</view>
+      <view class="service">服务 </view>
+     </view> 
+
+     <view class="disc">
+      正品保证  中国人寿保险投保测试测试车测试测试测试从测试测试
+     </view>        
+
+  </view>
+
+</view>

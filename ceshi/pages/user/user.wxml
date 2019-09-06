@@ -1,0 +1,158 @@
+<!--pages/user/user.wxml我的列表界面-->
+
+<!-- 头部用户基本数据 -->
+<view class="userinf">
+<!-- 背景图片 -->
+<image src="/images/wode_beijing.png"></image>
+
+<view class="userbasicinf">
+
+<view class="headurl"> 
+ <image  src="http://image-chitu.test.upcdn.net/chitu/couponImg/20190724134658395.jpg"></image>
+</view>
+
+<view class="userphonebox">
+ <view class="nikename">赤兔养车工作人员</view>
+
+ <view class="phonebox">
+  <image src="/images/phone_pic.png"></image>
+  <view class="phone">
+  15283666229
+  </view>
+ </view>
+
+</view>
+
+ <view class="rightPic">
+   <image src="/images/arrow_black_right_pic.png" ></image> 
+ </view>
+
+</view>
+
+<!-- 余额、我的收藏等 -->
+
+<view class="my">
+
+<view class="box">
+ <view class="number">100</view>
+ <view class="title">我的收藏</view>
+</view>
+
+<view class="box">
+ <view class="number">100</view>
+ <view class="title">我的车辆</view>
+</view>
+
+<view class="box">
+<view class="number">100</view>
+<view class="title">余额</view>
+</view>
+
+<view class="box">
+<view class="number">100</view>
+<view class="title">优惠券</view>
+</view>
+
+</view>
+
+</view>
+
+<!-- 限行路权查询 -->
+<view class="promote">
+<!-- 背景图片 -->
+ <image class="beijing" src="/images/promote.png"></image>
+ <view class="font">限行路权查询</view>
+ <image class="rightWhitePic" src="/images/arrow_right_white_pic.png"></image>
+</view>
+
+<!-- 订单 -->
+<view class="orderbox">
+ 
+ <view class="allorder">
+ 
+  <view class="mayorder">
+  我的订单
+  </view>
+  <view class="toAllOrderList">
+  全部订单
+  </view>
+  <image src="/images/arrow_right_pic.png"></image>
+
+  </view>
+
+  <view class="orderlist">
+    
+    <view class="ordertitle">
+    <image src="/images/obligation_pic.png"></image>
+    <view class="titles">待付款</view>
+    </view>
+    <view class="ordertitle">
+    <image src="/images/accountpaid_pic.png"></image>
+    <view class="titles">待发货</view>
+    </view>
+    <view class="ordertitle">
+    <image src="/images/wait_receiving_pic.png"></image>
+    <view class="titles">待收货</view>
+    </view>
+    <view class="ordertitle">
+    <image src="/images/wait_authentication_pic.png"></image>
+    <view class="titles">待认证</view>
+    </view>
+
+  </view>
+
+</view>
+
+<!-- 我的推广收益 -->
+<view class="promotes">
+ <image src="/images/generalize_pic.png"></image>
+</view>
+
+<!-- 我的工具 -->
+<view class="toolList">
+ 
+ <view class="tooltitle">我的工具</view>
+
+ <view class="toolbox">
+
+  <view class="tool">
+   <image src="/images/mine_menu_one.png"></image>
+   <view class="toolname">保养手册</view>
+  </view>
+  <view class="tool">
+   <image src="/images/mine_menu_two.png"></image>
+   <view class="toolname">保养记录</view>
+  </view>
+  <view class="tool">
+   <image src="/images/mine_menu_three.png"></image>
+   <view class="toolname">退款流程</view>
+  </view>
+  <view class="tool">
+   <image src="/images/mine_menu_four.png"></image>
+   <view class="toolname">违章提醒</view>
+  </view>
+  <view class="tool">
+   <image src="/images/mine_menu_five.png"></image>
+   <view class="toolname">车况报告</view>
+  </view>
+  <view class="tool">
+   <image src="/images/mine_menu_six.png"></image>
+   <view class="toolname">问题反馈</view>
+  </view>
+  <view class="tool">
+   <image src="/images/mine_menu_seven.png"></image>
+   <view class="toolname">保险查询</view>
+  </view>
+  <view class="tool">
+   <image src="/images/mine_menu_eight.png"></image>
+   <view class="toolname">我的推广</view>
+  </view>
+
+ </view>
+
+</view>
+
+<!-- 底部图片 -->
+<view class="bx">
+ <image src="http://image-chitu.test.upcdn.net/chitu/bannerImg/20190819112553915.jpg"></image>
+</view>

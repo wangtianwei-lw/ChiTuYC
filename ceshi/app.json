@@ -1,0 +1,43 @@
+{
+  "pages": [
+    
+    "pages/store/home/store",    
+    "pages/index/index",
+    "pages/user/user", 
+    "pages/store/storeInf/storeInf",       
+    "pages/details/details"
+  ],"window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "店铺详情",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#6C6C6C",
+    "selectedColor": "#FFC56C",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/images/home_unchoose_pic.png",
+      "selectedIconPath": "/images/home_choose_pic.png"
+    },{
+      "pagePath": "pages/store/home/store",
+      "text": "店铺",
+      "iconPath": "/images/home_classify_unchoose_pic.png",
+      "selectedIconPath": "/images/home_classify_choose_pic.png"
+    },{
+      "pagePath": "pages/details/details",
+      "text": "车论坛",
+      "iconPath": "/images/nearby_unchoose_pic.png",
+      "selectedIconPath": "/images/nearby_choose_pic.png"
+    },{
+      "pagePath": "pages/user/user",
+      "text": "我的",
+      "iconPath": "/images/mine_unchoose_pic.png",
+      "selectedIconPath": "/images/mine_choose_pic.png"
+    }
+    ]
+  }
+}

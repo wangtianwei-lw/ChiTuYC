@@ -1,0 +1,59 @@
+<!--pages/store/storeInf/storeInf.wxml 店铺详情界面-->
+<!-- 导航栏 -->
+<view class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
+ <view class="backs" bindtap="backs"> 
+  <image src="/images/icon_back.png"></image>
+ </view>
+ <view slot="content" class="title">店铺详情</view>
+</view>
+<!-- 头部轮播图 -->
+<swiper indicator-dots="true"
+  autoplay="true" interval="5000" duration="1000" circular="true"  indicator-color="white"
+  indicator-active-color="RGB(255,91,47)">
+  <block wx:for="{{imgUrls}}" wx:key="key">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 店铺基本信息 -->
+<view class="StoreInf">
+<!-- 店铺名称 -->
+ <view class="storeName">
+  新兴汽修新兴汽修新兴汽修新兴汽修新兴汽修新兴汽修新兴汽修新兴汽修新兴汽修新兴汽修新兴汽修新兴汽修新兴汽修
+ </view>
+ <!-- 店铺星级和购买数量 -->
+ <view class="starAndBuy">
+ <view class="star">
+  <image src="/images/star_open_pic.png"></image>
+  <image src="/images/star_open_pic.png"></image>
+  <image src="/images/star_open_pic.png"></image>
+  <image src="/images/star_open_pic.png"></image>
+  <image src="/images/star_open_pic.png"></image>
+ </view>
+ <view class="buy">
+  <view class="buytitle">
+  购买人数
+  </view>
+  <view class="buyNumber">
+  1800
+  </view>
+ </view>
+ </view>
+ <!-- 地址和营业时间 -->
+ <view class="addrandbusbox">
+  <view class="addrbox">
+   <image src="/images/location_two_pic.png"></image>
+   <view class="addrtitle">东大道与丁兰路交叉口(大地影院)</view>
+  </view>  
+  <view class="busbox">
+  <image src="/images/store_icon_pic.png"></image>
+   <view class="bustitle">营业时间：{{time}}</view>
+  </view>
+ </view>
+ <!-- 距离和收藏店铺 -->
+ <view class="distanceand">
+  
+ </view>
+
+</view>

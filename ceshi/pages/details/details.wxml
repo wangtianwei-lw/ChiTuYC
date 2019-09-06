@@ -1,0 +1,151 @@
+<!--pages/details/details.wxml 车论坛列表界面-->
+<!-- 导航栏 -->
+<view isBack="{{true}}" class="navbars">
+ <view slot="content" class="title">车论坛</view>
+</view>
+<!-- 头部轮播图 -->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}"  indicator-color="white"
+  indicator-active-color="RGB(255,91,47)">
+  <block wx:for="{{imgUrls}}" wx:key="key">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- tab选项卡 -->
+<view class="tabNav">
+    <view wx:for="{{navTab}}" wx:key="index" data-idx="{{index}}" bindtap="currentTab" class="{{currentTab==index ? 'cur' : ''}}">
+     <text class="tab">{{item}}</text>
+    </view>
+</view>
+
+<!-- 内容 -->
+<view class="carbbslistbox">
+   <view class="carbbsbox">
+   
+    <view class="carbbxlogo">
+     <image src="https://images.9liuda.com/image/201908/27/607a8c93d9bd48b9c4a8f81de83d0512?imageMogr2/auto-orient/interlace/1/format/jpg/thumbnail/500x/size-limit/$(fsize)"></image>
+    </view>
+    
+    <view class="carbbstitle">
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了++++++
+    </view>
+    <view class="carbbscontent">
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    </view>
+
+    <view class="carbbstime">
+    2019-8-27
+    </view>
+
+   </view>
+
+   <view class="carbbsbox">
+   
+    <view class="carbbxlogo">
+     <image src="https://images.9liuda.com/image/201908/27/607a8c93d9bd48b9c4a8f81de83d0512?imageMogr2/auto-orient/interlace/1/format/jpg/thumbnail/500x/size-limit/$(fsize)"></image>
+    </view>
+    
+    <view class="carbbstitle">
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了++++++
+    </view>
+    <view class="carbbscontent">
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    </view>
+
+    <view class="carbbstime">
+    2019-8-27
+    </view>
+
+   </view>
+
+   <view class="carbbsbox">
+   
+    <view class="carbbxlogo">
+     <image src="https://images.9liuda.com/image/201908/27/607a8c93d9bd48b9c4a8f81de83d0512?imageMogr2/auto-orient/interlace/1/format/jpg/thumbnail/500x/size-limit/$(fsize)"></image>
+    </view>
+    
+    <view class="carbbstitle">
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了++++++
+    </view>
+    <view class="carbbscontent">
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    </view>
+    
+    <view class="carbbstime">
+    2019-8-27
+    </view>
+
+   </view>
+
+   <view class="carbbsbox">
+   
+    <view class="carbbxlogo">
+     <image src="https://images.9liuda.com/image/201908/27/607a8c93d9bd48b9c4a8f81de83d0512?imageMogr2/auto-orient/interlace/1/format/jpg/thumbnail/500x/size-limit/$(fsize)"></image>
+    </view>
+    
+    <view class="carbbstitle">
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了++++++
+    </view>
+    <view class="carbbscontent">
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    </view>
+    
+    <view class="carbbstime">
+    2019-8-27
+    </view>
+
+   </view>
+
+   <view class="carbbsbox">
+   
+    <view class="carbbxlogo">
+     <image src="https://images.9liuda.com/image/201908/27/607a8c93d9bd48b9c4a8f81de83d0512?imageMogr2/auto-orient/interlace/1/format/jpg/thumbnail/500x/size-limit/$(fsize)"></image>
+    </view>
+    
+    <view class="carbbstitle">
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了++++++
+    </view>
+    <view class="carbbscontent">
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    还剩5天！高速收费全面调整，事关每位车主，有车的要注意了
+    </view>
+    
+    <view class="carbbstime">
+    2019-8-27
+    </view>
+
+   </view>
+
+</view>

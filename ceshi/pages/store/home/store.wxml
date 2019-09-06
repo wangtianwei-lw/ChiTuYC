@@ -1,0 +1,99 @@
+<!--pages/store/store.wxml店铺列表界面-->
+<!-- 导航栏 -->
+<view  class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
+ <view  class="title">店铺</view>
+</view>
+<!-- 头部搜索栏 -->
+<view class="searchbox">
+
+ <view class="search"> 
+  
+  <view class="searchinput">
+   <image src="/images/search_pic.png"></image>
+   <input class="storeInf"  type="text"  placeholder="请输入店铺名称" confirm-type="done"/>
+  </view>
+
+  <view class="searchbottom">
+   <view class="bottons">
+   搜索
+   </view>
+  </view>
+
+ </view>
+
+</view>
+
+<!-- 条件重载栏 -->
+<view class="moreconditions">
+ 
+ <view class="conditions">
+    <picker class="areas" mode="region" bindchange="RegionChange" value="{{region}}"  range="{{region}}">
+    <view>
+    {{area}}
+    </view>
+    <image src="/images/icon_down.png"></image>
+    </picker>
+ </view>
+
+  <view class="conditions2">
+    <picker class="service"   bindchange="PickerChanges" value="{{service}}" range="{{service}}">
+      {{index?service[index]:'全部服务'}}
+    <image src="/images/icon_down.png"></image>
+    </picker>
+ </view>
+
+  <view class="conditions3">
+    <picker class="sort"  mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}" range-key="areas">
+      默认排序
+    <image src="/images/icon_down.png"></image>
+    </picker>
+ </view>
+
+</view>
+
+<!-- 店铺列表界面 -->
+<view class="storelistbox" bindtap="bindViewTap">
+
+<view class="storelogo">
+ <image src="http://image-chitu.test.upcdn.net/chitu/storImg/20190815112110668.jpg"></image>
+</view>
+
+<view class="storeinfbox">
+
+ <view class="storeListStoreName">
+  <image src="/images/location_two_pic.png"></image>
+  <view class="storename">
+ 赤兔通统一润滑油(含机油+机滤+工时)
+  </view>
+ </view>
+</view>
+
+<view class="storeAddr">
+ 赤兔通统一润滑油(含机油+机滤+工时)
+ 赤兔通统一润滑油(含机油+机滤+工时)
+ 赤兔通统一润滑油(含机油+机滤+工时)
+</view>
+
+<view class="distance">
+距离1327.37km
+</view>
+
+<view class="star">
+
+ <image src="/images/star_open_pic.png"></image>
+ <image src="/images/star_open_pic.png"></image>
+ <image src="/images/star_open_pic.png"></image>
+ <image src="/images/star_open_pic.png"></image>
+ <image src="/images/star_open_pic.png"></image>
+
+</view>
+
+<view class="buy">
+
+ <view class="buyNumber">9600</view>
+ <view class="fixed">人购买</view>
+
+</view>
+
+</view>
+

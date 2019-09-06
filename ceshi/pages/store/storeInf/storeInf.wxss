@@ -1,0 +1,105 @@
+/* pages/store/storeInf/storeInf.wxss */
+swiper ,swiper-item image{
+width: 100%;
+height: 380rpx;
+}
+.wx-swiper-dots{
+  position:absolute;
+}
+.StoreInf{
+  width: 100%;
+  height: 208rpx;
+}
+.storeName{
+position: absolute;
+font-size: 32rpx;
+margin-left: 28rpx;
+margin-top:12rpx; 
+overflow: hidden;
+height: 44rpx;
+width: 694rpx;
+}
+.starAndBuy{
+  position: absolute;
+  width: 360rpx;
+  height: 40rpx;
+  margin-top: 62rpx;
+  margin-left:18rpx;
+}
+.star{
+position: absolute;
+height: 28rpx;
+width: 190rpx;
+margin-top:6rpx;
+}
+.star image{
+  float: left;
+  width: 28rpx;
+  height: 100%;
+  margin-left:10rpx; 
+}
+.buy{
+  float: right;
+  height: 40rpx;
+  display: flex;
+  flex-direction: row;
+}
+.buytitle{
+font-size:24rpx;
+font-style: rgba(3,3,3,1);
+margin-top:2rpx; 
+}
+.buyNumber{
+font-size:28rpx;
+font-style: rgba(0,0,0,1);
+margin-left: 6rpx;
+}
+.addrandbusbox{
+  position: absolute;
+  margin-top: 122rpx;
+  border-right: 2rpx solid rgba(216,216,216,1);
+  width: 384rpx;
+  height: 80rpx;
+}
+.addrbox{
+  height: 32rpx;
+  position: absolute;
+  margin-top:2rpx;
+  margin-left:30rpx;
+}
+.addrbox image{
+  float: left;
+  width: 32rpx;
+  height: 32rpx;
+}
+.addrtitle{
+float: left;
+height: 28rpx;
+font-size:20rpx;
+color:rgba(3,3,3,1);
+margin-left: 16rpx;
+margin-top:2rpx; 
+overflow: hidden;
+width: 300rpx;
+}
+.busbox{
+  height: 32rpx;
+  position: absolute;
+  margin-top:44rpx;
+  margin-left:30rpx;
+}
+.busbox image{
+  float: left;
+  width: 32rpx;
+  height: 32rpx;
+}
+.bustitle{
+float: left;
+height: 28rpx;
+font-size:20rpx;
+color:rgba(3,3,3,1);
+margin-left: 16rpx;
+margin-top:2rpx; 
+overflow: hidden;
+width: 300rpx;
+}

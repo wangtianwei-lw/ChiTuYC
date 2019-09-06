@@ -1,0 +1,88 @@
+/* pages/details/details.wxss */
+swiper ,swiper-item image{
+width: 100%;
+height: 252rpx;
+}
+.tabNav{
+  position: absolute; 
+  width:100%; 
+  height:76rpx; 
+  display: flex;
+  box-sizing: border-box; 
+  font-size: 28rpx;
+  line-height: 40rpx;
+  margin-top:4rpx;
+   }
+.tabNav> view{
+  text-align: center; 
+  }
+.tabNav> view:last-child{
+   margin-right: 0;
+   }
+.tabNav> view text{
+   height: 70rpx;
+   width: 150rpx;
+   display:inline-block;
+   padding-top: 15rpx;
+   }  
+.tabNav .cur text{
+  height: 56rpx;
+   border-bottom:6rpx solid #FFC56C; 
+   color:#FFC56C;
+   }
+   .carbbslistbox{
+     position: absolute;
+     width: 100%;
+     margin-top: 84rpx;
+   }
+  .carbbsbox{
+    width: 100%;
+    height: 212rpx;
+  } 
+  .carbbxlogo{
+    width: 320rpx;
+    height:188rpx;
+    position: absolute;
+    margin: 12rpx 410rpx 12rpx 20rpx;
+  }
+  .carbbxlogo image{
+  width: 100%;
+  height: 100%;
+  }
+  .carbbstitle{
+    position: absolute;
+    width: 370rpx;
+    height: 40rpx;
+    font-size: 28rpx;
+    margin: 16rpx 20rpx 160rpx 360rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .carbbscontent{
+    position: absolute;
+    width: 370rpx;
+    height: 108rpx;
+    font-size: 20rpx;
+    margin-top: 54rpx;
+    margin-left:360rpx; 
+    color:rgba(3,3,3,1);
+    line-height: 28rpx;
+
+    overflow: hidden;
+    display: -webkit-box; 
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    white-space: normal !important;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+  .carbbstime{
+   width: 102rpx;
+   height: 28rpx;
+   font-size: 20rpx;
+   color:rgba(3,3,3,1);
+   position: absolute;
+   margin-left: 626rpx;
+   margin-top: 166rpx;
+ }
