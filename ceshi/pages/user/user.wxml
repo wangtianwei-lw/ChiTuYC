@@ -152,6 +152,9 @@
 
 </view>
 
+<!-- 测试felix -->
+
+
 <!-- 底部图片 -->
 <view class="bx">
  <image src="http://image-chitu.test.upcdn.net/chitu/bannerImg/20190819112553915.jpg"></image>
