@@ -53,8 +53,13 @@
  </view>
  <!-- 距离和收藏店铺 -->
  <view class="distanceAndCollection">
-  <view class="distanceBox"></view>
-  <view class="collectionBox"></view>
+  <view class="distanceBox">
+   <image src="/images/navigation_pic.png"></image>
+   <view class="distance">店铺距离你{{distance}}km</view>
+  </view>
+  <view class="collectionBox">
+   
+  </view>
  </view>
 
 </view>

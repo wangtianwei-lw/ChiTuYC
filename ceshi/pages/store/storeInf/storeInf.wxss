@@ -60,6 +60,7 @@ margin-left: 6rpx;
   border-right: 2rpx solid rgba(216,216,216,1);
   width: 384rpx;
   height: 80rpx;
+  background-color:red; 
 }
 .addrbox{
   height: 32rpx;
@@ -102,4 +103,19 @@ margin-left: 16rpx;
 margin-top:2rpx; 
 overflow: hidden;
 width: 300rpx;
+}
+.distanceAndCollection{
+  background-color:blue; 
+  position: absolute;
+  width: 384rpx;
+  height: 80rpx;
+  margin-top: 122rpx;
+  margin-left:386rpx; 
+}
+.distanceBox image{
+  width: 42rpx;
+  height: 42rpx;
+}
+.distance{
+  font-size:20rpx; 
 }

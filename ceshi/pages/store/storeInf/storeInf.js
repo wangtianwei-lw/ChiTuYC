@@ -10,7 +10,8 @@ Page({
     StatusBar: app.globalData.StatusBar,
     CustomBar: app.globalData.CustomBar,
     Custom: app.globalData.Custom,
-    time: ['06:00-17:00']
+    time: ['06:00-17:00'],
+    distance: ['9600']
   }, 
   backs: function () {
     wx.navigateBack({
