@@ -1,10 +1,10 @@
 {
   "pages": [
-    
+        "pages/store/storeInf/storeInf",
+  
     "pages/store/home/store",    
     "pages/index/index",
     "pages/user/user", 
-    "pages/store/storeInf/storeInf",       
     "pages/details/details"
   ],"window": {
     "backgroundTextStyle": "light",
