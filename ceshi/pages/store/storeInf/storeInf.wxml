@@ -52,8 +52,9 @@
   </view>
  </view>
  <!-- 距离和收藏店铺 -->
- <view class="distanceand">
-  
+ <view class="distanceAndCollection">
+  <view class="distanceBox"></view>
+  <view class="collectionBox"></view>
  </view>
 
 </view>
