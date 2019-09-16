@@ -1,15 +1,13 @@
 {
   "pages": [
-        "pages/store/storeInf/storeInf",
-  
-    "pages/store/home/store",    
+    "pages/store/storeInf/storeInf",
     "pages/index/index",
+    "pages/store/home/store",
     "pages/user/user", 
     "pages/details/details"
   ],"window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "店铺详情",
     "navigationBarTextStyle": "black",
     "navigationStyle": "custom"
   },

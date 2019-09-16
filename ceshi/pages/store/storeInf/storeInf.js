@@ -11,11 +11,22 @@ Page({
     CustomBar: app.globalData.CustomBar,
     Custom: app.globalData.Custom,
     time: ['06:00-17:00'],
-    distance: ['9600']
+    distance: ['960'],
+    collection:['已收藏'],
+    serviceList: [{
+        serviceName: "轮胎更换"
+        },{
+        serviceName: "爱车保养"
+        },{
+        serviceName: "洗车"
+        },{
+        serviceName: "汽车维修"
+        }
+        ]
   }, 
   backs: function () {
     wx.navigateBack({
-      url: '../home/store'
+      delta:1
     })
   },
 

@@ -60,7 +60,6 @@ margin-left: 6rpx;
   border-right: 2rpx solid rgba(216,216,216,1);
   width: 384rpx;
   height: 80rpx;
-  background-color:red; 
 }
 .addrbox{
   height: 32rpx;
@@ -105,7 +104,6 @@ overflow: hidden;
 width: 300rpx;
 }
 .distanceAndCollection{
-  background-color:blue; 
   position: absolute;
   width: 384rpx;
   height: 80rpx;
@@ -115,7 +113,106 @@ width: 300rpx;
 .distanceBox image{
   width: 42rpx;
   height: 42rpx;
+  position: absolute;
+  margin-left:62rpx; 
 }
 .distance{
   font-size:20rpx; 
+  position: absolute;
+  margin-top: 52rpx;
+  height: 28rpx;
+  text-align: center;
+  width: 178rpx; 
+}
+.distanceBox{
+  position: absolute;
+  margin-left:36rpx;
+  height: 80rpx;
+  width: 178rpx;  
+}
+.collectionBox{
+width: 80rpx;
+height: 100%;
+position: absolute;
+margin-left: 256rpx; 
+}
+.collectionBox image{
+width: 42rpx;
+height:42rpx;
+position: absolute;
+margin-left:18rpx; 
+}
+.collection{
+font-size:20rpx;
+text-align: center;
+width: 80rpx;
+height: 28rpx; 
+position: absolute;
+margin-top:52rpx; 
+}
+.serviceBox{
+  width: 100%;
+  background-color: #F0F0F0;
+  display: flex;
+  flex-wrap:wrap; 
+}
+.service{
+  height: 76rpx;
+  margin-left: 15rpx;
+  margin-top:20rpx; 
+  width: 720rpx;
+  background-color:white; 
+  border-top-left-radius: 12rpx; 
+  border-top-right-radius: 12rpx; 
+}
+.serviceBox :last-child{
+margin-bottom:20rpx; 
+}
+.serviceCircle image{
+width: 28rpx;
+height: 28rpx;
+float: left;
+}
+.serviceCircle{
+width: 28rpx;
+height: 28rpx;
+float: left;
+margin-left:30rpx;
+margin-top:24rpx;  
+}
+.serviceName{
+font-size:32rpx;
+float: left;
+margin-top:16rpx;  
+margin-left: 30rpx;
+height: 44rpx;
+line-height:44rpx;
+}
+.serviceMark image{
+width: 28rpx;
+height: 28rpx;
+float: left;
+}
+.serviceMark{
+width: 28rpx;
+height: 28rpx;
+float: left;
+margin-left:30rpx;
+margin-top:24rpx;
+}
+.serviceUpAndDoun image{
+width: 20rpx;
+height: 12rpx;
+float: left;
+}
+.serviceUpAndDoun{
+  widows: 20rpx;
+  height: 12rpx;
+  float: right;
+  margin-right:30rpx; 
+  margin-top:32rpx; 
+}
+.userEvaluationBox{
+  height: 336rpx;
+  width: 100%;
 }

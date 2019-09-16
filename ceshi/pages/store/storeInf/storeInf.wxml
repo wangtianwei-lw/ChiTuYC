@@ -58,8 +58,27 @@
    <view class="distance">店铺距离你{{distance}}km</view>
   </view>
   <view class="collectionBox">
-   
+   <image src="/images/collection_three_pic.png"></image>
+   <view class="collection">{{collection}}</view>
   </view>
  </view>
-
+</view>
+<!-- 店铺服务 -->
+<view class="serviceBox">
+ <view class="service"  wx:for="{{serviceList}}" wx:key>
+  <view class="serviceCircle">
+   <image src="/images/icon_rb_unselect.png"></image>
+  </view>
+  <view class="serviceName">{{item.serviceName}}</view>
+  <view class="serviceMark">
+   <image src="/images/good_rule_pic.png"></image>
+  </view>
+  <view class="serviceUpAndDoun">
+    <image src="/images/store_arrow_down_pic.png"></image>
+  </view>
+ </view>
+</view>
+<!-- 用户评价 -->
+<view class="userEvaluationBox">
+ 
 </view>
