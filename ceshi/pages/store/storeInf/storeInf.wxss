@@ -213,6 +213,19 @@ float: left;
   margin-top:32rpx; 
 }
 .userEvaluationBox{
-  height: 336rpx;
+  height: 345rpx;
   width: 100%;
+}
+.titleBox{
+  height: 76rpx;
+  width: 100%;
+  background: blanchedalmond;
+  border-bottom: 1rpx solid #F0F0F0;
+}
+.moneyAndBuy{
+  width: 100%;
+  height: 84rpx;
+  position: fixed;
+  bottom: 0rpx;
+  background-color:red; 
 }

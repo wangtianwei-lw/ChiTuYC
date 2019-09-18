@@ -71,37 +71,17 @@
   星级店铺推荐
   </view>
  </view>
-
- <view class="storebox">
-  <view class="store">
-   <image  src="http://image-chitu.test.upcdn.net/chitu/storImg/20190703144931691.jpg">
+ <scroll-view class="storebox" scroll-x="true">
+  <view class="store" wx:for="{{storeList}}" wx:key>
+   <image  src="{{item.storeLogo}}">
    </image>
    <view class="storeinf">
-    <view class="storename">赤兔养车红涛汽车快修年检测试测试测试测试</view>
+    <view class="storename">{{item.storeName}}</view>
     <view class="look">立即查看</view>
    </view>
   </view>
 
-  <view class="store">
-   <image  src="http://image-chitu.test.upcdn.net/chitu/storImg/20190703144931691.jpg">
-   </image>
-   <view class="storeinf">
-    <view class="storename">赤兔养车红涛汽车快修年检</view>
-    <view class="look">立即查看</view>
-   </view>
-  </view>
-
-  <view class="store">
-   <image  src="http://image-chitu.test.upcdn.net/chitu/storImg/20190703144931691.jpg">
-   </image>
-   <view class="storeinf">
-    <view class="storename">赤兔养车红涛汽车快修年检</view>
-    <view class="look">立即查看</view>
-   </view>
-  </view>
-
- </view>
-
+ </scroll-view>
 </view>
 <!-- app中间图片 -->
 <view class="apppic">

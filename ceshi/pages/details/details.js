@@ -15,6 +15,9 @@ Page({
     navTab: ['全部', '汽车','汽车新闻', '新车', '用车知识'],
     currentTab: 0,
     sendList: [],
+    StatusBar: app.globalData.StatusBar,
+    CustomBar: app.globalData.CustomBar,
+    Custom: app.globalData.Custom
   }, select: {
     page: 1,
     size: 6,

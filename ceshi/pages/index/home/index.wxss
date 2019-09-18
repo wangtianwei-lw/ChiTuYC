@@ -90,13 +90,13 @@ margin: 16rpx 20rpx;
  .store{
    width: 280rpx;
    height: 160rpx;
-   display:inline-block;
-   margin-left:6rpx; 
-   overflow-x:scroll; 
-
+   display: inline-block;
+   margin-left:10rpx;
+   margin-right:10rpx; 
+ 
   }
  .store image{
-   width: 280rpx;
+  width: 280rpx;
   height: 160rpx;
   position: absolute;
  }
@@ -104,13 +104,13 @@ margin: 16rpx 20rpx;
    position: absolute;
    margin-top: 72rpx;
    height: 160rpx;
-   width: 858rpx;
-   margin-left:14rpx; 
-   overflow-x:scroll; 
+   display:flex;
+   white-space: nowrap;
  }
  .storename{
    font-size: 20rpx;
    text-align: center;
+   white-space: pre-wrap;
  }
  .look{
    font-size: 16rpx;

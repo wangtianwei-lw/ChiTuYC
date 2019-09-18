@@ -80,5 +80,11 @@
 </view>
 <!-- 用户评价 -->
 <view class="userEvaluationBox">
+ <view class="titleBox">
  
+ </view>
+</view>
+<!-- 底部购买栏 -->
+<view class="moneyAndBuy">
+
 </view>

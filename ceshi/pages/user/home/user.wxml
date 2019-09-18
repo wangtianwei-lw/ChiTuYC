@@ -17,7 +17,7 @@
  <view class="phonebox">
   <image src="/images/phone_pic.png"></image>
   <view class="phone">
-  15283666229
+  {{phone}}
   </view>
  </view>
 

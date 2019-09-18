@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/index/home/index",
     "pages/store/storeInf/storeInf",
-    "pages/index/index",
     "pages/store/home/store",
-    "pages/user/user", 
+    "pages/user/home/user", 
     "pages/details/details"
   ],"window": {
     "backgroundTextStyle": "light",
@@ -16,7 +16,7 @@
     "color": "#6C6C6C",
     "selectedColor": "#FFC56C",
     "list": [{
-      "pagePath": "pages/index/index",
+      "pagePath": "pages/index/home/index",
       "text": "首页",
       "iconPath": "/images/home_unchoose_pic.png",
       "selectedIconPath": "/images/home_choose_pic.png"
@@ -31,7 +31,7 @@
       "iconPath": "/images/nearby_unchoose_pic.png",
       "selectedIconPath": "/images/nearby_choose_pic.png"
     },{
-      "pagePath": "pages/user/user",
+      "pagePath": "pages/user/home/user",
       "text": "我的",
       "iconPath": "/images/mine_unchoose_pic.png",
       "selectedIconPath": "/images/mine_choose_pic.png"

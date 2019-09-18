@@ -7,7 +7,68 @@ Page({
     area:['全部区域'],
     StatusBar: app.globalData.StatusBar,
     CustomBar: app.globalData.CustomBar,
-    Custom: app.globalData.Custom
+    Custom: app.globalData.Custom,
+    allStoreList:[{
+      storeName:' 赤兔通统一润滑油(含机油+机滤+工时)',
+      storeLogo:'http://image-chitu.test.upcdn.net/chitu/storImg/20190815112110668.jpg',
+      storeAddr:'赤兔通统一润滑油(含机油+机滤+工时)赤兔通统一润滑油(含机油+机滤+工时)赤兔通统一润滑油(含机油+机滤+工时)',
+      distance:'1327.37',
+      buyNumber:'9600'
+    }, {
+        storeName: ' 赤兔通统一润滑油(含机油+机滤+工时)',
+        storeLogo: 'http://image-chitu.test.upcdn.net/chitu/storImg/20190815112110668.jpg',
+        storeAddr: '赤兔通统一润滑油(含机油+机滤+工时)赤兔通统一润滑油(含机油+机滤+工时)赤兔通统一润滑油(含机油+机滤+工时)',
+        distance: '1327.37',
+        buyNumber: '9600'
+      },{
+        storeName: ' 赤兔通统一润滑油(含机油+机滤+工时)',
+        storeLogo: 'http://image-chitu.test.upcdn.net/chitu/storImg/20190815112110668.jpg',
+        storeAddr: '赤兔通统一润滑油(含机油+机滤+工时)赤兔通统一润滑油(含机油+机滤+工时)赤兔通统一润滑油(含机油+机滤+工时)',
+        distance: '1327.37',
+        buyNumber: '9600'
+      },{
+        storeName: ' 赤兔通统一润滑油(含机油+机滤+工时)',
+        storeLogo: 'http://image-chitu.test.upcdn.net/chitu/storImg/20190815112110668.jpg',
+        storeAddr: '赤兔通统一润滑油(含机油+机滤+工时)赤兔通统一润滑油(含机油+机滤+工时)赤兔通统一润滑油(含机油+机滤+工时)',
+        distance: '1327.37',
+        buyNumber: '9600'
+      },{
+        storeName: ' 赤兔通统一润滑油(含机油+机滤+工时)',
+        storeLogo: 'http://image-chitu.test.upcdn.net/chitu/storImg/20190815112110668.jpg',
+        storeAddr: '赤兔通统一润滑油(含机油+机滤+工时)赤兔通统一润滑油(含机油+机滤+工时)赤兔通统一润滑油(含机油+机滤+工时)',
+        distance: '1327.37',
+        buyNumber: '9600'
+      },{
+        storeName: ' 赤兔通统一润滑油(含机油+机滤+工时)',
+        storeLogo: 'http://image-chitu.test.upcdn.net/chitu/storImg/20190815112110668.jpg',
+        storeAddr: '赤兔通统一润滑油(含机油+机滤+工时)赤兔通统一润滑油(含机油+机滤+工时)赤兔通统一润滑油(含机油+机滤+工时)',
+        distance: '1327.37',
+        buyNumber: '9600'
+      },{
+        storeName: ' 赤兔通统一润滑油(含机油+机滤+工时)',
+        storeLogo: 'http://image-chitu.test.upcdn.net/chitu/storImg/20190815112110668.jpg',
+        storeAddr: '赤兔通统一润滑油(含机油+机滤+工时)赤兔通统一润滑油(含机油+机滤+工时)赤兔通统一润滑油(含机油+机滤+工时)',
+        distance: '1327.37',
+        buyNumber: '9600'
+      },{
+        storeName: ' 赤兔通统一润滑油(含机油+机滤+工时)',
+        storeLogo: 'http://image-chitu.test.upcdn.net/chitu/storImg/20190815112110668.jpg',
+        storeAddr: '赤兔通统一润滑油(含机油+机滤+工时)赤兔通统一润滑油(含机油+机滤+工时)赤兔通统一润滑油(含机油+机滤+工时)',
+        distance: '1327.37',
+        buyNumber: '9600'
+      },{
+        storeName: ' 赤兔通统一润滑油(含机油+机滤+工时)',
+        storeLogo: 'http://image-chitu.test.upcdn.net/chitu/storImg/20190815112110668.jpg',
+        storeAddr: '赤兔通统一润滑油(含机油+机滤+工时)赤兔通统一润滑油(含机油+机滤+工时)赤兔通统一润滑油(含机油+机滤+工时)',
+        distance: '1327.37',
+        buyNumber: '9600'
+      },{
+        storeName: ' 赤兔通统一润滑油(含机油+机滤+工时)',
+        storeLogo: 'http://image-chitu.test.upcdn.net/chitu/storImg/20190815112110668.jpg',
+        storeAddr: '赤兔通统一润滑油(含机油+机滤+工时)赤兔通统一润滑油(含机油+机滤+工时)赤兔通统一润滑油(含机油+机滤+工时)',
+        distance: '1327.37',
+        buyNumber: '9600'
+      }]
   },
   lifetimes: {
     // 生命周期函数，可以为函数，或一个在methods段中定义的方法名
@@ -47,7 +108,7 @@ Page({
    var city = '330100';//获取到全局变量
    var that = this
     wx.request({
-       url: 'http://192.169.3.35:8080/weChatQueryController/query',//给函数传递服务器地址参数 
+       url: 'http://192.168.3.35:8080/weChatQueryController/query',//给函数传递服务器地址参数 
       data: {
         key: '1000',
          city:city,

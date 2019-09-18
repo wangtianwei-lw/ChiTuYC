@@ -1,6 +1,6 @@
 <!--pages/details/details.wxml 车论坛列表界面-->
 <!-- 导航栏 -->
-<view isBack="{{true}}" class="navbars">
+<view isBack="{{true}}" class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
  <view slot="content" class="title">车论坛</view>
 </view>
 <!-- 头部轮播图 -->

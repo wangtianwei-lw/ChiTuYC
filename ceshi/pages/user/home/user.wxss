@@ -52,7 +52,7 @@ margin-left:16rpx;
   width: 14rpx;
   height: 22rpx;
   position: absolute;
-  margin-top:8rpx; 
+  margin-top:5rpx; 
 }
 .rightPic{
   width: 56rpx;

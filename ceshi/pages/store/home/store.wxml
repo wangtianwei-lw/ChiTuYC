@@ -52,48 +52,35 @@
 </view>
 
 <!-- 店铺列表界面 -->
-<view class="storelistbox" bindtap="bindViewTap">
-
+<view class="StoreMainBox" wx:for="{{allStoreList}}" wx:key>
+<view class="storelistbox" bindtap="bindViewTap" >
 <view class="storelogo">
- <image src="http://image-chitu.test.upcdn.net/chitu/storImg/20190815112110668.jpg"></image>
+ <image src="{{item.storeLogo}}"></image>
 </view>
-
 <view class="storeinfbox">
-
  <view class="storeListStoreName">
   <image src="/images/location_two_pic.png"></image>
   <view class="storename">
- 赤兔通统一润滑油(含机油+机滤+工时)
+ {{item.storeName}}
   </view>
  </view>
 </view>
-
 <view class="storeAddr">
- 赤兔通统一润滑油(含机油+机滤+工时)
- 赤兔通统一润滑油(含机油+机滤+工时)
- 赤兔通统一润滑油(含机油+机滤+工时)
+{{item.storeAddr}}
 </view>
-
 <view class="distance">
-距离1327.37km
+距离{{item.distance}}km
 </view>
-
 <view class="star">
-
  <image src="/images/star_open_pic.png"></image>
  <image src="/images/star_open_pic.png"></image>
  <image src="/images/star_open_pic.png"></image>
  <image src="/images/star_open_pic.png"></image>
  <image src="/images/star_open_pic.png"></image>
-
 </view>
-
 <view class="buy">
-
- <view class="buyNumber">9600</view>
+ <view class="buyNumber">{{item.buyNumber}}</view>
  <view class="fixed">人购买</view>
-
 </view>
-
 </view>
-
+</view>
