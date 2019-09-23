@@ -13,6 +13,7 @@ Page({
     time: ['06:00-17:00'],
     distance: ['960'],
     collection:['已收藏'],
+    number:["666"],
     serviceList: [{
         serviceName: "轮胎更换"
         },{

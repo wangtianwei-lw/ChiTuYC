@@ -1,4 +1,5 @@
 <!--pages/store/storeInf/storeInf.wxml 店铺详情界面-->
+
 <!-- 导航栏 -->
 <view class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
  <view class="backs" bindtap="backs"> 
@@ -6,6 +7,7 @@
  </view>
  <view slot="content" class="title">店铺详情</view>
 </view>
+
 <!-- 头部轮播图 -->
 <swiper indicator-dots="true"
   autoplay="true" interval="5000" duration="1000" circular="true"  indicator-color="white"
@@ -16,6 +18,7 @@
     </swiper-item>
   </block>
 </swiper>
+
 <!-- 店铺基本信息 -->
 <view class="StoreInf">
 <!-- 店铺名称 -->
@@ -40,6 +43,7 @@
   </view>
  </view>
  </view>
+
  <!-- 地址和营业时间 -->
  <view class="addrandbusbox">
   <view class="addrbox">
@@ -51,6 +55,7 @@
    <view class="bustitle">营业时间：{{time}}</view>
   </view>
  </view>
+
  <!-- 距离和收藏店铺 -->
  <view class="distanceAndCollection">
   <view class="distanceBox">
@@ -63,6 +68,7 @@
   </view>
  </view>
 </view>
+
 <!-- 店铺服务 -->
 <view class="serviceBox">
  <view class="service"  wx:for="{{serviceList}}" wx:key>
@@ -78,12 +84,21 @@
   </view>
  </view>
 </view>
+
 <!-- 用户评价 -->
 <view class="userEvaluationBox">
  <view class="titleBox">
- 
+  <view class="titleAndNumber">
+  用户评价({{number}})
+  </view>
+ <view class="MoreAndImage">
+ <view class="LookMore">查看更多</view>
+ <image src="/images/arrow_black_right_pic.png"></image>
  </view>
+ </view>
+
 </view>
+
 <!-- 底部购买栏 -->
 <view class="moneyAndBuy">
 

@@ -215,11 +215,11 @@ float: left;
 .userEvaluationBox{
   height: 345rpx;
   width: 100%;
+  /* 可删除 */
 }
 .titleBox{
   height: 76rpx;
   width: 100%;
-  background: blanchedalmond;
   border-bottom: 1rpx solid #F0F0F0;
 }
 .moneyAndBuy{
@@ -228,4 +228,31 @@ float: left;
   position: fixed;
   bottom: 0rpx;
   background-color:red; 
+}
+.titleAndNumber{
+  font-size:28rpx;
+  float: left;
+  margin-left:28rpx;
+  margin-top:22rpx; 
+  text-align: center;  
+}
+.MoreAndImage{
+  float: right;
+  margin-top: 24rpx;
+  margin-right:34rpx; 
+  width: 108rpx;
+  height: 28rpx;
+}
+.LookMore{
+  font-size: 20rpx;
+  width: 80rpx;
+  height: 28rpx;
+  float: left;
+  color: rgba(0,0,0,1);
+}
+.MoreAndImage image{
+width: 12rpx;
+height: 20rpx;
+float: right;
+margin-top:6rpx; 
 }
