@@ -1,0 +1,57 @@
+<!--pages/store/goodsInf/goodsInf.wxml 商品详情界面-->
+
+<!-- 引入过滤器 -->
+<!-- <wxs module="filter" src="app.wxs"></wxs> -->
+
+<!-- 导航栏 -->
+<view class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
+ <view class="backs" bindtap="backs"> 
+  <image src="/images/icon_back.png"></image>
+ </view>
+ <view slot="content" class="title">产品详情</view>
+</view>
+
+<!-- 头部轮播图 -->
+<swiper indicator-dots="true"
+  autoplay="true" interval="5000" duration="1000" circular="true"  indicator-color="white"
+  indicator-active-color="RGB(255,91,47)">
+  <block wx:for="{{imgUrls}}" wx:key="key">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 产品基本信息 -->
+<view class="goodsInfBox">
+<!-- 价格 -->
+<view class="priceBox">
+ <!-- <view class="presentPrice">￥{{filter.toFix(presentPrice,2)}}</view> -->
+ <view class="presentPrice">￥{{presentPrice}}.00</view>
+ <view class="originalPriceBox">
+  <view class="originalPriceTitle">原价</view>
+  <view class="originalPrice">￥{{originalPrice}}.00</view>
+ </view>
+
+</view>
+<!-- 商品名称 -->
+<view class="goodsNameBox">(正版授权）壳牌超凡喜力灰壳全和成机油10W-40，4L/ 瓶德国原装进口 SN级润滑油</view>
+<!-- 限量和快递费 -->
+<view class="buyAndCourierBox">
+ <view class="courier">快递:{{courier}}.00</view>
+ <view class="buyNumber">销量:{{buyNumber}}</view>
+</view>
+</view>
+
+<!-- 部分商品优惠、服务等 -->
+<view class="serviceBox">
+ <!-- 优惠 -->
+ <view class="preferentialBox test">1</view>
+ <!-- 快递 -->
+ <view class="courierBox test">2</view>
+ <!-- 服务 -->
+ <view class="serviceBox test">3</view>
+ <!-- 购买数量 -->
+ <view class="number test">3</view>
+
+</view>

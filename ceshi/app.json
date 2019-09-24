@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/store/storeInf/storeInf",
+    "pages/store/goodsInf/goodsInf",
     "pages/index/home/index",
+    "pages/store/storeInf/storeInf",
     "pages/store/home/store",
     "pages/user/home/user", 
     "pages/details/details"

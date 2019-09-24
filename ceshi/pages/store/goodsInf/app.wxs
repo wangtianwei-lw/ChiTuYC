@@ -1,0 +1,9 @@
+// 价格过滤器 val位传入的值 count位保留几位有效数字
+var previceFilte = {
+  toFix:function(val,count){
+    return val.toFixed(count);
+  }
+}
+module.exports = {
+  toFix: previceFilte.toFix
+}

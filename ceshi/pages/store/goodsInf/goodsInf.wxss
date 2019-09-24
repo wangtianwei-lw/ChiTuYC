@@ -1,0 +1,75 @@
+/* pages/store/goodsInf/goodsInf.wxss */
+swiper ,swiper-item image{
+width: 100%;
+height: 520rpx;
+}
+.wx-swiper-dots{
+  position:absolute;
+}
+.goodsInfBox{
+  width: 100%;
+  height: 202rpx;
+}
+.priceBox{
+  width: 694rpx;
+  height: 50rpx;
+  position: absolute;
+  margin-top: 12rpx;
+  margin-left: 28rpx;
+}
+.goodsNameBox{
+  width: 694rpx;
+  height: 80rpx;
+  position: absolute;
+  margin-top:64rpx;
+  margin-left:28rpx;  
+  font-size: 28rpx;
+}
+.buyAndCourierBox{
+  width: 694rpx;
+  height: 28rpx;
+  font-size: 20rpx;
+  position: absolute;
+  margin-top:162rpx;
+  margin-left:28rpx; 
+}
+.presentPrice{
+  font-size: 36rpx;
+  color: red;
+  float: left;
+}
+.originalPriceBox{
+ float: left; 
+ margin-left:24rpx;
+  height: 28rpx;
+  margin-top:12rpx;
+  font-size: 20rpx;
+  color:rgb(90, 86, 86);
+}
+.originalPriceTitle{
+float: left;
+}
+.originalPrice{
+float: left;
+text-decoration: line-through;
+}
+.buyNumber{
+float: right;
+}
+.courier{
+float: left;
+}
+.serviceBox{
+  background-color:black;
+  width: 100%;
+}
+.test{
+  width: 100%;
+  height: 76rpx;
+  background: red;
+  float: left;
+  margin-top:10rpx; 
+}
+.number{
+ margin-bottom:10rpx; 
+}

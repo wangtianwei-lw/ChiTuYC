@@ -87,15 +87,20 @@
 
 <!-- 用户评价 -->
 <view class="userEvaluationBox">
+<!-- 头部 -->
  <view class="titleBox">
   <view class="titleAndNumber">
   用户评价({{number}})
   </view>
  <view class="MoreAndImage">
- <view class="LookMore">查看更多</view>
- <image src="/images/arrow_black_right_pic.png"></image>
+  <view class="LookMore">查看更多</view>
+  <image src="/images/arrow_black_right_pic.png"></image>
  </view>
  </view>
+<!-- 评价展示栏 -->
+<view>
+
+</view>
 
 </view>
 
