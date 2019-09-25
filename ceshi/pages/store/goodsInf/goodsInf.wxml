@@ -43,15 +43,96 @@
 </view>
 </view>
 
+<!-- 空白占位 -->
+<view class="placeholder"></view>
+
 <!-- 部分商品优惠、服务等 -->
 <view class="serviceBox">
  <!-- 优惠 -->
- <view class="preferentialBox test">1</view>
+ <view class="preferentialBox test">
+  <view class="preferentialService same">优惠</view>
+  <view class="preferential sameTwo">第二瓶价格118元（第二瓶不另含工时费和机滤）啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</view>
+ </view>
  <!-- 快递 -->
- <view class="courierBox test">2</view>
+ <view class="courierBox test">
+  <view class="courieService same">快递</view>
+  <view class="courie sameTwo">次日23:00下单，承诺2月24日送达啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</view>
+  </view>
  <!-- 服务 -->
- <view class="serviceBox test">3</view>
+ <view class="servicesBox test">
+  <view class="Services same">服务</view>
+  <view class="service sameTwo">正品低价.品质保证啊啊啊啊啊啊啊啊啊啊啊啊啊啊</view>
+ </view>
  <!-- 购买数量 -->
- <view class="number test">3</view>
+ <view class="number test">
+  <view class="numberService same">购买数量</view>
+  <image class="reduction" src="/images/num_less_pic.png"></image>
+  <view class="numbers">199</view>
+  <image class="add" src="/images/num_add_pic.png"></image>
+ </view>
+</view>
+
+ <!-- 空白占位 -->
+ <view class="placeholder"></view>
+
+<!-- 用户评价 -->
+<view class="userEvaluationBox">
+<!-- 头部 -->
+ <view class="TitleBox">
+  <view class="titleAndNumber">
+  用户评价({{number}})
+  </view>
+ <view class="MoreAndImage">
+  <view class="LookMore">查看全部</view>
+  <image src="/images/arrow_black_right_pic.png"></image>
+ </view>
+ </view>
+<!-- 评价展示栏 -->
+<view class="evaluationShow">
+ <!-- 头像 -->
+ <view class="headPicBox">
+  <image src="http://pic16.nipic.com/20111006/6239936_092702973000_2.jpg"></image>
+ </view>
+ <!-- 评论用户的昵称 -->
+ <view class="userNickName">赤兔养车+++啊+++++++++++++++++++++++</view>
+ <!-- 评论时间 -->
+ <view class="evaluationTime">2019-07-25 14:01:12</view>
+ <!-- 评论内容 -->
+ <view class="evaluationContent">0次普通洗车+1次空调清洗+1次精洗+1次单0次普通洗车+1次空调清洗+1次精洗+1次单0次普通洗车+1次空调清洗+1次精洗+1次单20次普通洗车+1次空调清洗+1次精洗+1次单面精洗20次普通洗车+1次 空调清洗+1次精洗+1次单面精洗</view>
+ <!-- 评论图片 -->
+ <view class="evalPicUrlBox">
+  <view class="evalPicUrl" wx:for="{{evalPicUrlList}}" wx:key>
+   <image src="{{item.evalPicUrl}}"></image>
+  </view>
+ </view>
+</view>
 
 </view>
+
+ <!-- 空白占位 -->
+ <view class="placeholder"></view>
+
+ <!-- 商品详情 -->
+ <view class="goodsDetails">
+ <!-- 头部 -->
+ <view class="detailsTitleBox">
+  <view class="detailsTitle">商品详情</view>
+ </view>
+ <!-- 商品具体详情 -->
+ <view class="goodsDetailsHtml">
+ <import src="../../../wxParse/wxParse.wxml"/>
+ <template is="wxParse" data="{{wxParseData:article.nodes}}"/> 
+ </view>
+ </view>
+
+ <!-- 底部购买栏 -->
+ <view class="collectionAndBuy">
+  <!-- 收藏 -->
+  <view class="collection">
+   <image src="/images/collection_three_pic.png"></image>
+   <view class="collectionTitle">已收藏</view>
+  </view>
+  <!-- 购买 -->
+  <view class="buyNow">立即购买</view>
+
+ </view>
