@@ -46,3 +46,7 @@
   height: 20rpx;
   background-color:#F0F0F0; 
 }
+.placeholderdd{
+  width: 100%;
+  height: 98rpx;
+}  

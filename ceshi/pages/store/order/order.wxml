@@ -49,20 +49,55 @@
  <!-- 到店时间 -->
  <view class="same">
   <view class="infTitle">到店时间</view>
+  <image src="/images/arrow_black_right_pic.png"></image>
+  <view class="storeTime infSame">2019-07-10 16:30:30</view>
  </view>
  <!-- 订单金额 -->
  <view class="same">
   <view class="infTitle">订单金额</view>
+  <view class="orderMoney infSame xx">108.00</view>
  </view>
  <!-- 优惠券 -->
  <view class="same">
   <view class="infTitle">优惠券</view>
+  <image src="/images/DisclosureIndicator.png"></image>
+  <view class="yhj infSame xx">-18.00</view>
  </view>
  <!-- 实付 -->
  <view class="same">
   <view class="infTitle">实付</view>
+  <view class="actpay infSame xx">实付：￥140.00</view>
  </view>
 </view>
 
 <!-- 空白占位 -->
 <view class="placeholder"></view>
+
+<!-- 支付方式 -->
+<view class="payAway">
+ <view class="payBox">
+  <view class="payAwayChoose">选择支付方式</view>
+ </view>
+ <view class="payBox">
+  <image class="payPic" src="/images/weixin.png"></image>
+  <view class="WeChatPay pay">微信支付</view>
+  <image class="choosePic" src="/images/xuanze.png"></image>
+ </view>
+ <view class="payBox">
+ <image class="payPic" src="/images/daodianzhifu.png"></image>
+  <view class="daodianzhifu pay">到店支付</view>
+  <image class="choosePic" src="/images/un_storechoose_pic.png"></image>
+ </view>
+</view>
+
+<!-- 空白占位 -->
+<view class="placeholderdd"></view>
+
+<!-- 点击支付 -->
+<view class="payNowBox">
+ <view class="payMoneySjBox">
+  <view class="payMoneySjTitle">实付金额：</view>
+  <view class="payMoneySjMoney">￥140.00</view>
+ </view>
+ <view class="payNow">立即支付</view>
+</view>
