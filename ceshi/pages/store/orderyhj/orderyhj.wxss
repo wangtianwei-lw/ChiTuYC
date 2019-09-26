@@ -1,0 +1,99 @@
+/* pages/store/orderyhj/orderyhj.wxss */
+.yhjState0{
+  float: left;
+  font-size: 28rpx;
+  height: 40rpx;
+  width: 148rpx;
+  margin-left:10rpx; 
+  margin-top: 18rpx;
+  color:rgba(0,0,0,0.4);
+}
+.yhjtitles{
+  float: left;
+  font-size: 36rpx;
+  height: 50rpx;
+  width: 108rpx;
+  margin-left:20rpx; 
+  margin-top: 13rpx;
+}
+.sameHeight{
+  border-top: 2rpx solid #F0F0F0;
+  border-bottom: 2rpx solid #F0F0F0;
+}
+.yhjChooseBox{
+  background: #F0F0F0;
+}
+.yhjBox{
+  width: 722rpx;
+  height: 192rpx;
+  float: left;
+  margin:12rpx 14rpx;
+  background: white;
+  border-radius:8rpx; 
+}
+.yhjPriceBox{
+  position:absolute;
+  height: 192rpx;
+  width: 290rpx;
+  border-right: 2rpx dashed  #F0F0F0;
+  color: red;
+}
+.priceUnit{
+  position: absolute;
+  margin-top:84rpx;
+  margin-left: 14rpx; 
+  font-size: 36rpx;
+}
+.priceNumber{
+font-size: 70rpx;
+ position: absolute;
+ margin-left: 50rpx;
+ margin-top: 50rpx;
+}
+.topRounded16{
+  width: 32rpx;
+  height: 32rpx;
+  background: #F0F0F0;
+  position:fixed;
+  margin-left: 276rpx;
+  border-radius:16rpx; 
+  margin-top: -16rpx;
+}
+.bottomRounded8{
+  width: 16rpx;
+  height: 16rpx;
+  background: #F0F0F0;
+  position:fixed;
+  border-radius: 50%;
+  margin-left: 284rpx;
+  margin-top: 184rpx;
+}
+.yhjInfBox{
+  width: 430rpx;
+  height: 192rpx;
+  position: absolute;
+  margin-left: 292rpx;
+}
+.yhjNameAndPeriodBox{
+  width: 430rpx;
+  height: 44rpx;
+  position: absolute;
+  margin-top: 24rpx;
+} 
+.yhjName{
+ font-size: 32rpx;
+ float: left;
+ height: 44rpx;
+ margin-left: 24rpx;
+ max-width: 263rpx;
+ overflow: hidden;
+}
+.periodxxx{
+font-size: 20rpx;
+float: left;
+color: red;
+height: 28rpx;
+margin-top: 12rpx;
+margin-left:8rpx; 
+max-width: 135rpx;
+}

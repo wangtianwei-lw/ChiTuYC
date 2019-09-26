@@ -1,0 +1,43 @@
+<!--pages/store/orderyhj/orderyhj.wxml 确认订单选择优惠券界面-->
+<!-- 导航栏 -->
+<view class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
+ <view class="backs" bindtap="backs"> 
+  <image src="/images/icon_back.png"></image>
+ </view>
+ <view slot="content" class="title">优惠券</view>
+</view>
+
+<!-- 优惠券总数量 -->
+ <view class="sameHeight">
+  <view class="yhjtitles">优惠券</view>
+  <view class="yhjState0">(2)张待使用</view>
+ </view>
+
+ <!-- 选择具体的优惠券 -->
+ <view class="yhjChooseBox">
+  <!-- 空白占位 -->
+  <view class="placeholder12"></view>
+  <view class="yhjBox">
+   <!-- 优惠券价格 -->
+   <view class="yhjPriceBox">
+    <view class="priceUnit">￥</view>
+    <view class="priceNumber">78.99</view>
+   </view>
+   <!-- 上圆角 -->
+   <view class="topRounded16"></view>
+   <!-- 下圆角 -->
+   <view class="bottomRounded8"></view>
+   <!-- 优惠券基本信息 -->
+   <view class="yhjInfBox">
+    <!-- 名称 -->
+    <view class="yhjNameAndPeriodBox">
+     <view class="yhjName">新人红包</view>
+     <view class="periodxxx">还剩999天过期</view>
+    </view>
+
+   </view>
+  </view>
+    <!-- 空白占位 -->
+  <view class="placeholder12"></view>
+ </view>
+
