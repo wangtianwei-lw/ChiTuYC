@@ -85,7 +85,7 @@ font-size: 70rpx;
  float: left;
  height: 44rpx;
  margin-left: 24rpx;
- max-width: 263rpx;
+ max-width: 253rpx;
  overflow: hidden;
 }
 .periodxxx{
@@ -95,5 +95,6 @@ color: red;
 height: 28rpx;
 margin-top: 12rpx;
 margin-left:8rpx; 
-max-width: 135rpx;
+max-width: 145rpx;
+overflow: hidden;
 }
