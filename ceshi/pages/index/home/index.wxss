@@ -13,9 +13,10 @@ height: 456rpx;
   position: absolute;
   width: 100%;
   background:rgba(255,255,255,1);
-  height: 422rpx;
+  height: 536rpx;
   margin-top:-42rpx; 
   border-radius: 15rpx 15rpx 0rpx 0rpx;
+  background: red;
 }
 .maylove{
   background-color: #FFC56C;
@@ -34,9 +35,8 @@ margin-top: 30rpx;
 }
 .pic{
   width: 22%;
-  height: 92rpx;
+  height: 138rpx;
   text-align: center;
-
 }
 .pic image{
 width: 92rpx;
@@ -70,7 +70,7 @@ margin: 16rpx 20rpx;
   width: 100%;
   height: 244rpx;
   background:rgba(255,255,255,1);
-  margin-top: 380rpx;
+  margin-top: 498rpx;
 }
 .storetitle{
   float: left;

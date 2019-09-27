@@ -1,0 +1,28 @@
+<!--pages/store/comments/comments.wxml 用户品论界面-->
+<!-- 导航栏 -->
+<view class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
+ <view class="backs" bindtap="backs"> 
+  <image src="/images/icon_back.png"></image>
+ </view>
+ <view slot="content" class="title">用户评论（{{number}}）</view>
+</view>
+
+<!-- 评价展示栏 -->
+<view class="evaluationShow">
+ <!-- 头像 -->
+ <view class="headPicBox">
+  <image src="http://pic16.nipic.com/20111006/6239936_092702973000_2.jpg"></image>
+ </view>
+ <!-- 评论用户的昵称 -->
+ <view class="userNickName">赤兔养车+++啊+++++++++++++++++++++++</view>
+ <!-- 评论时间 -->
+ <view class="evaluationTime">2019-07-25 14:01:12</view>
+ <!-- 评论内容 -->
+ <view class="evaluationContent">0次普通洗车+1次空调清洗+1次精洗+1次单0次普通洗车+1次空调清洗+1次精洗+1次单0次普通洗车+1次空调清洗+1次精洗+1次单20次普通洗车+1次空调清洗+1次精洗+1次单面精洗20次普通洗车+1次 空调清洗+1次精洗+1次单面精洗</view>
+ <!-- 评论图片 -->
+ <view class="evalPicUrlBox">
+  <view class="evalPicUrl" wx:for="{{evalPicUrlList}}" wx:key>
+   <image src="{{item.evalPicUrl}}"></image>
+  </view>
+ </view>
+</view>

@@ -24,7 +24,7 @@
         <image src="/images/home_menu_one.png"></image>
         <view class="font">爱车保养</view>
       </view>
-
+      
       <view class="pic">
         <image src="/images/home_menu_two.png"></image>
         <view class="font">轮胎更换</view>

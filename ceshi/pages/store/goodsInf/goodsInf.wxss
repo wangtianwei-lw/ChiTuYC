@@ -205,6 +205,7 @@ overflow: hidden;
   margin-right:20rpx; 
 }
 .evalPicUrl image{
+  position: absolute;
   width: 164rpx;
   height: 118rpx;
 }

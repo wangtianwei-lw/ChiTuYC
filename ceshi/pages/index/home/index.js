@@ -27,23 +27,23 @@ Page({
       cardCur: e.detail.current
     })
   },
-  onLoad: function () {
-    var city = '330100';//获取到全局变量
-    wx.request({
-      url: 'https://wx.chituyc.com/test/weChatQueryController/query',//给函数传递服务器地址参数
-      data: {
-        key: '1000',
-        city:city,
-      },//给服务器传递数据，若本次请求不需要数据，可以不填
-      header: {
-        'content-type': 'application/json' // 默认值，返回的数据设置为json数组格式
-      },
-      success: function (res) {
-        console.log(res);//打印出返回的数据
-        this.setData({
-          imgUrls:res.banner
-        })//通过setData方法把返回的数据复制给本页面定义的list数组
-      },
-    })
-  },
+  // onLoad: function () {
+  //   var city = '330100';//获取到全局变量
+  //   wx.request({
+  //     url: 'https://wx.chituyc.com/test/weChatQueryController/query',//给函数传递服务器地址参数
+  //     data: {
+  //       key: '1000',
+  //       city:city,
+  //     },//给服务器传递数据，若本次请求不需要数据，可以不填
+  //     header: {
+  //       'content-type': 'application/json' // 默认值，返回的数据设置为json数组格式
+  //     },
+  //     success: function (res) {
+  //       console.log(res);//打印出返回的数据
+  //       this.setData({
+  //         imgUrls:res.banner
+  //       })//通过setData方法把返回的数据复制给本页面定义的list数组
+  //     },
+  //   })
+  // },
 })

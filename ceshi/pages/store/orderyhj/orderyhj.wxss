@@ -25,7 +25,7 @@
 }
 .yhjBox{
   width: 722rpx;
-  height: 192rpx;
+  height: 160rpx;
   float: left;
   margin:12rpx 14rpx;
   background: white;
@@ -33,14 +33,14 @@
 }
 .yhjPriceBox{
   position:absolute;
-  height: 192rpx;
+  height: 160rpx;
   width: 290rpx;
   border-right: 2rpx dashed  #F0F0F0;
   color: red;
 }
 .priceUnit{
   position: absolute;
-  margin-top:84rpx;
+  margin-top:70rpx;
   margin-left: 14rpx; 
   font-size: 36rpx;
 }
@@ -48,7 +48,7 @@
 font-size: 70rpx;
  position: absolute;
  margin-left: 50rpx;
- margin-top: 50rpx;
+ margin-top: 34rpx;
 }
 .topRounded16{
   width: 32rpx;
@@ -66,7 +66,7 @@ font-size: 70rpx;
   position:fixed;
   border-radius: 50%;
   margin-left: 284rpx;
-  margin-top: 184rpx;
+  margin-top: 152rpx;
 }
 .yhjInfBox{
   width: 430rpx;
@@ -85,7 +85,7 @@ font-size: 70rpx;
  float: left;
  height: 44rpx;
  margin-left: 24rpx;
- max-width: 253rpx;
+ max-width: 230rpx;
  overflow: hidden;
 }
 .periodxxx{
@@ -97,4 +97,45 @@ margin-top: 12rpx;
 margin-left:8rpx; 
 max-width: 145rpx;
 overflow: hidden;
+}
+.StopTime{
+  height: 28rpx;
+  font-size: 20rpx;
+  position: absolute;
+  margin-top: 80rpx;
+  margin-left: 24rpx;
+  max-width: 230rpx;
+  overflow-y: hidden;
+  
+}
+.userXZ{
+  font-size: 20rpx;
+  position: absolute;
+  margin-top: 120rpx;
+  margin-left: 24rpx;
+  max-width: 230rpx;
+  overflow-y: hidden;
+  height: 28rpx;
+  border-radius: 6rpx;
+  text-align: center;
+  line-height: 28rpx;
+}
+.userNow{
+ position: absolute;
+ width: 126rpx;
+ height: 46rpx;
+ font-size: 24rpx;
+ text-align: center;
+ line-height: 46rpx;
+ background: #FFC56C;
+ margin-top: 74rpx;
+ margin-left: 280rpx;
+ border-radius: 6rpx;
+}
+.state2{
+width: 108rpx;
+height: 108rpx;
+position: absolute;
+margin-top:28rpx;
+margin-left: 280rpx; 
 }

@@ -82,7 +82,7 @@
   <view class="titleAndNumber">
   用户评价({{number}})
   </view>
- <view class="MoreAndImage">
+ <view class="MoreAndImage" bindtap="toComments">
   <view class="LookMore">查看全部</view>
   <image src="/images/arrow_black_right_pic.png"></image>
  </view>
@@ -133,6 +133,6 @@
    <view class="collectionTitle">已收藏</view>
   </view>
   <!-- 购买 -->
-  <view class="buyNow">立即购买</view>
+  <view class="buyNow" bindtap="toOrderInf">立即购买</view>
 
  </view>

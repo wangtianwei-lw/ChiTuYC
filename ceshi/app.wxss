@@ -59,3 +59,18 @@
   width: 100%;
   height: 76rpx;
 }
+.gray{
+  color: #999999;
+  background: white;
+}
+.hiddens{
+  display: none;
+}
+.bgY{
+   background: #FFC56C;
+   color: white;
+}
+.leftjian{
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}

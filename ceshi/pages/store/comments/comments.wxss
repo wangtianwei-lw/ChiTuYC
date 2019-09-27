@@ -1,0 +1,62 @@
+/* pages/store/comments/comments.wxss */
+/* 用户评价 */
+.evaluationShow{
+  width: 100%;
+  height: 267rpx;
+}
+.headPicBox{
+  width: 56rpx;
+  height: 56rpx;
+  position: absolute;
+  margin-left:32rpx; 
+  margin-top: 5rpx;
+}
+.headPicBox image{
+  width: 56rpx;
+  height: 56rpx;
+  border-radius: 28px;
+}
+.userNickName{
+position: absolute;
+margin-top: 21rpx;
+margin-left:102rpx; 
+font-size: 20rpx;
+width: 300rpx;
+height: 28rpx;
+overflow: hidden;
+}
+.evaluationTime{
+position: absolute;
+margin-top: 21rpx;
+margin-left:520rpx; 
+font-size: 20rpx;
+}
+.evaluationContent{
+position: absolute;
+margin-top: 61rpx;
+margin-left:102rpx; 
+font-size: 20rpx;
+width: 608rpx;
+height: 56rpx;
+line-height: 28rpx;
+overflow-y: hidden;
+}
+.evalPicUrlBox{
+  width: 610rpx;
+  height: 118rpx;
+  position: absolute;
+  margin-left: 102rpx;
+  margin-top: 137rpx;
+  display: flex;
+  flex-direction:row;
+}
+.evalPicUrl{
+  width: 164rpx;
+  height: 100%;
+  margin-right:20rpx; 
+}
+.evalPicUrl image{
+  position: absolute;
+  width: 164rpx;
+  height: 100%;
+}

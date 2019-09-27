@@ -71,40 +71,68 @@
 
 <!-- 店铺服务 -->
 <view class="serviceBox">
- <view class="service"  wx:for="{{serviceList}}" wx:key>
-  <view class="serviceCircle">
-   <image src="/images/icon_rb_unselect.png"></image>
-  </view>
-  <view class="serviceName">{{item.serviceName}}</view>
-  <view class="serviceMark">
-   <image src="/images/good_rule_pic.png"></image>
-  </view>
-  <view class="serviceUpAndDoun">
-    <image src="/images/store_arrow_down_pic.png"></image>
-  </view>
+  <view class="service"  wx:for="{{serviceList}}" wx:key>
+   <view class="serviceCircle">
+    <image src="/images/icon_rb_unselect.png"></image>
+   </view>
+   <view class="serviceName">{{item.serviceName}}</view>
+   <view class="serviceMark">
+    <image src="/images/good_rule_pic.png"></image>
+   </view>
+   <view class="serviceUpAndDoun">
+    <image src="/images/store_arrow_down_pic.png" bindtap="toGoodsInf"></image>
+   </view>
  </view>
 </view>
 
 <!-- 用户评价 -->
 <view class="userEvaluationBox">
 <!-- 头部 -->
- <view class="titleBox">
+ <view class="TitleBox">
   <view class="titleAndNumber">
   用户评价({{number}})
   </view>
- <view class="MoreAndImage">
-  <view class="LookMore">查看更多</view>
+ <view class="MoreAndImage" bindtap="toComments">
+  <view class="LookMore">查看全部</view>
   <image src="/images/arrow_black_right_pic.png"></image>
  </view>
  </view>
 <!-- 评价展示栏 -->
-<view>
-
+<view class="evaluationShow">
+ <!-- 头像 -->
+ <view class="headPicBox">
+  <image src="http://pic16.nipic.com/20111006/6239936_092702973000_2.jpg"></image>
+ </view>
+ <!-- 评论用户的昵称 -->
+ <view class="userNickName">赤兔养车+++啊+++++++++++++++++++++++</view>
+ <!-- 评论时间 -->
+ <view class="evaluationTime">2019-07-25 14:01:12</view>
+ <!-- 评论内容 -->
+ <view class="evaluationContent">0次普通洗车+1次空调清洗+1次精洗+1次单0次普通洗车+1次空调清洗+1次精洗+1次单0次普通洗车+1次空调清洗+1次精洗+1次单20次普通洗车+1次空调清洗+1次精洗+1次单面精洗20次普通洗车+1次 空调清洗+1次精洗+1次单面精洗</view>
+ <!-- 评论图片 -->
+ <view class="evalPicUrlBox">
+  <view class="evalPicUrl" wx:for="{{evalPicUrlList}}" wx:key>
+   <image src="{{item.evalPicUrl}}"></image>
+  </view>
+ </view>
 </view>
 
 </view>
+ <!-- 空白占位 -->
+ <view class="placeholderdd"></view>
+ <!-- 底部购买栏 -->
+ <view class="collectionAndBuy">
+  <!-- 价格和数量 -->
+  <view class="numberAndMoney">
+   <view class="allNumber">共3件产品</view>
+   <view class="allMoney">合计:￥235.00</view>
+  </view>
+  <!-- 客服 -->
+  <view class="kefuBox">
+   <image src="/images/kefu.png"></image>
+   <view class="kefuzixun">客服咨询</view>
+  </view>
+  <!-- 购买 -->
+  <view class="buyNow" bindtap="toOrderInf">立即购买</view>
 
-<!-- 底部购买栏 -->
-<view class="moneyAndBuy">
-
-</view>
+ </view>

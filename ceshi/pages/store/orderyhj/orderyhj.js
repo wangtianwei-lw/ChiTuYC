@@ -11,5 +11,9 @@ Page({
     Custom: app.globalData.Custom,
     ScreenHeight: app.globalData.ScreenHeight
   },
-
+  backs: function () {
+    wx.navigateBack({
+      delta: 1
+    })
+  },
 })

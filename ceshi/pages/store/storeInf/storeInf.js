@@ -23,12 +23,31 @@ Page({
         },{
         serviceName: "汽车维修"
         }
-        ]
+        ],
+        evalPicUrlList: [
+      { evalPicUrl: 'http://pic16.nipic.com/20111006/6239936_092702973000_2.jpg' },
+      { evalPicUrl: 'http://pic16.nipic.com/20111006/6239936_092702973000_2.jpg' },
+      { evalPicUrl: 'http://pic16.nipic.com/20111006/6239936_092702973000_2.jpg' }
+    ],
+  }, 
+  toOrderInf: function () {
+    wx.navigateTo({
+      url: '../order/order'
+    })
+  }, 
+  toGoodsInf: function() {
+    wx.navigateTo({
+      url: '../goodsInf/goodsInf'
+    })
   }, 
   backs: function () {
     wx.navigateBack({
-      delta:1
+      delta: 1
     })
   },
-
+  toComments: function () {
+    wx.navigateTo({
+      url: '../comments/comments'
+    })
+  },
 })

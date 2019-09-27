@@ -1,0 +1,42 @@
+<!--pages/store/orderChooseStore/orderChooseStore.wxml  订单选择店铺界面 -->
+<!-- 导航栏 -->
+<view class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
+ <view class="backs" bindtap="backs"> 
+  <image src="/images/icon_back.png"></image>
+ </view>
+ <view slot="content" class="title">选择店铺</view>
+</view>
+
+<!-- 店铺列表 -->
+<view class="StoreMainBox" wx:for="{{allStoreList}}" wx:key>
+<view class="storelistbox" bindtap="backs" >
+<view class="storelogo">
+ <image src="{{item.storeLogo}}"></image>
+</view>
+<view class="storeinfbox">
+ <view class="storeListStoreName">
+  <image src="/images/location_two_pic.png"></image>
+  <view class="storename">
+ {{item.storeName}}
+  </view>
+ </view>
+</view>
+<view class="storeAddr">
+{{item.storeAddr}}
+</view>
+<view class="distance">
+距离{{item.distance}}km
+</view>
+<view class="star">
+ <image src="/images/star_open_pic.png"></image>
+ <image src="/images/star_open_pic.png"></image>
+ <image src="/images/star_open_pic.png"></image>
+ <image src="/images/star_open_pic.png"></image>
+ <image src="/images/star_open_pic.png"></image>
+</view>
+<view class="buy">
+ <view class="buyNumber">{{item.buyNumber}}</view>
+ <view class="fixed">人购买</view>
+</view>
+</view>
+</view>

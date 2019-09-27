@@ -25,7 +25,7 @@
  <!-- 具体地址 -->
  <view class="StoreAddr">杭州市西湖区三墩杭州市西湖区三墩杭州市西湖区三墩杭州市西湖区三墩杭州市西湖区三墩</view>
  <!-- 选择店铺 -->
- <view class="chooseStore">
+ <view class="chooseStore" bindtap="toChooseStore">
   <view class="chooseTitle">点击可选其他门店</view>
   <image src="/images/arrow_black_right_pic.png"></image>
  </view>
@@ -60,8 +60,8 @@
  <!-- 优惠券 -->
  <view class="same">
   <view class="infTitle">优惠券</view>
-  <image src="/images/DisclosureIndicator.png"></image>
-  <view class="yhj infSame xx">-18.00</view>
+  <image src="/images/DisclosureIndicator.png" bindtap="toyhj"></image>
+  <view class="yhj infSame xx" bindtap="toyhj">-18.00</view>
  </view>
  <!-- 实付 -->
  <view class="same">

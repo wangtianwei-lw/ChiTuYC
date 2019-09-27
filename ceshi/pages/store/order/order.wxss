@@ -93,7 +93,6 @@ margin-top: 20rpx;
 }
 .orderInf{
   width: 100%;
-  height: 304rpx;
 }
 .same{
   width: 100%;
