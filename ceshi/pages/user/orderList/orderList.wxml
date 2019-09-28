@@ -1,0 +1,52 @@
+<!--pages/user/orderList/orderList.wxml 我的订单列表界面-->
+
+<!-- 导航栏 -->
+<view class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
+ <view class="backs" bindtap="backs"> 
+  <image src="/images/icon_back.png"></image>
+ </view>
+ <view slot="content" class="title">我的订单</view>
+</view>
+
+<!-- tab选项卡 -->
+<view class="tabNav">
+    <view wx:for="{{navTab}}" wx:key="index" data-idx="{{index}}" bindtap="currentTab" class="{{currentTab==index ? 'cur' : ''}}">
+     <text class="tab">{{item}}</text>
+    </view>
+</view>
+
+<!-- 订单基本数据列表 -->
+<view class="AllOrderListBox">
+
+<!-- 空白占位 -->
+<view class="placeholder8"></view>
+<!-- 订单基本数据 -->
+<view class="OrderInfBox">
+ <!-- 店铺名称和订单状态 -->
+ <view class="StoreNameAndStateBox SameTypeBox" bindtap="toOrderDetails">
+  <view class="StoreName">赤兔养车（丁桥店）赤兔养车（丁桥店）赤兔养车（丁桥店）赤兔养车（丁桥店）赤兔养车（丁桥店）</view>
+  <view class="state">待付款</view>
+ </view>
+
+ <!-- 商品信息 -->
+ <view class="GoodsInfBox SameTypeBox" bindtap="toOrderDetails">
+  <view class="goodsName">壳牌喜力HX3高品质机油（机油4L+机滤+工时费，运营车辆专享)</view>
+  <view class="goodsName">壳牌喜力HX3高品质机油（机油4L+机滤+工时费，运营车辆专享)</view>
+  <view class="goodsName">壳牌喜力HX3高品质机油（机油4L+机滤+工时费，运营车辆专享)</view>
+  <view class="goodsName">壳牌喜力HX3高品质机油（机油4L+机滤+工时费，运营车辆专享)</view>
+  <view class="goodsName">壳牌喜力HX3高品质机油（机油4L+机滤+工时费，运营车辆专享)</view>
+  <view class="goodsName">壳牌喜力HX3高品质机油（机油4L+机滤+工时费，运营车辆专享)</view>
+ </view>
+
+ <!-- 其他信息 -->
+ <view class="OthersInfBox SameTypeBox">
+  <view class="placeOrderTime">2018-10-23 08:44:55</view>
+  <view class="numberAndPrice">共1件产品 合计:￥128</view>
+  <view class="bpttonBox">
+   <view class="delete">取消订单</view>
+   <view class="payNow" bindtap="toOrder">去付款</view>
+  </view>
+  </view>
+</view>
+
+</view>

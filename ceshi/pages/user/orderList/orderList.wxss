@@ -1,0 +1,114 @@
+/* pages/user/orderList/orderList.wxss */
+/* tab选项卡 */
+.tabNav{
+  width:100%; 
+  height:76rpx; 
+  display: flex;
+  box-sizing: border-box; 
+  font-size: 28rpx;
+  line-height: 40rpx;
+   }
+.tabNav> view{
+  text-align: center; 
+  }
+.tabNav> view:last-child{
+   margin-right: 0;
+   }
+.tabNav> view text{
+   height: 70rpx;
+   width: 150rpx;
+   display:inline-block;
+   padding-top: 15rpx;
+   }  
+.tabNav .cur text{
+  height: 56rpx;
+   border-bottom:6rpx solid #FFC56C; 
+   color:#FFC56C;
+}
+.AllOrderListBox{
+  width: 100%;
+  background: #F0F0F0;
+}
+.OrderInfBox{
+  width: 100%;
+  min-height: 264rpx;
+  background: white;
+  border-bottom: 2rpx solid #F0F0F0;
+}
+.SameTypeBox{
+  width: 696rpx;
+  margin-left:32rpx;
+  float: left; 
+}
+.StoreNameAndStateBox{
+  height: 44rpx;
+  margin-top: 12rpx;  
+  font-size:32rpx; 
+}
+.StoreName{
+max-width: 590rpx;
+overflow-y: hidden;
+float: left;
+height: 100%;
+}
+.state{
+color: #FFC56C;
+float: right;
+height: 100%;
+width: 96rpx;
+}
+.GoodsInfBox{
+  margin-top: 28rpx;
+  font-size: 24rpx;
+}
+goodsName{
+  font-size: 24rpx;
+}
+.OthersInfBox{
+  height: 108rpx;
+  margin-top: 20rpx;
+  margin-bottom: 18rpx;
+}
+.placeOrderTime{
+ float: left;
+ margin-top: 74rpx;
+ font-size: 24rpx;
+ width: 242rpx;
+ height: 34rpx;
+}
+.numberAndPrice{
+ float: right;
+ font-size: 28rpx;
+ height: 40rpx;
+ margin-right: 96rpx;
+}
+.bpttonBox{
+float: left;
+margin-left: 184rpx;
+height: 38rpx;
+margin-top: 22rpx;
+width: 270rpx;
+}
+.delete{
+width: 128rpx;
+height: 34rpx;
+font-size: 24rpx;
+text-align: center;
+line-height: 34rpx;
+float: left;
+border-radius: 10rpx;
+border:  2rpx solid rgba(199,199,199,1);
+}
+.payNow{
+width: 128rpx;
+height: 34rpx;
+font-size: 24rpx;
+text-align: center;
+line-height: 34rpx;
+float: left;
+margin-left: 8rpx;
+border-radius: 10rpx;
+border:  2rpx solid #FFC56C;
+color: white;
+background: #FFC56C;
+}

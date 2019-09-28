@@ -1,6 +1,10 @@
 {
   "pages": [
+    "pages/user/orderDetails/orderDetails",
+    "pages/user/orderList/orderList",
+    "pages/user/home/user", 
     "pages/index/home/index",
+    "pages/details/details",
     "pages/store/storeInf/storeInf",
     "pages/store/home/store",        
     "pages/store/goodsInf/goodsInf",
@@ -8,8 +12,6 @@
     "pages/store/order/order",
     "pages/store/orderChooseStore/orderChooseStore",
     "pages/store/orderyhj/orderyhj",
-    "pages/user/home/user", 
-    "pages/details/details",
     "pages/public/noData/noData"
   ],"window": {
     "backgroundTextStyle": "light",

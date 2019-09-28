@@ -73,10 +73,10 @@
   <view class="mayorder">
   我的订单
   </view>
-  <view class="toAllOrderList">
+  <view class="toAllOrderList" bindtap="toAllOrderList">
   全部订单
   </view>
-  <image src="/images/arrow_right_pic.png"></image>
+  <image src="/images/arrow_right_pic.png" bindtap="toAllOrderList"></image>
 
   </view>
 

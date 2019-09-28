@@ -1,0 +1,29 @@
+/* pages/user/orderDetails/orderDetails.wxss */
+.navbars{
+position: fixed;
+top: 0rpx;
+}
+page{
+  background: #F6F6F6;
+}
+.bg image{
+ width: 100%;
+ height: 551rpx;
+}
+.OrderDetailsState{
+ position: absolute;
+ margin-top: -389rpx;
+ margin-left: 39rpx;
+ color: white;
+ font-size: 36rpx;
+ line-height: 35rpx;
+ height:35rpx;
+}
+.OrderDetailsStoreInf{
+  width: 686rpx;
+  height: 423rpx;
+  position: absolute;
+  background: white;
+  margin-left: 32rpx;
+  margin-top: -315rpx;
+}

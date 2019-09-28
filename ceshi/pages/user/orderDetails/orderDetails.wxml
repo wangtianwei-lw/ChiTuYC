@@ -1,0 +1,24 @@
+<!--pages/user/orderDetails/orderDetails.wxml 我的订单详情界面-->
+
+<!-- 导航栏 -->
+<view class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
+ <view class="backs" bindtap="backs"> 
+  <image src="/images/icon_back.png"></image>
+ </view>
+ <view slot="content" class="title">订单详情</view>
+</view>
+
+<!-- 背景图片 -->
+<view class="bg">
+ <image src="/images/order_details_bg.png"></image>
+</view>
+
+<!-- 订单状态 -->
+<view class="OrderDetailsState">
+待付款
+</view>
+
+<!-- 店铺基本信息 -->
+<view class="OrderDetailsStoreInf">
+
+</view>

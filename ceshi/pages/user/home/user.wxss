@@ -27,7 +27,7 @@
 }
 .userphonebox{
   width: 500rpx;
-  height: 104rpx;
+  height: 112rpx;
   position: absolute;
   margin-left:152rpx; 
 }
@@ -40,7 +40,8 @@ margin-top:12rpx;
 .phonebox{
 position: absolute;
 height: 28rpx;
-margin-top:60rpx; 
+min-width: 160rpx;
+margin-top:72rpx; 
 }
 .phone{
 font-size: 24rpx;
@@ -186,6 +187,7 @@ text-align: center;
 .promotes image{
   width: 100%;
   height: 100%;
+  float: left;
 }
 .toolList{
   width: 100%;
@@ -201,6 +203,7 @@ text-align: center;
   height: 170rpx;
   width: 710rpx;
   margin-left:20rpx; 
+  float: left;
 }
 .tooltitle{
 font-size: 32rpx;
