@@ -82,19 +82,19 @@
 
   <view class="orderlist">
     
-    <view class="ordertitle">
+    <view class="ordertitle" bindtap="toAllOrderList">
     <image src="/images/obligation_pic.png"></image>
     <view class="titles">待付款</view>
     </view>
-    <view class="ordertitle">
+    <view class="ordertitle" bindtap="toAllOrderList">
     <image src="/images/accountpaid_pic.png"></image>
     <view class="titles">待发货</view>
     </view>
-    <view class="ordertitle">
+    <view class="ordertitle" bindtap="toAllOrderList">
     <image src="/images/wait_receiving_pic.png"></image>
     <view class="titles">待收货</view>
     </view>
-    <view class="ordertitle">
+    <view class="ordertitle" bindtap="toAllOrderList">
     <image src="/images/wait_authentication_pic.png"></image>
     <view class="titles">待认证</view>
     </view>

@@ -87,7 +87,7 @@
   <!-- 空白占位 -->
   <view class="placeholder20"></view>
   <!-- 中国人寿保单信息 -->
-  <view class="order_zhongguorenshoubaoxianBox">
+  <view class="order_zhongguorenshoubaoxianBox" style="display:none">
    
   </view>
  </view>
