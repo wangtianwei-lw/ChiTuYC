@@ -80,14 +80,14 @@ goodsName{
  float: right;
  font-size: 28rpx;
  height: 40rpx;
- margin-right: 96rpx;
+ margin-right: 28rpx;
 }
 .bpttonBox{
 float: left;
-margin-left: 184rpx;
+margin-left: 174rpx;
 height: 38rpx;
 margin-top: 22rpx;
-width: 270rpx;
+width: 280rpx;
 }
 .delete{
 width: 128rpx;

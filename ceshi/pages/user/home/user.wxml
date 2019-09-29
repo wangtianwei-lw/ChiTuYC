@@ -44,7 +44,7 @@
 </view>
 
 <view class="box">
-<view class="number">100</view>
+<view class="number">100.00</view>
 <view class="title">余额</view>
 </view>
 

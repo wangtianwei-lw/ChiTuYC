@@ -58,6 +58,11 @@
   width: 100%;
   height: 8rpx;
 }
+.placeholder20{
+  width: 100%;
+  height: 20rpx;
+  background: #F6F6F6;
+}
 /* 高度一致的 */
 .sameHeight{
   width: 100%;

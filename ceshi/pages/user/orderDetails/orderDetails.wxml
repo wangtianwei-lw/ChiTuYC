@@ -20,5 +20,72 @@
 
 <!-- 店铺基本信息 -->
 <view class="OrderDetailsStoreInf">
+ <!-- 订单描述 -->
+ <view class="introductionBox">
+  <image src="/images/order_logo.png"></image>
+  <view class="intrude">很遗憾未能为您提供服务，期待您再次光临。啊啊啊啊</view>
+ </view>
+ <!-- 订单店铺地址 -->
+ <view class="addressBox">
+  <image src="/images/order_store.png" class="order_store"></image>
+  <view class="address">门店地址</view>
+  <image src="/images/order_daohang.png" class="order_daohang"></image>
+ </view>
+ <!-- 店铺名称 -->
+ <view class="order_store_name">点强洗车行（大坪新街对面）点强洗车行（大坪新街对面）点强洗车行（大坪新街对面）</view>
+ <!-- 店铺图片及其他信息 -->
+ <view class="StoreInfBox">
+  <image src="https://shared.ydstatic.com/at/2.0.6fs/styles/indexb/banners/banner_jp_336.png"></image>
+  <view class="store_specific_address">武汉市洪山区关山大道200号啊啊啊啊啊啊啊啊啊啊啊啊啊啊</view>
+  <view class="business">营业时间：早上09点-晚上11点啊啊啊啊啊</view>
+ </view>
+ </view>
 
-</view>
+ <!-- 订单商品、价格和创建时间等信息以及中国人寿保险部分信息 -->
+ <view class="OrderAllInfBox">
+  <!-- 标题 -->
+  <view class="order_title_box">商品</view>
+  <!-- 商品信息 -->
+  <view class="order_goods_inf">
+   <image src="https://shared.ydstatic.com/at/2.0.6fs/styles/indexb/banners/banner_jp_336.png"></image>
+   <view class="order_goods_name">赤兔幻影全合成润滑油(含机油+机滤+工时)赤兔幻影全合成润滑油(含机油+机滤+工时赤兔幻影全合成润滑油(含机油+机滤+工时赤兔幻影全合成润滑油(含机油+机滤+工时</view>
+   <view class="order_goods_price">￥158.00</view>
+   <view class="order_goods_number">1件</view>
+  </view>
+  <!-- 订单创建时间等 -->
+  <view class="order_times">
+   <view class="create_orderBox order_times_same">
+    <view class="order_code_title">订单编号：</view>
+    <view class="order_code">457892146334144</view>
+   </view>
+   <view class="create_timeBox order_times_same">
+    <view class="order_code_title">创建时间：</view>
+    <view class="order_code">2018-09-17 15:56:00</view>
+   </view>
+   <view class="create_timeBox order_times_same">
+    <view class="order_code_title">到店时间：</view>
+    <view class="order_code">2018-09-17 16:30:15</view>
+   </view>
+  </view>
+  <!-- 订单价格等 -->
+  <view class="order_prices">
+   <view class="yhjjgBox yhj_same_box">
+    <view class="yhj_title">优惠金额</view>
+    <view class="yhj_price">￥158.00</view>
+   </view>
+   <view class="yhj_same_box all_price">
+    <view class="yhj_title ">订单总价</view>
+    <view class="yhj_price">￥158.00</view>
+   </view>
+   <view class="real_pay_box">
+    <view class="real_pay_title">实付款</view>
+    <view class="real_pay_price">￥158.00</view>
+   </view>
+  </view>
+  <!-- 客服 -->
+  <view class="order_kefu">联系客服：400-098-0985</view>
+  <!-- 空白占位 -->
+  <view class="placeholder20"></view>
+  <!-- 中国人寿保单信息 -->
+  <view class="order_zhongguorenshoubaoxianBox"></view>
+ </view>

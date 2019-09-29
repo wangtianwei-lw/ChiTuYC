@@ -41,7 +41,7 @@ Page({
       isEnd: false
     }
     this.data.sendList = [];
-    this.getData()
+    // this.getData()
   },
   /**
    * 生命周期函数--监听页面加载
