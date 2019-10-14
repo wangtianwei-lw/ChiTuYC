@@ -1,0 +1,34 @@
+<!--pages/index/orderSuccess/orderSuccess.wxml 下单成功界面-->
+
+<!-- 导航栏 -->
+<view class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
+ <view class="backs" bindtap="backs"> 
+  <image src="/images/icon_back.png"></image>
+ </view>
+ <view slot="content" class="title">下单成功</view>
+</view>
+
+<!-- 订单基本信息 -->
+
+<view class="order_inf_box">
+ <image src="/images/xuanze.png" class="success_pic"></image>
+ <view class="sucess_title">恭喜您的下单已成功！</view>
+ <view class="inf_boxs">
+  <view class="inf_titles">订单编号</view>
+  <view class="inf_infs">20190623151415915</view>
+ </view>
+ <view class="inf_boxss">
+  <view class="inf_titles">下单时间</view>
+  <view class="inf_infs">2019-07-02 12:01:30</view>
+ </view>
+ <view class="inf_boxsss">
+  <view class="inf_titles">到店时间</view>
+  <view class="inf_infs">2019-07-02 12:01:30</view>
+ </view>
+</view>
+
+<!-- 底部操作 -->
+<view class="bottom_box">
+ <view class="look_order" bindtap="bjqrOrder">查看订单详情</view>
+ <view class="go_to_store">导航去门店</view>
+</view>

@@ -16,6 +16,15 @@
   margin-left:20rpx; 
   margin-top: 13rpx;
 }
+.sc_yhj_xz{
+  height: 28rpx;
+  font-size: 20rpx;
+  position: absolute;
+  margin-top: 76rpx;
+  margin-left: 24rpx;
+  max-width: 230rpx;
+  overflow-y: hidden;
+}
 .sameHeight{
   border-top: 2rpx solid #F0F0F0;
   border-bottom: 2rpx solid #F0F0F0;

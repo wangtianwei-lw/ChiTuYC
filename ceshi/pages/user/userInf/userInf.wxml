@@ -1,0 +1,69 @@
+<!--pages/user/userInf/userInf.wxml 个人信息界面-->
+
+<!-- 导航栏 -->
+<view class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
+ <view class="backs" bindtap="backs"> 
+  <image src="/images/icon_back.png"></image>
+ </view>
+ <view slot="content" class="title">个人信息</view>
+</view>
+
+<!-- 空白占位 -->
+<view class="placeholder10"></view>
+
+<!-- 修改头像 -->
+<view class="headurl_uodate_box">
+ <view class="title_box head_title">修改头像</view>
+ <image src="/images/insurance.png" class="headurl_pic"></image>
+ <image src="/images/arrow_right_pic.png" class="right_pic"></image>
+</view>
+
+<!-- 账号、昵称 -->
+<view class="user_inf_box">
+ <view class="title_box nosame">账号</view>
+ <view class="user_inf_right_box">
+  <view class="phone">15283666229</view>
+ </view>
+</view>
+<view class="user_inf_box">
+ <view class="title_box nosame">昵称</view>
+ <view class="user_inf_right_box">
+  <view class="nicheng">赤兔养车</view>
+  <image src="/images/arrow_right_pic.png"></image>
+ </view>
+</view>
+
+<!-- 空白占位 -->
+<view class="placeholder10"></view>
+
+<!-- 生日 性别 实名认证 -->
+<view class="user_inf_box">
+ <view class="title_box nosame">生日</view>
+ <view class="user_inf_right_box">
+  <view class="phone">实名认证后可获得生日关怀</view>
+ </view>
+</view>
+<view class="user_inf_box">
+ <view class="title_box nosame">性别</view>
+ <view class="user_inf_right_box">
+  <view class="phone">男</view>
+ </view>
+</view>
+<view class="user_inf_box">
+ <view class="title_box nosame">实名认证</view>
+ <view class="user_inf_right_box" bindtap="realName">
+  <view class="nicheng">未认证</view>
+  <image src="/images/arrow_right_pic.png"></image>
+ </view>
+</view>
+
+<!-- 空白占位 -->
+<view class="placeholder10"></view>
+
+<!-- 地区 -->
+<view class="user_inf_box">
+ <view class="title_box nosame">地区</view>
+ <view class="user_inf_right_box">
+  <view class="phone">杭州市</view>
+ </view>
+</view>

@@ -27,38 +27,38 @@ width: 694rpx;
   margin-left:18rpx;
 }
 .star{
-position: absolute;
+float: left;
 height: 28rpx;
-width: 190rpx;
 margin-top:6rpx;
 }
 .star image{
   float: left;
   width: 28rpx;
-  height: 100%;
+  height: 28rpx;
   margin-left:10rpx; 
 }
 .buy{
-  float: right;
+  float: left;
   height: 40rpx;
   display: flex;
   flex-direction: row;
+  margin-left: 10rpx;
 }
 .buytitle{
 font-size:24rpx;
 font-style: rgba(3,3,3,1);
-margin-top:2rpx; 
+line-height: 40rpx;
 }
 .buyNumber{
 font-size:28rpx;
 font-style: rgba(0,0,0,1);
-margin-left: 6rpx;
+line-height: 40rpx;
 }
 .addrandbusbox{
   position: absolute;
   margin-top: 122rpx;
   border-right: 2rpx solid rgba(216,216,216,1);
-  width: 384rpx;
+  width: 444rpx;
   height: 80rpx;
 }
 .addrbox{
@@ -80,7 +80,7 @@ color:rgba(3,3,3,1);
 margin-left: 16rpx;
 margin-top:2rpx; 
 overflow: hidden;
-width: 300rpx;
+width: 360rpx;
 }
 .busbox{
   height: 32rpx;
@@ -101,14 +101,14 @@ color:rgba(3,3,3,1);
 margin-left: 16rpx;
 margin-top:2rpx; 
 overflow: hidden;
-width: 300rpx;
+width: 360rpx;
 }
 .distanceAndCollection{
   position: absolute;
-  width: 384rpx;
+  width: 300rpx;
   height: 80rpx;
   margin-top: 122rpx;
-  margin-left:386rpx; 
+  margin-left:446rpx; 
 }
 .distanceBox image{
   width: 42rpx;
@@ -126,15 +126,15 @@ width: 300rpx;
 }
 .distanceBox{
   position: absolute;
-  margin-left:36rpx;
+  margin-left:5rpx;
   height: 80rpx;
-  width: 178rpx;  
+  width: 178rpx; 
 }
 .collectionBox{
 width: 80rpx;
 height: 100%;
 position: absolute;
-margin-left: 256rpx; 
+margin-left: 206rpx; 
 }
 .collectionBox image{
 width: 42rpx;
@@ -157,7 +157,7 @@ margin-top:52rpx;
   flex-wrap:wrap; 
 }
 .service{
-  height: 76rpx;
+  height: auto;
   margin-left: 15rpx;
   margin-top:20rpx; 
   width: 720rpx;
@@ -165,8 +165,8 @@ margin-top:52rpx;
   border-top-left-radius: 12rpx; 
   border-top-right-radius: 12rpx; 
 }
-.serviceBox :last-child{
-margin-bottom:20rpx; 
+.service_real_box{
+  height: 76rpx;
 }
 .serviceCircle image{
 width: 28rpx;
@@ -203,14 +203,14 @@ margin-top:24rpx;
 .serviceUpAndDoun image{
 width: 20rpx;
 height: 12rpx;
-float: left;
+float: right;
+margin-right:30rpx; 
+margin-top:32rpx; 
 }
 .serviceUpAndDoun{
-  widows: 20rpx;
-  height: 12rpx;
+  width: 450rpx;
+  height: 100%;
   float: right;
-  margin-right:30rpx; 
-  margin-top:32rpx; 
 }
 .userEvaluationBox{
   height: 345rpx;
@@ -330,6 +330,7 @@ margin-left:102rpx;
 font-size: 20rpx;
 width: 608rpx;
 height: 56rpx;
+line-height: 28rpx;
 overflow: hidden;
 }
 .evalPicUrlBox{
@@ -413,12 +414,14 @@ line-height: 84rpx;
 .goodsinf{
   width: 100%;
   height: 244rpx;
+  border-bottom: 2rpx solid #F6F6F6;
 }
 .goodspic{
   width: 192rpx;
   height: 220rpx;
   position: absolute;
-  margin: 12rpx 538rpx 12rpx 20rpx;
+  margin-top: 12rpx;
+  margin-left: 48rpx;
 }
 .goodspic image{
   width: 100%;
@@ -426,19 +429,21 @@ line-height: 84rpx;
 }
 .goodsname{
 position: absolute;
-width:486rpx;
+width:456rpx;
 height:80rpx;
 font-size:28rpx;
 font-family:PingFangSC;
 overflow:hidden; 
 text-overflow:ellipsis; 
-margin: 12rpx 28rpx 152rpx 236rpx;
+margin-top: 12rpx;
+margin-left: 260rpx;
+font-weight:bold;
 }
 .biaoqian{
   width: 410rpx;
-  height: 62rpx;
+  height: 92rpx;
   position: absolute;
-  margin-left: 236rpx;
+  margin-left: 260rpx;
   margin-top: 92rpx;
 }
 .biaoqian_title{
@@ -454,28 +459,14 @@ margin-top: 4rpx;
 text-indent: 6rpx;
 padding-right:6rpx; 
 }
-.buy{
-float: right;
-height:34rpx;
-font-size:24rpx;
-margin-top: 106rpx; 
-margin-right:10rpx; 
-}
-.disc{
-  font-size:24rpx; 
-  position: absolute;
-  margin-left: 236rpx;
-  margin-top:198rpx; 
-  overflow: hidden; 
-  height: 34rpx;
-}
 .moneyuse{
 position: absolute;
 height:44rpx;
 font-size:32rpx;
 color:rgba(253,0,0,1);
 line-height:44rpx;
-margin: 154rpx 390rpx 46rpx 236rpx;
+margin-top: 184rpx;
+margin-left: 260rpx;
 }
 .moneynotuse{
 position: absolute;
@@ -522,4 +513,91 @@ font-size: 20rpx;
 .kefuzixun{
   position: absolute;
   margin-top: 40rpx;
+}
+.goods_inf_box_h{
+  display: none;
+}
+.goods_inf_real_box{
+  height: 190rpx;
+  border-bottom: 2rpx solid #F6F6F6;
+}
+
+.services{
+height:26rpx;
+border-radius:12rpx;
+border:2rpx solid rgba(253,0,0,1);
+font-size:20rpx;
+color:rgba(253,0,0,1);
+text-align: center;
+float: left;
+margin-left:4rpx; 
+text-indent: 8rpx;
+padding-right:8rpx; 
+}
+.serviceboxs{
+position: absolute;
+height: 30rpx;
+width: 250rpx;
+margin-top: 168rpx;
+margin-left: 486rpx;
+overflow: hidden;
+}
+
+.reduction{
+width: 40rpx;
+height: 36rpx;
+float: left;
+margin-top:4rpx; 
+}
+.add{
+width: 40rpx;
+height: 36rpx;
+float: right;
+margin-top:4rpx; 
+}
+.number_box{
+position: absolute;
+height:44rpx;
+margin-top: 184rpx;
+margin-left: 570rpx;
+min-width: 140rpx;
+}
+.numbers{
+  text-align: center;
+  line-height: 44rpx;
+  font-size: 28rpx;
+  float: left;
+  width: 60rpx;
+  height: 44rpx;
+}
+.cl_pic{
+width: 28rpx;
+height: 28rpx;
+position: absolute;
+margin-left: 20rpx;
+margin-top: 108rpx;
+}
+
+.phone_store{
+ font-size: 32rpx;
+ margin: 20rpx;
+ background: red;
+ color: white;
+ height: 76rpx;
+ line-height: 76rpx;
+ border-radius: 10rpx;
+}
+.phone_kefu{
+ font-size: 32rpx;
+ margin: 20rpx;
+ background: red;
+ color: white;
+ height: 76rpx;
+ line-height: 76rpx;
+  border-radius: 10rpx;
+
+}
+.goodsDetailsHtml{
+  width: 720rpx;
+  margin-left: 15rpx;
 }

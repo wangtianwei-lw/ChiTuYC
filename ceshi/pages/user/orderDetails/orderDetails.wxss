@@ -134,7 +134,7 @@ color: #666666;
   line-height: 76rpx;
   width: 644rpx;
   height: 76rpx;
-  border-bottom: 1rpx solid #F0F0F0;
+  /* border-bottom: 1rpx solid #F0F0F0; */
   margin-left: 21rpx;
 }
 .order_goods_inf{
@@ -268,13 +268,28 @@ font-size: 34rpx;
 color: #F54B3B;
 overflow: hidden;
 }
-.order_kefu{
+.order_kefu_box{
   width: 686rpx;
   height: 90rpx;
+}
+.order_kefu_image image{
+height: 28rpx;
+width: 28rpx;
+position: absolute;
+}
+.order_kefu_image{
+height: 28rpx;
+width: 28rpx;
+position: absolute;
+margin-left: 158rpx;
+margin-top: 30rpx;
+}
+.order_cell_kefu{
   font-size: 26rpx;
-  text-align: center;
   line-height: 90rpx;
-  color: #999999;
+  height: 90rpx;
+  position: absolute;
+  margin-left: 197rpx;
 }
 .order_zhongguorenshoubaoxianBox{
 width: 686rpx;

@@ -59,11 +59,11 @@
     <view class="order_code">457892146334144</view>
    </view>
    <view class="create_timeBox order_times_same">
-    <view class="order_code_title">创建时间：</view>
+    <view class="order_code_title">下单时间：</view>
     <view class="order_code">2018-09-17 15:56:00</view>
    </view>
    <view class="create_timeBox order_times_same">
-    <view class="order_code_title">到店时间：</view>
+    <view class="order_code_title">预约时间：</view>
     <view class="order_code">2018-09-17 16:30:15</view>
    </view>
   </view>
@@ -78,12 +78,17 @@
     <view class="yhj_price">￥158.00</view>
    </view>
    <view class="real_pay_box">
-    <view class="real_pay_title">实付款</view>
+    <view class="real_pay_title">应付款</view>
     <view class="real_pay_price">￥158.00</view>
    </view>
   </view>
   <!-- 客服 -->
-  <view class="order_kefu">联系客服：400-098-0985</view>
+  <view class="order_kefu_box">
+   <view class="order_kefu_image">
+   <image src="/images/cell_kefu.png"></image>
+   </view>
+   <view class="order_cell_kefu">联系客服：400-098-0985</view>
+  </view>
   <!-- 空白占位 -->
   <view class="placeholder20"></view>
   <!-- 中国人寿保单信息 -->

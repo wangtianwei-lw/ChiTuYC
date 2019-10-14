@@ -1,0 +1,41 @@
+<!--pages/user/realName/realName.wxml 实名认证界面-->
+
+<!-- 导航栏 -->
+<view class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
+ <view class="backs" bindtap="backs"> 
+  <image src="/images/icon_back.png"></image>
+ </view>
+ <view slot="content" class="title">身份认证</view>
+</view>
+
+<!-- 真实姓名 身份证号 -->
+<view class="car_same">
+ <view class="TITLE_SAME">身份证号</view>
+ <view class="right_same">
+  <input placeholder="请输入身份证号" class="input_same xslcd"></input>
+ </view>
+</view>
+<view class="car_same">
+ <view class="TITLE_SAME">真实姓名</view>
+ <view class="right_same">
+  <input placeholder="请输入您的真实姓名" class="input_same xslcs"></input>
+ </view>
+</view>
+
+<!-- 身份证正面 反面 -->
+<view class="id_card_zf_box ss">
+ <view class="id_card_zf_title">身份证正面</view>
+ <view class="id_card_pic_box">
+  <image src="/images/add_car_pic.png" class="pic1"></image>
+ </view>
+</view> 
+
+<view class="id_card_zf_box">
+ <view class="id_card_zf_title">身份证反面</view>
+ <view class="id_card_pic_box xx">
+  <image src="/images/insurance.png" class="pic2"></image>
+ </view>
+</view> 
+
+<!-- 提交按钮 -->
+<view class="tj_now">提交</view>

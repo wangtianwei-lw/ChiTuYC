@@ -1,0 +1,17 @@
+<!--pages/user/myTGsy/myTGsy.wxml 推广收益界面-->
+<!-- 导航栏 -->
+<view class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
+ <view class="backs" bindtap="backs"> 
+  <image src="/images/icon_back.png"></image>
+ </view>
+ <view slot="content" class="title">我的收益</view>
+</view>
+
+<!-- 我的推广下级基本信息和收益 -->
+<view class="tg_in_box">
+ <view class="name_and_phone_box">
+  <view class="tg_in_name">好友159****5632消费了1000.00元</view>  
+  <view class="tg_in_phone">2019-07-10 16:30:22</view>
+ </view>
+ <view class="money">+18.00</view>
+</view>

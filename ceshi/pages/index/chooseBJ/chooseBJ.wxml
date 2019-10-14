@@ -1,0 +1,58 @@
+<!--pages/index/chooseBJ/chooseBJ.wxml 钣金喷漆选择界面-->
+
+<!-- 导航栏 -->
+<view class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
+ <view class="backs" bindtap="backs"> 
+  <image src="/images/icon_back.png"></image>
+ </view>
+ <view slot="content" class="title">钣金喷漆</view>
+</view>
+
+<!-- 空白占位 -->
+<view class="placeholder24"></view>
+
+<!-- 汽车模型 -->
+<view class="car_modle_box">
+ <view class="car_box">
+  <image src="/images/car_all_pic.png"></image>
+  <image src="{{item}}" class="show {{images ? '' : 'shows'}}" wx:for="{{images}}" wx:key></image>
+ </view>
+</view>
+
+<!-- 空白占位 -->
+<view class="placeholder24"></view>
+
+<!-- 选择钣金 -->
+<view class="moudle_box">
+ <view class="moudle {{item.isShowFrom ? 'moudles' : ''}}" wx:for="{{moudle}}" wx:key data-id="{{item.id}}" bindtap="showFrom">{{item.moudle_name}}</view>
+</view>
+
+<view class="show_box">
+<!-- 钣金价格说明 -->
+<view class="bj_jg_show">钣金价格说明</view>
+
+<view class="show_inf_box">
+ <view class="inf_text">因钣金修复需根据车辆实际情况现场勘测定价,点击下方预约服务填写车型及到店时间,将有工作人员联系您为您提供报价.</view>
+ <image src="/images/bj_show.png"></image>
+</view>
+
+<view class="jx_show">
+ <text class="texts">继续拖动，查看图文详情</text>
+</view>
+
+</view>
+
+<!-- 钣金喷漆详情介绍 -->
+ <view class="goodsDetailsHtml">
+ <import src="../../../wxParse/wxParse.wxml"/>
+ <template is="wxParse" data="{{wxParseData:article.nodes}}"/> 
+ </view>
+
+ <!-- 底部购买 -->
+ <view class="cell_and_buy_box">
+  <view class="cell_box">
+   <image src="/images/cell.png"></image>
+   <view class="cell_title">电话咨询</view>
+  </view>
+  <view class="buy_box" bindtap="bjqrOrder">立即下单</view>
+ </view>

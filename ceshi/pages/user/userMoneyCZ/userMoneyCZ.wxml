@@ -1,0 +1,42 @@
+<!--pages/user/userMoneyCZ/userMoneyCZ.wxml 余额充值界面-->
+
+<!-- 导航栏 -->
+<view class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
+ <view class="backs" bindtap="backs"> 
+  <image src="/images/icon_back.png"></image>
+ </view>
+ <view slot="content" class="title">余额充值</view>
+</view>
+
+<!-- 空白占位 -->
+<view class="placeholder26"></view>
+
+<!-- 充值金额 -->
+<view class="user_cz_money_box">
+ <view class="user_cz_money_main_box">
+  <view class="user_cz_money_title">充值金额</view>
+  <view class="user_cz_money_sz_box">
+   <view class="user_cz_money_dw">￥</view>
+   <input placeholder="0.00" class="user_cz_money_write" type="digit" placeholder-style="color: black;"></input>
+  </view>
+ </view>
+</view>
+<!-- 空白占位 -->
+<view class="placeholder20"></view>
+
+<!-- 支付方式 -->
+<view class="user_cz_money_zf_type_title">
+去选择支付方式
+</view>
+
+<!-- 空白占位 -->
+<view class="placeholder20"></view>
+
+<!-- 支付方式 -->
+<view class="choose_type">
+ <view class="choose_type_title">微信</view>
+ <image src="/images/icon_rb_selected.png"></image>
+</view>
+
+<!-- 按钮 -->
+<view class="cz_now">充值</view>

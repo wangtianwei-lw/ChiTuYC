@@ -32,7 +32,6 @@
   <image src="/images/star_open_pic.png"></image>
   <image src="/images/star_open_pic.png"></image>
   <image src="/images/star_open_pic.png"></image>
-  <image src="/images/star_open_pic.png"></image>
  </view>
  <view class="buy">
   <view class="buytitle">
@@ -72,18 +71,56 @@
 <!-- 店铺服务 -->
 <view class="serviceBox">
   <view class="service"  wx:for="{{serviceList}}" wx:key>
-   <view class="serviceCircle">
-    <image src="/images/icon_rb_unselect.png"></image>
+   <view class="service_real_box" style="color:{{item.color}}">
+    <view class="serviceCircle">
+    <!--  data-id 获取服务排序的id -->
+     <image src="{{item.serviceImg}}" data-id="{{item.id}}" bindtap="toCheck"></image>
+    </view>
+    <view class="serviceName">{{item.serviceName}}</view>
+    <view class="serviceMark">
+     <image src="/images/good_rule_pic.png" bindtap="showModal"  data-target="ChooseService"></image>
+    </view>
+    <view class="serviceUpAndDoun" data-param="{{item.id}}" bindtap="showFrom">
+     <image src="/images/{{item.pic}}.png" catchtap="showFrom" data-param="{{item.id}}"></image>
+    </view>
    </view>
-   <view class="serviceName">{{item.serviceName}}</view>
-   <view class="serviceMark">
-    <image src="/images/good_rule_pic.png"></image>
-   </view>
-   <view class="serviceUpAndDoun">
-    <image src="/images/store_arrow_down_pic.png" bindtap="toGoodsInf"></image>
+   <view  class="goods_inf_box {{item.isShowFrom ? '' : 'goods_inf_box_h'}}">
+    <view class="goodsinf" wx:for="{{item.goodslist}}" wx:key="item.id">
+        <!-- bindtap="toGoodsInf" -->
+    <view class="goodsinf"  bindtap="toGoodsInf">
+    <!-- data-id同一个店铺中服务的排序id   data-ids同一个service中商品的排序id-->
+    <image src="{{item.serviceImg}}" class="cl_pic" catchtap="checkGoods" data-id="{{item.id}}" data-ids="{{item.ids}}"></image>
+    <view class="goodspic">
+    <image   src="http://image-chitu.test.upcdn.net/chitu/goodsImg/20190529135451798.jpg">
+    </image>
+    </view>
+    <view class="goodsname">{{item.goodsname}}</view>
+    <view class="biaoqian">
+     <view class="biaoqian_title">矿物质机油</view>
+     <view class="biaoqian_title">矿物质机油</view>
+     <view class="biaoqian_title">矿物质机油</view>
+     <view class="biaoqian_title">矿物质机油</view>
+     <view class="biaoqian_title">矿物质机油</view>
+     <view class="biaoqian_title">矿物</view>     
+    </view>
+    <view class="moneyuse">￥138.00</view>
+
+<!-- data-goodsnumber 商品数量  data-id 服务id data-ids商品id-->
+    <view class="number_box">
+     <image class="reduction" src="/images/num_less_pic.png" catchtap="jian" data-goodsnumber="{{item.goodsnumber}}" data-id="{{item.id}}" data-ids="{{item.ids}}"></image>
+     <view class="numbers">{{item.goodsnumber}}</view>
+     <image class="add" src="/images/num_add_pic.png" catchtap="add" data-goodsnumber="{{item.goodsnumber}}" data-id="{{item.id}}" data-ids="{{item.ids}}"></image>
+    </view> 
+
+  </view>
+  
+    </view>
    </view>
  </view>
 </view>
+
+<!-- 空白占位 -->
+<view class="placeholder20"></view>
 
 <!-- 用户评价 -->
 <view class="userEvaluationBox">
@@ -128,7 +165,7 @@
    <view class="allMoney">合计:￥235.00</view>
   </view>
   <!-- 客服 -->
-  <view class="kefuBox">
+  <view class="kefuBox" bindtap="showModal"  data-target="ChooseModal">
    <image src="/images/kefu.png"></image>
    <view class="kefuzixun">客服咨询</view>
   </view>
@@ -136,3 +173,22 @@
   <view class="buyNow" bindtap="toOrderInf">立即购买</view>
 
  </view>
+
+<!-- 唤起拨打电话功能 -->
+<view class="cu-modal bottom-modal {{modalName=='ChooseModal'?'show':''}}" bindtap="hideModal">
+  <view class="cu-dialog">
+   <view class="phone_store" data-phone="15283663702" bindtap="cellPhone">拨打联系电话:15283663702</view>
+   <view class="phone_kefu" data-phone="4000980985" bindtap="cellPhone">联系客服:4000980985</view>
+  </view>
+</view>
+
+<!-- 唤起服务详情 -->
+<view class="cu-modal bottom-modal {{modalName=='ChooseService'?'show':''}}" bindtap="hideModal">
+  <scroll-view class="cu-dialog" style="max-height:{{ScreenHeight/2}}px;" scroll-y>
+    <!-- 服务具体详情 -->
+ <view class="goodsDetailsHtml">
+ <import src="../../../wxParse/wxParse.wxml"/>
+ <template is="wxParse" data="{{wxParseData:article.nodes}}"/> 
+ </view>
+  </scroll-view>
+</view>

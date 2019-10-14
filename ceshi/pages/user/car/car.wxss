@@ -1,0 +1,97 @@
+/* pages/user/car/car.wxss */
+.car_inf_box{
+  width: 694rpx;
+  height: 274rpx;
+  margin-left: 28rpx;
+  background: #FFC56C;
+  border-radius: 10rpx;
+}
+.b{
+  background: #F6F6F6;
+}
+.add_box{
+ width: 144rpx;
+ height: 140rpx;
+ position: absolute;
+ margin-top: 68rpx;
+ margin-left: 276rpx; 
+}
+.add_box image{
+position: absolute;
+width: 68rpx;
+height: 68rpx;
+margin-left: 38rpx;
+}
+.add_car{
+  font-size: 36rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  position: absolute;
+  margin-top: 90rpx;
+  color: #030303;
+}
+.car_inf_jiben_box{
+  width: 694rpx;
+  height: 92rpx;
+  position: absolute;
+  margin-top: 28rpx;
+}
+.car_inf_jiben_box image{
+  width: 92rpx;
+  height: 92rpx;
+  border-radius: 50%;
+  float: left;
+  margin-left:16rpx; 
+}
+.car_name_box{
+  height: 90rpx;
+  float: left;
+  margin-left:24rpx; 
+  margin-top: 2rpx;
+  max-width: 400rpx;
+  overflow: hidden;
+}
+.car_yrz{
+  float: right;
+  font-size: 28rpx;
+  width: 160rpx;
+  height: 44rpx;
+  text-align: center;
+  line-height: 44rpx;
+  border-radius:124px 0px 0px 124px;
+  background: white;
+  color: #F03D3D;
+  margin-top: 4rpx;
+}
+.car_name{
+  font-size: 36rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  max-width: 400rpx;
+  overflow: hidden;
+}
+.car_names{
+ font-size: 28rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  max-width: 400rpx;
+  overflow: hidden;
+}
+.car_mr_box{
+  height: 40rpx;
+  width: 176rpx;
+  position: absolute;
+  margin-left: 500rpx;
+  margin-top: 222rpx;
+}
+.car_mr_box image{
+width: 28rpx;
+height: 28rpx;
+position: absolute;
+margin-top: 6rpx;
+}
+.car_mr_title{
+  font-size: 28rpx;
+  color: #F03D3D;
+  margin-left: 36rpx;
+}

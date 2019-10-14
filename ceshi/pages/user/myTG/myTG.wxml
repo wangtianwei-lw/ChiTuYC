@@ -1,0 +1,38 @@
+<!--pages/user/myTG/myTG.wxml 我的推广-->
+
+<!-- 导航栏 -->
+<view class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
+ <view class="backs" bindtap="backs"> 
+  <image src="/images/icon_back.png"></image>
+ </view>
+ <view slot="content" class="title">我的推广</view>
+</view>
+ 
+<!-- 推广收益 -->
+<view class="tui_anniu_box" bindtap="myTGsy">
+ <image class="F_PIC" src="/images/TG_SY.png"></image>
+ <view class="tuig_anniu">推广收益</view>
+ <image class="L_PIC" src="/images/arrow_black_right_pic.png"></image>
+</view>
+
+<view class="main_box_big">
+<!-- 我的推广下级基本信息 -->
+<view class="tg_in_box">
+ <image src="/images/insurance.png"></image>
+ <view class="name_and_phone_box">
+  <view class="tg_in_name">赤兔养车</view>  
+  <view class="tg_in_phone">15283666229</view>
+ </view>
+ <view class="time_tg">2019-07-10 16:30:22</view>
+</view>
+
+<view class="tg_in_box">
+ <image src="/images/insurance.png"></image>
+ <view class="name_and_phone_box">
+  <view class="tg_in_name">赤兔养车</view>  
+  <view class="tg_in_phone">15283666229</view>
+ </view>
+ <view class="time_tg">2019-07-10 16:30:22</view>
+</view>
+
+</view>

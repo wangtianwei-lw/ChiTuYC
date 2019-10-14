@@ -28,7 +28,7 @@
  
  <view class="conditions">
     <picker class="areas" mode="region" bindchange="RegionChange" value="{{region}}"  range="{{region}}">
-    <view>
+    <view class="fontstyle">
     {{area}}
     </view>
     <image src="/images/icon_down.png"></image>

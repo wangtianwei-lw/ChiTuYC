@@ -13,25 +13,26 @@ height: 456rpx;
   position: absolute;
   width: 100%;
   background:rgba(255,255,255,1);
-  height: 536rpx;
+  height: 508rpx;
   margin-top:-42rpx; 
   border-radius: 15rpx 15rpx 0rpx 0rpx;
-  background: red;
 }
 .maylove{
-  background-color: #FFC56C;
-  height: 76rpx;
-  margin: 4rpx 32rpx;
-  border-radius: 5rpx;
-  text-align: center;
+  height: 78rpx;
+  width: 714rpx;
+  position: absolute;
+  margin-top: 426rpx;
+  margin-left: 18rpx;
+  border-bottom: 2rpx solid #F0F0F0;
+  border-top: 2rpx solid #F0F0F0;
 }
 .box{
 width: 100%;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-around;
-margin-top: 30rpx;
-
+margin-top: 108rpx;
+position: absolute;
 }
 .pic{
   width: 22%;
@@ -46,31 +47,41 @@ height: 92rpx;
   font-size: 24rpx;
 }
 .two{
-  margin-top: 68rpx;
+  margin-top: 24rpx;
 }
 .car{
-float: left;
-font-size: 20rpx;
-text-align: center;
-margin: 24rpx 356rpx 20rpx 152rpx;
+position: absolute;
+font-size: 24rpx;
+height: 78rpx;
+line-height: 78rpx;
+margin-left: 176rpx;
 }
 .addcar{
-float: right;
-font-size: 20rpx;
-color: white;
-margin: 22rpx 20rpx 22rpx 0rpx;
+position: absolute;
+font-size: 24rpx;
+color: #E51414;
+width:130rpx;
+height: 50rpx;
+line-height: 50rpx;
+margin-left: 582rpx;
+background: rgb(255,228,121);
+border-radius: 8rpx;
+text-align: center;
+margin-top: 12rpx;
 }
 .lovecar{
 position: absolute;
-font-size: 32rpx;
-text-align: center;
-margin: 16rpx 20rpx;
+font-size: 28rpx;
+height: 78rpx;
+line-height: 78rpx;
+margin-left: 58rpx;
 }
 .starstore{
   width: 100%;
   height: 244rpx;
   background:rgba(255,255,255,1);
-  margin-top: 498rpx;
+  margin-top: 468rpx;
+  border-bottom: 2rpx solid #F0F0F0;
 }
 .storetitle{
   float: left;
@@ -129,10 +140,12 @@ margin: 16rpx 20rpx;
 .apppic{
   width: 100%;
   height: 160rpx;
+  border-bottom: 2rpx solid #F0F0F0;
 }
 .apppic image{
 width: 100%;
-height: 100%;
+height: 158rpx;
+float: left;
 }
 .more image{
   height: 22rpx;
@@ -140,26 +153,30 @@ height: 100%;
   float:  right;
   margin-top:6rpx; 
 }
+.usergoodstitle{
+  width: 710rpx;
+  height: 48rpx;
+  position: absolute;
+  margin-top: 12rpx;
+  margin-left: 20rpx;
+}
 .goodstitle{
   height: 48rpx;
   width: 264rpx;
   background-color: rgb(255,228,121);
-  margin-left:20rpx; 
   border-top-right-radius:50rpx;
   position: absolute;
-  margin-top: 12rpx;
 }
 .goodgoodstitle{
   position: absolute;
   font-size: 28rpx;
   width: 224rpx;
-  height: 36rpx;
-  margin:6rpx 30rpx 6rpx 10rpx; 
+  line-height: 48rpx;
+  margin-left:10rpx; 
 }
 .more{
 float: right;
-margin-top: 20rpx;
-margin-right: 48rpx;
+margin-top: 8rpx;
 width: 70rpx;
 }
 .fonts{
@@ -170,7 +187,6 @@ width: 70rpx;
 background:rgba(255,255,255,1); 
 height:544rpx;
 width: 100%;
-position: relative;
 }
 .usergoodsbigpic{
   position: absolute;
@@ -181,6 +197,7 @@ position: relative;
 .usergoodsbigpic image{
   height: 100%;
   width: 100%;
+  float: left;
 }
 .usergoodsbottompic{
   position: absolute;
@@ -195,6 +212,7 @@ position: relative;
 .inf image{
   width: 100%;
   height: 100%;
+  float: left;
 }
 .three{
   margin-left: 6rpx;
@@ -235,6 +253,8 @@ height: 50rpx;
 .goodspic image{
   width: 100%;
   height: 100%;
+  position: absolute;
+
 }
 .goodsname{
 position: absolute;
@@ -245,6 +265,7 @@ font-family:PingFangSC;
 overflow:hidden; 
 text-overflow:ellipsis; 
 margin: 12rpx 28rpx 152rpx 236rpx;
+font-weight:610;
 }
 .biaoqian{
   width: 410rpx;
@@ -287,7 +308,8 @@ height:44rpx;
 font-size:32rpx;
 color:rgba(253,0,0,1);
 line-height:44rpx;
-margin: 154rpx 390rpx 46rpx 236rpx;
+margin-top: 154rpx;
+margin-left:236rpx;
 }
 .moneynotuse{
 position: absolute;
@@ -295,8 +317,9 @@ height:34rpx;
 font-size:24rpx;
 color:rgba(0,0,0,1);
 line-height:34rpx;
-margin: 162rpx 258rpx 48rpx 380rpx;
+margin-top: 162rpx;
 text-decoration:line-through rgba(0,0,0,1);
+margin-left: 380rpx;
 }
 .service{
 height:26rpx;
@@ -313,8 +336,27 @@ padding-right:8rpx;
 .servicebox{
 position: absolute;
 height: 30rpx;
-width: 220rpx;
+width: 250rpx;
 margin-top: 168rpx;
-margin-left: 526rpx;
+margin-left: 486rpx;
 overflow: hidden;
+}
+.index_xiadan_box{
+  position: absolute;
+  width: 712rpx;
+  margin-left: 18rpx;
+  height: 78rpx;
+  border-bottom: 2rpx solid #F0F0F0;
+}
+.index_xiadan_box image{
+  position: absolute;
+  width: 40rpx;
+  height: 34rpx;
+  margin-top: 20rpx;
+}
+.maylove image{
+  position: absolute;
+  width: 40rpx;
+  height: 34rpx;
+  margin-top: 20rpx;
 }

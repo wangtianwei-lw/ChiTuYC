@@ -258,7 +258,7 @@ margin-top: 28rpx;
 position: absolute;
 width: 256rpx;
 height: 68rpx;
-margin-left: 450rpx;
+margin-left: 494rpx;
 margin-top: 4rpx;
 background: red;
 color: white;

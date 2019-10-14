@@ -1,0 +1,106 @@
+/* pages/index/chooseGoods/chooseGoods.wxss */
+.goodsinf{
+  width: 100%;
+  height: 244rpx;
+}
+.goodspic{
+  width: 192rpx;
+  height: 220rpx;
+  position: absolute;
+  margin: 12rpx 538rpx 12rpx 20rpx;
+}
+.goodspic image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+}
+.goodsname{
+position: absolute;
+width:486rpx;
+height:80rpx;
+font-size:28rpx;
+font-family:PingFangSC;
+overflow:hidden; 
+text-overflow:ellipsis; 
+margin: 12rpx 28rpx 152rpx 236rpx;
+font-weight:610;
+}
+.biaoqian{
+  width: 410rpx;
+  height: 62rpx;
+  position: absolute;
+  margin-left: 236rpx;
+  margin-top: 92rpx;
+}
+.biaoqian_title{
+height:28rpx;
+font-size:20rpx;
+color:rgba(0,0,0,1);
+background:rgba(216,216,216,1);
+border-radius:12rpx;
+text-align: center;
+float: left;
+margin-left:8rpx; 
+margin-top: 4rpx;
+text-indent: 6rpx;
+padding-right:6rpx; 
+}
+.buy{
+float: right;
+height:34rpx;
+font-size:24rpx;
+margin-top: 106rpx; 
+margin-right:10rpx; 
+}
+.disc{
+  font-size:24rpx; 
+  position: absolute;
+  margin-left: 236rpx;
+  margin-top:198rpx; 
+  overflow: hidden; 
+  height: 34rpx;
+}
+.moneyuse{
+position: absolute;
+height:44rpx;
+font-size:32rpx;
+color:rgba(253,0,0,1);
+line-height:44rpx;
+margin-top: 154rpx;
+margin-left:236rpx;
+}
+.moneynotuse{
+position: absolute;
+height:34rpx;
+font-size:24rpx;
+color:rgba(0,0,0,1);
+line-height:34rpx;
+margin-top: 162rpx;
+text-decoration:line-through rgba(0,0,0,1);
+margin-left: 380rpx;
+}
+.service{
+height:26rpx;
+border-radius:12rpx;
+border:2rpx solid rgba(253,0,0,1);
+font-size:20rpx;
+color:rgba(253,0,0,1);
+text-align: center;
+float: left;
+margin-left:4rpx; 
+text-indent: 8rpx;
+padding-right:8rpx; 
+}
+.servicebox{
+position: absolute;
+height: 30rpx;
+width: 250rpx;
+margin-top: 168rpx;
+margin-left: 486rpx;
+overflow: hidden;
+}
+.kongbai{
+  height: 20rpx;
+  width: 100%;
+}

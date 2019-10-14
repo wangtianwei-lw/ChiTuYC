@@ -1,0 +1,57 @@
+/* pages/index/carWX/carWX.wxss */
+.titlt_box{
+height: 86rpx;
+width: 100%;
+background: #F6F6F6;
+}
+.caWX{
+  margin-left: 32rpx;
+  font-size: 28rpx;
+  line-height: 86rpx;
+  height: 86rpx;
+}
+.service_box{
+  height: 208rpx;
+  width: 100%;
+  background: #F6F6F6;
+}
+.main_box{
+  height: 208rpx;
+  width: 694rpx;
+  position: absolute;
+  margin-left: 28rpx;
+  background: rgb(254, 197, 151);
+  border-radius: 10rpx;
+}
+.main_title{
+  position: absolute;
+  margin-left: 36rpx;
+ margin-top: 74rpx;
+ font-size: 40rpx;
+ color: white;
+ height: 56rpx;
+ line-height: 56rpx;
+ width: 160rpx;
+}
+.car_pic_box{
+  width: 232rpx;
+  height: 90rpx;
+  position: absolute;
+  margin-top: 112rpx;
+  margin-left: 382rpx;
+}
+.car_pic_box image{
+  width: 232rpx;
+  height: 90rpx;
+  position: absolute;
+}
+.right_pic{
+  position: absolute;
+  margin-left: 658rpx;
+  margin-top: 98rpx;
+  height: 22rpx;
+  width: 12rpx;
+}
+.sss{
+  background: rgb(156, 199, 255);
+}

@@ -1,0 +1,81 @@
+<!--pages/user/addCar/addCar.wxml 添加车辆界面-->
+
+<!-- 导航栏 -->
+<view class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
+ <view class="backs" bindtap="backs"> 
+  <image src="/images/icon_back.png"></image>
+ </view>
+ <view slot="content" class="title">添加车辆</view>
+</view>
+
+<!-- 车牌号、品牌车系、行驶里程 -->
+<view class="car_same">
+ <view class="TITLE_SAME">车牌号</view>
+ <view class="right_same">
+  <input placeholder="请输入车牌号" class="input_same"></input>
+ </view>
+</view>
+<view class="car_same">
+ <view class="TITLE_SAME">品牌车系</view>
+  <view class="right_same nosame">
+   <view class="right_title_same">请选择</view>
+   <image src="/images/arrow_right_pic.png"></image>
+  </view>
+</view>
+<view class="car_same">
+ <view class="TITLE_SAME">行驶里程</view>
+ <view class="right_same">
+  <input placeholder="请输入行驶里程" class="input_same xslc"></input>
+ </view>
+</view>
+
+<!-- 标题 -->
+<view class="titles_sames">
+ <view class="boxssames">使用保养服务请完善以下信息</view>
+</view>
+
+<!-- 上路时间、车辆认证 -->
+
+<view class="car_same">
+ <view class="TITLE_SAME">上路时间</view>
+  <view class="right_same nosame">
+   <view class="right_title_same">请选择</view>
+   <image src="/images/arrow_right_pic.png"></image>
+  </view>
+</view>
+<view class="car_same">
+ <view class="TITLE_SAME">车辆认证</view>
+  <view class="right_same nosame">
+   <view class="right_title_same">请上传行驶证</view>
+   <image src="/images/arrow_right_pic.png"></image>
+  </view>
+</view>
+
+<!-- 标题 -->
+<!-- 标题 -->
+<view class="titles_sames">
+ <view class="boxssames">查询车辆违章请填写以下内容</view>
+</view>
+
+<!-- 车架号 发动机号 默认 -->
+<view class="car_same">
+ <view class="TITLE_SAME">车架号</view>
+ <view class="right_same">
+  <input placeholder="请输入完成整的车架号" class="input_same xslcd"></input>
+ </view>
+</view>
+<view class="car_same">
+ <view class="TITLE_SAME">发动号</view>
+ <view class="right_same">
+  <input placeholder="请输入完成整的发动机号" class="input_same xslcs"></input>
+ </view>
+</view>
+<view class="car_same">
+ <view class="TITLE_SAME">设置为默认</view>
+ <view class="right_same">
+  <switch type="switch" color="#FFC56C" class="swictch"></switch>
+ </view>
+</view>
+
+<!-- 提交 -->
+<view class="bz_now">保存</view>

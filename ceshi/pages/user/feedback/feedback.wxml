@@ -1,0 +1,63 @@
+<!--pages/user/feedback/feedback.wxml 问题反馈-->
+
+<!-- 导航栏 -->
+<view class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
+ <view class="backs" bindtap="backs"> 
+  <image src="/images/icon_back.png"></image>
+ </view>
+ <view slot="content" class="title">意见反馈</view>
+</view>
+
+<!-- 问题类型 -->
+<view class="question_title">
+ <view class="star_q">*</view>
+ <view class="titlr_q">请描述你遇到的问题类型</view>
+</view>
+
+<!-- 选择问题类型 -->
+<view class="type_pox">
+ <view wx:for="{{p_type}}" wx:key class="p_type_box">
+ {{item}}
+ </view>
+</view>
+
+<!-- 文字描述问题内容 -->
+<view class="question_title">
+ <view class="star_q">*</view>
+ <view class="titlr_q">请文字描述你的问题</view>
+</view>
+
+<!-- 问题具体内容 -->
+<view class="q_jz_box">
+ <textarea class="areas" placeholder='请输入文字' placeholder-style="color:#F03D3D;line-height:50rpx; font-size: 24rpx;" maxlength="200" bindinput="inputs"> 
+        <text class="currentWordNumber">{{currentWordNumber}}/200字</text>
+    </textarea>
+</view>
+
+<!-- 文字描述问题内容 -->
+<view class="question_title">
+ <view class="star_q">*</view>
+ <view class="titlr_q">请上传图片（不超过4张）</view>
+</view>
+
+<!-- 图片上传区域 -->
+<view class="p_pic_box">
+<image src="/images/add_pic.png"></image>
+<image src="/images/add_pic.png" style="display:none"></image>
+<image src="/images/add_pic.png" style="display:none"></image>
+<image src="/images/add_pic.png" style="display:none"></image>
+</view>
+
+<!-- 文字描述问题内容 -->
+<view class="question_title">
+ <view class="star_q">*</view>
+ <view class="titlr_q">请输入你的反馈手机号</view>
+</view>
+
+<!-- 输入反馈的手机号 -->
+<view class="input_box">
+ <input placeholder="  请输入你的手机号，便于我们与你联系！" placeholder-style="color:#F03D3D;" type="digit" class="input_sr"></input>                 
+</view>
+
+<!-- 提交按钮 -->
+<view class="tijiao_now">提交反馈</view>

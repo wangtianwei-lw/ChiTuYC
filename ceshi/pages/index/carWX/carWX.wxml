@@ -1,0 +1,41 @@
+<!--pages/index/carWX/carWX.wxml 汽车维修界面-->
+
+<!-- 导航栏 -->
+<view class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
+ <view class="backs" bindtap="backs"> 
+  <image src="/images/icon_back.png"></image>
+ </view>
+ <view slot="content" class="title">汽车维修</view>
+</view>
+
+<!-- 汽车维修标题 -->
+<view class="titlt_box">
+ <view class="caWX">汽车维修</view>
+</view>
+
+<!-- 钣金 喷漆 -->
+<view class="service_box">
+ <view class="main_box" bindtap="chooseBJ">
+  <view class="main_title">喷漆服务</view>
+  <view class="car_pic_box">
+   <image src="/images/fullCarLacquer-b.png"></image>
+  </view>
+  <image src="/images/arrow_right_white_pic.png" class="right_pic"></image>
+ </view>
+</view>
+
+<!-- 空白占位 -->
+<view class="placeholder16"></view>
+
+<view class="service_box">
+ <view class="main_box sss" bindtap="chooseBJ">
+  <view class="main_title">钣金喷漆</view>
+  <view class="car_pic_box">
+   <image src="/images/banjinpenqi.png"></image>
+  </view>
+  <image src="/images/arrow_right_white_pic.png" class="right_pic"></image>
+ </view>
+</view>
+
+<!-- 空白占位 -->
+<view class="placeholder16"></view>

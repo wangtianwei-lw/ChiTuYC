@@ -1,2 +1,11 @@
-<!--pages/public/noData/noData.wxml 无数据界面专用-->
+<!--pages/public/noData/noData.wxml 引入html界面专用-->
+<!-- 导航栏 -->
+<view class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
+ <view class="backs" bindtap="backs"> 
+  <image src="/images/icon_back.png"></image>
+ </view>
+ <view slot="content" class="title">{{title}}</view>
+</view>
 
+<!-- 指向引入的html界面 https://wx.chituyc.com -->
+<!-- <web-view src="http://www.chituyc.com/indexController/toGuide"></web-view> -->

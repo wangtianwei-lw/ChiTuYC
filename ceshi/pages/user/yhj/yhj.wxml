@@ -1,0 +1,112 @@
+<!--pages/user/yhj/yhj.wxml 我的优惠券-->
+
+<!-- 导航栏 -->
+<view class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
+ <view class="backs" bindtap="backs"> 
+  <image src="/images/icon_back.png"></image>
+ </view>
+ <view slot="content" class="title">我的优惠券</view>
+</view>
+
+<!-- tab选项卡 -->
+<view class="tabNav">
+    <view wx:for="{{navTab}}" wx:key="index" data-idx="{{index}}" bindtap="currentTab" class="{{currentTab==index ? 'cur' : ''}}">
+     <text class="tab">{{item}}</text>
+    </view>
+</view>
+
+<!-- 选择具体的优惠券 -->
+ <view class="yhjChooseBox">
+ 
+  <!-- 空白占位 -->
+  <view class="placeholder12"></view>
+
+  <!-- 优惠券列表 -->
+  <view class="yhjBox"  style="height:192rpx;">
+   <!-- 优惠券价格 -->
+   <view class="yhjPriceBox" style="height:192rpx;">
+    <view class="priceUnit" style="margin-top:84rpx;">￥</view>
+    <view class="priceNumber" style="margin-top: 40rpx;font-size: 80rpx;">78.99</view>
+   </view>
+   <!-- 上圆角 -->
+   <view class="topRounded16"></view>
+   <!-- 下圆角 -->
+   <view class="bottomRounded8" style="margin-top:184rpx;"></view>
+   <!-- 优惠券基本信息 -->
+   <view class="yhjInfBox">
+    <!-- 名称 -->
+    <view class="yhjNameAndPeriodBox">
+     <view class="yhjName">新人啊啊啊啊红包</view>
+     <view class="periodxxx">还剩999哎哎哎天过期</view>
+    </view>
+    <view class="sc_yhj_xz">仅限于机油类产品啊啊啊啊aaa </view>
+    <!-- 有效期 -->
+    <view class="StopTime" style="margin-top: 108rpx;">有效期：60天aaaaaa啊啊啊</view>
+    <!-- 使用限制 -->
+    <view class="userXZ bgY leftjian" style="margin-top:140rpx;">仅限于机油类产品啊啊啊啊</view>
+    <!-- 立即使用 -->
+    <view class="userNow" bindtap="toAIche">立即使用</view>
+   </view>
+  </view>
+
+  <!-- 优惠券列表 -->
+  <view class="yhjBox">
+   <!-- 优惠券价格 -->
+   <view class="yhjPriceBox">
+    <view class="priceUnit gray">￥</view>
+    <view class="priceNumber gray">78.99</view>
+   </view>
+   <!-- 上圆角 -->
+   <view class="topRounded16"></view>
+   <!-- 下圆角 -->
+   <view class="bottomRounded8"></view>
+   <!-- 优惠券基本信息 -->
+   <view class="yhjInfBox">
+    <!-- 名称 -->
+    <view class="yhjNameAndPeriodBox">
+     <view class="yhjName gray">新人啊啊啊啊红包</view>
+     <view class="periodxxx hiddens">还剩999哎哎哎天过期</view>
+    </view>
+    <!-- 有效期 -->
+    <view class="StopTime gray">有效期：60天aaaaaa啊啊啊</view>
+    <!-- 使用限制 -->
+    <view class="userXZ gray">仅限于机油类产品啊啊啊啊</view>
+    <!-- 立即使用 -->
+    <view class="userNow hiddens">立即使用</view>
+    <!-- 已使用 -->
+    <image class="state2" src="/images/coupon_state_one.png"></image>
+   </view>
+  </view>
+
+  <!-- 优惠券列表 -->
+  <view class="yhjBox">
+   <!-- 优惠券价格 -->
+   <view class="yhjPriceBox">
+    <view class="priceUnit gray">￥</view>
+    <view class="priceNumber gray">78.99</view>
+   </view>
+   <!-- 上圆角 -->
+   <view class="topRounded16"></view>
+   <!-- 下圆角 -->
+   <view class="bottomRounded8"></view>
+   <!-- 优惠券基本信息 -->
+   <view class="yhjInfBox">
+    <!-- 名称 -->
+    <view class="yhjNameAndPeriodBox">
+     <view class="yhjName gray">新人啊啊啊啊红包</view>
+     <view class="periodxxx hiddens">还剩999哎哎哎天过期</view>
+    </view>
+    <!-- 有效期 -->
+    <view class="StopTime gray">有效期：60天aaaaaa啊啊啊</view>
+    <!-- 使用限制 -->
+    <view class="userXZ gray">仅限于机油类产品啊啊啊啊</view>
+    <!-- 立即使用 -->
+    <view class="userNow hiddens">立即使用</view>
+    <!-- 已过期 -->
+    <image class="state2" src="/images/coupon_state_two.png"></image>
+   </view>
+  </view>
+
+    <!-- 空白占位 -->
+  <view class="placeholder12"></view>
+ </view>

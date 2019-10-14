@@ -1,0 +1,71 @@
+<!--pages/index/bjqrOrder/bjqrOrder.wxml 确认钣金订单界面-->
+
+<!-- 导航栏 -->
+<view class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
+ <view class="backs" bindtap="backs"> 
+  <image src="/images/icon_back.png"></image>
+ </view>
+ <view slot="content" class="title">确认订单</view>
+</view>
+
+<!-- 空白占位 -->
+<view class="placeholder24"></view>
+
+<view class="store-inf_box">
+ <view class="store_inf_main_box" bindtap="orderChooseStore">
+  <image class="store_pic" src="/images/order_details_bg.png"></image>
+  <view class="bj_store_name">广峰汽修店a啊啊啊啊啊啊啊啊</view>
+  <image src="/images/location_two_pic.png" class="location"></image>
+  <view class="store_addr">杭州市西湖区三墩杭州市西湖区三墩杭州市西湖区三墩杭州市西湖区三墩</view>
+  <view class="bj_order_distance">1995.12km</view>
+  <image src="/images/right.png" class="right_pic"></image>
+ </view>
+</view>
+
+<!-- 空白占位 -->
+<view class="placeholder24"></view>
+
+<!-- 输入订单金额 -->
+<view class="bj_order_money sameHeight">
+ <view class="bj_order_title">输入订单金额</view>
+ <input placeholder="填写维修费用（费用金额字号14号字）" class="money_input" type="digit"></input>
+</view>
+
+<!-- 优惠标题 -->
+<view class="bj_yh_title_box">
+<view class="BJ_YH_title">优惠</view>
+</view>
+
+<!-- 优惠券 应支付价格 -->
+<view class="user_inf_box">
+ <view class="title_box nosame">优惠券</view>
+ <view class="user_inf_right_box">
+  <view class="nicheng"  bindtap="toyhj">20元</view>
+  <image src="/images/arrow_right_pic.png"  bindtap="toyhj"></image>
+ </view>
+</view>
+
+<view class="user_inf_box">
+ <view class="title_box nosame">实付</view>
+ <view class="user_inf_right_box">
+  <view class="phone">450元</view>
+ </view>
+</view>
+
+<!-- 选择支付方式 -->
+<view class="bj_yh_title_box">
+<view class="BJ_YH_title">选择支付方式</view>
+</view>
+
+<view class="user_inf_box  user_inf_boxs">
+ <view class="title_box nosame">微信</view>
+ <image src="/images/icon_rb_selected.png"></image>
+</view>
+
+
+<!-- 底部购买栏 -->
+<view class="money_And_Buy_Now">
+ <view class="bj_money_dw">合计金额：</view>
+ <view class="bj_money_money">￥460.00</view>
+ <view class="buy_now">去支付</view>
+</view>

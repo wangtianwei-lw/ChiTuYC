@@ -1,0 +1,44 @@
+<!--pages/user/car/car.wxml-->
+
+<!-- 导航栏 -->
+<view class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
+ <view class="backs" bindtap="backs"> 
+  <image src="/images/icon_back.png"></image>
+ </view>
+ <view slot="content" class="title">我的车辆</view>
+</view>
+
+<!-- 空白占位 -->
+<view class="placeholder12s"></view>
+
+<!-- 已添加的车信息 -->
+<view class="b">
+<view class="car_inf_box">
+ <view class="car_inf_jiben_box">
+  <image src="/images/insurance.png"></image>
+  <view class="car_name_box">
+   <view class="car_name">奥迪A6L奥迪A6L奥迪A6L奥迪A6L奥迪A6L奥迪A6L奥迪A6L</view>
+   <view class="car_names">浙A 65636奥迪A6L奥迪A6L奥迪A6L奥迪A6L奥迪A6L</view>
+  </view>
+  <view class="car_yrz">已认证</view>
+ </view>
+ <view class="car_mr_box">
+  <image src="/images/xuanze.png"></image>
+  <view class="car_mr_title">已设为默认</view>
+ </view>
+</view>
+</view>
+<!-- 空白占位 -->
+<view class="placeholder12s"></view>
+
+<!-- 添加车辆 -->
+<view class="b">
+<view class="car_inf_box">
+ <view class="add_box" bindtap="addCar">
+  <image src="/images/add_car_pic.png"></image>
+  <view class="add_car">添加车辆</view>
+ </view>
+</view>
+</view>
+<!-- 空白占位 -->
+<view class="placeholder12s"></view>

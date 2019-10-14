@@ -10,19 +10,20 @@
  */-->
 
 <!--基础元素-->
-<template name="wxParseVideo">
-  <!--增加video标签支持，并循环添加-->
+<!-- <template name="wxParseVideo">
+  <!--增加video标签支持，并循环添加
   <view class="{{item.classStr}} wxParse-{{item.tag}}" style="{{item.styleStr}}">
     <video class="{{item.classStr}} wxParse-{{item.tag}}-video" src="{{item.attr.src}}"></video>
   </view>
-</template>
+</template> -->
 
 <template name="wxParseImg">
-  <image class="{{item.classStr}} wxParse-{{item.tag}}" data-from="{{item.from}}" data-src="{{item.attr.src}}" data-idx="{{item.imgIndex}}" src="{{item.attr.src}}" mode="aspectFit" bindload="wxParseImgLoad" bindtap="wxParseImgTap" mode="widthFix" style="width:{{item.width}}px;"
+  <image class="{{item.classStr}} wxParse-{{item.tag}}" data-from="{{item.from}}" data-src="{{item.attr.src}}" data-idx="{{item.imgIndex}}" src="{{item.attr.src}}" mode="aspectFit" bindload="wxParseImgLoad"  mode="widthFix" style="width:100%;"
   />
+  <!-- bindtap="wxParseImgTap" -->
 </template>
 
-<template name="WxEmojiView">
+<!-- <template name="WxEmojiView">
   <view class="WxEmojiView wxParse-inline" style="{{item.styleStr}}">
     <block wx:for="{{item.textArray}}" wx:key="">
       <block class="{{item.text == '\\n' ? 'wxParse-hide':''}}" wx:if="{{item.node == 'text'}}">{{item.text}}</block>
@@ -31,7 +32,7 @@
       </block>
     </block>
   </view>
-</template>
+</template> -->
 
 <template name="WxParseBr">
   <text>\n</text>
@@ -123,7 +124,7 @@
   <!--判断是否是文本节点-->
   <block wx:elif="{{item.node == 'text'}}">
     <!--如果是，直接进行-->
-    <template is="WxEmojiView" data="{{item}}" />
+    <!-- <template is="WxEmojiView" data="{{item}}" /> -->
   </block>
 
 </template>
@@ -201,7 +202,7 @@
   <!--判断是否是文本节点-->
   <block wx:elif="{{item.node == 'text'}}">
     <!--如果是，直接进行-->
-    <template is="WxEmojiView" data="{{item}}" />
+    <!-- <template is="WxEmojiView" data="{{item}}" /> -->
   </block>
 
 </template>
@@ -278,7 +279,7 @@
   <!--判断是否是文本节点-->
   <block wx:elif="{{item.node == 'text'}}">
     <!--如果是，直接进行-->
-    <template is="WxEmojiView" data="{{item}}" />
+    <!-- <template is="WxEmojiView" data="{{item}}" /> -->
   </block>
 
 </template>
@@ -354,7 +355,7 @@
   <!--判断是否是文本节点-->
   <block wx:elif="{{item.node == 'text'}}">
     <!--如果是，直接进行-->
-    <template is="WxEmojiView" data="{{item}}" />
+    <!-- <template is="WxEmojiView" data="{{item}}" /> -->
   </block>
 
 </template>
@@ -430,7 +431,7 @@
   <!--判断是否是文本节点-->
   <block wx:elif="{{item.node == 'text'}}">
     <!--如果是，直接进行-->
-    <template is="WxEmojiView" data="{{item}}" />
+    <!-- <template is="WxEmojiView" data="{{item}}" /> -->
   </block>
 
 </template>
@@ -506,7 +507,7 @@
   <!--判断是否是文本节点-->
   <block wx:elif="{{item.node == 'text'}}">
     <!--如果是，直接进行-->
-    <template is="WxEmojiView" data="{{item}}" />
+    <!-- <template is="WxEmojiView" data="{{item}}" /> -->
   </block>
 
 </template>
@@ -582,7 +583,7 @@
   <!--判断是否是文本节点-->
   <block wx:elif="{{item.node == 'text'}}">
     <!--如果是，直接进行-->
-    <template is="WxEmojiView" data="{{item}}" />
+    <!-- <template is="WxEmojiView" data="{{item}}" /> -->
   </block>
 
 </template>
@@ -657,7 +658,7 @@
   <!--判断是否是文本节点-->
   <block wx:elif="{{item.node == 'text'}}">
     <!--如果是，直接进行-->
-    <template is="WxEmojiView" data="{{item}}" />
+    <!-- <template is="WxEmojiView" data="{{item}}" /> -->
   </block>
 
 </template>
@@ -733,7 +734,7 @@
   <!--判断是否是文本节点-->
   <block wx:elif="{{item.node == 'text'}}">
     <!--如果是，直接进行-->
-    <template is="WxEmojiView" data="{{item}}" />
+    <!-- <template is="WxEmojiView" data="{{item}}" /> -->
   </block>
 
 </template>
@@ -809,7 +810,7 @@
   <!--判断是否是文本节点-->
   <block wx:elif="{{item.node == 'text'}}">
     <!--如果是，直接进行-->
-    <template is="WxEmojiView" data="{{item}}" />
+    <!-- <template is="WxEmojiView" data="{{item}}" /> -->
   </block>
 
 </template>
@@ -885,7 +886,7 @@
   <!--判断是否是文本节点-->
   <block wx:elif="{{item.node == 'text'}}">
     <!--如果是，直接进行-->
-    <template is="WxEmojiView" data="{{item}}" />
+    <!-- <template is="WxEmojiView" data="{{item}}" /> -->
   </block>
 
 </template>
@@ -961,7 +962,7 @@
   <!--判断是否是文本节点-->
   <block wx:elif="{{item.node == 'text'}}">
     <!--如果是，直接进行-->
-    <template is="WxEmojiView" data="{{item}}" />
+    <!-- <template is="WxEmojiView" data="{{item}}" /> -->
   </block>
 
 </template>

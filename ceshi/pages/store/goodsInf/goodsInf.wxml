@@ -38,8 +38,8 @@
 <view class="goodsNameBox">(正版授权）壳牌超凡喜力灰壳全和成机油10W-40，4L/ 瓶德国原装进口 SN级润滑油</view>
 <!-- 限量和快递费 -->
 <view class="buyAndCourierBox">
- <view class="courier">快递:{{courier}}.00</view>
- <view class="buyNumber">销量:{{buyNumber}}</view>
+ <view class="courier">快递：￥{{courier}}.00</view>
+ <view class="buyNumber">月销{{buyNumber}}</view>
 </view>
 </view>
 
@@ -66,9 +66,9 @@
  <!-- 购买数量 -->
  <view class="number test">
   <view class="numberService same">购买数量</view>
-  <image class="reduction" src="/images/num_less_pic.png"></image>
-  <view class="numbers">199</view>
-  <image class="add" src="/images/num_add_pic.png"></image>
+  <image class="reduction" src="/images/num_less_pic.png" bindtap="jian" data-goodsnumber="{{goodsnumber}}"></image>
+  <view class="numbers" >{{goodsnumber}}</view>
+  <image class="add" src="/images/num_add_pic.png" data-goodsnumber="{{goodsnumber}}" bindtap="add"></image>
  </view>
 </view>
 
@@ -80,7 +80,7 @@
 <!-- 头部 -->
  <view class="TitleBox">
   <view class="titleAndNumber">
-  用户评价({{number}})
+  用户评价({{usernumber}})
   </view>
  <view class="MoreAndImage" bindtap="toComments">
   <view class="LookMore">查看全部</view>
@@ -133,6 +133,6 @@
    <view class="collectionTitle">已收藏</view>
   </view>
   <!-- 购买 -->
-  <view class="buyNow" bindtap="toOrderInf">立即购买</view>
+  <view class="buyNow" bindtap="toOrderInf">立即下单</view>
 
  </view>

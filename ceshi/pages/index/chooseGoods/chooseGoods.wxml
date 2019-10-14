@@ -1,0 +1,52 @@
+<!--pages/index/chooseGoods/chooseGoods.wxml 商品选择界面-->
+
+<!-- 导航栏 -->
+<view class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
+ <view class="backs" bindtap="backs"> 
+  <image src="/images/icon_back.png"></image>
+ </view>
+ <view slot="content" class="title">{{title}}</view>
+</view>
+
+<!-- 空白占位 -->
+<view class="kongbai"></view>
+
+<!-- 商品详情 -->
+  <view class="goodsinf" bindtap="toGoodsInf">
+    
+    <view class="goodspic">
+    <image   src="http://image-chitu.test.upcdn.net/chitu/goodsImg/20190529135451798.jpg">
+    </image>
+    </view>
+
+    <view class="goodsname"> 
+    赤兔通统一润滑油(含机油+机滤+工时)+++++++++++++++++++++++++++++++++++++++++++++++++
+    </view>
+
+    <view class="buy">
+    已售1110
+    </view>  
+    <view class="biaoqian">
+     <view class="biaoqian_title">矿物质机油</view>
+     <view class="biaoqian_title">矿物质机油</view>
+     <view class="biaoqian_title">矿物质机油</view>
+     <view class="biaoqian_title">矿物质机油</view>
+     <view class="biaoqian_title">矿物质机油</view>
+     <view class="biaoqian_title">矿物</view>     
+    </view>
+    
+     <view class="moneyuse">￥18.00</view>
+
+     <view class="moneynotuse">￥18.00</view>
+
+     <view class="servicebox">
+      <view class="service">安装服务</view>
+      <view class="service">安装服务</view>
+      <view class="service">服务 </view>
+     </view> 
+
+     <view class="disc">
+      正品保证  中国人寿保险投保测试测试车测试测试测试从测试测试
+     </view>        
+
+  </view>

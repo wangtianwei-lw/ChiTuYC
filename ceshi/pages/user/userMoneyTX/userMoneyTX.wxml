@@ -1,0 +1,37 @@
+<!--pages/user/userMoneyTX/userMoneyTX.wxml 用户余额体现界面-->
+
+<!-- 导航栏 -->
+<view class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
+ <view class="backs" bindtap="backs"> 
+  <image src="/images/icon_back.png"></image>
+ </view>
+ <view slot="content" class="title">余额提现</view>
+</view>
+
+<!-- 提现余额 -->
+<view class="user_money_tx_box">
+ <!-- 标题 -->
+ <view class="user_money_tx_title">提现金额</view>
+ <!-- 提现的金额 -->
+ <view class="user_money_tx_money_box">
+  <view class="tx_money_unit">￥</view>
+  <view class="tx_shiji_money">
+  <input placeholder="0.00" type="digit" placeholder-style="color:red">18866.00</input>
+  </view>
+ </view>
+</view>
+
+<!-- 可提现的余额以及全部提现 -->
+<view class="all_money_tx_box">
+ <view class="should_tx_all_money">可提现余额￥700.78</view>
+ <view class="all_money_tx">全部提现</view>
+</view>
+
+<!-- 提现到微信余额 -->
+<view class="all_money_tx_box wx_ye">
+ <view class="should_tx_all_money">提现至</view>
+ <view class="all_money_tx">微信余额</view>
+</view>
+
+<!-- 提现按钮 -->
+<view class="tx_botton">提现</view>

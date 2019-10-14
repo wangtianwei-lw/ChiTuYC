@@ -1,0 +1,34 @@
+<!--pages/user/userMoney/userMoney.wxml 用户余额界面-->
+
+<!-- 导航栏 -->
+<view class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
+ <view class="backs" bindtap="backs"> 
+  <image src="/images/icon_back.png"></image>
+ </view>
+ <view slot="content" class="title">余额</view>
+</view>
+
+<!-- 空白占位 -->
+<view class="placeholder2"></view>
+
+<!-- 余额部分信息 -->
+<view class="user_price_box">
+ <!-- 账单记录 -->
+ <view class="user_money_billing_records_box">
+  <view class="user_money_billing_records" bindtap="toJU">账单记录</view>
+ </view>
+ <!-- 标题和余额说明 -->
+ <view class="user_money_title_box">
+  <view class="user_money_title">赤兔余额</view>
+  <view class="user_money_speak" bindtap="toshuoming">余额说明？</view>
+ </view>
+ <!-- 余额及体现 -->
+ <view class="user_money_and_tixian_box">
+  <view class="user_money_unit">￥</view>
+  <view class="user_money">188.00</view>
+  <view class="withdrawal" bindtap="to_user_money_tx">余额提现</view>
+ </view>
+</view>
+
+<!-- 立即充值 -->
+<view class="chongqian_now" bindtap="to_chongqian">立即充值</view>

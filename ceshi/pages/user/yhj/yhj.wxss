@@ -1,0 +1,159 @@
+/* pages/user/yhj/yhj.wxss */
+/* tab选项卡 */
+.tabNav{
+  width:690rpx; 
+  height:76rpx; 
+  display: flex;
+  box-sizing: border-box; 
+  font-size: 28rpx;
+  line-height: 40rpx;
+  margin-left: 48rpx;
+   }
+.tabNav> view{
+  text-align: center; 
+  margin-left: 98rpx;
+  width: 160rpx;
+  }
+.tabNav> view:first-child{
+   margin-left: 0;
+   }
+.tabNav> view text{
+   height: 76rpx;
+   width: 160rpx;
+   display:inline-block;
+   padding-top: 15rpx;
+   }  
+.tabNav .cur text{
+  height: 56rpx;
+   border-bottom:6rpx solid #FFC56C; 
+   color:#FFC56C;
+}
+/* tab选项卡 */
+
+.yhjChooseBox{
+  background: #F0F0F0;
+}
+.yhjBox{
+  width: 722rpx;
+  height: 160rpx;
+  float: left;
+  margin:12rpx 14rpx;
+  background: white;
+  border-radius:8rpx; 
+}
+.yhjPriceBox{
+  position:absolute;
+  height: 160rpx;
+  width: 290rpx;
+  border-right: 2rpx dashed  #F0F0F0;
+  color: red;
+}
+.priceUnit{
+  position: absolute;
+  margin-top:70rpx;
+  margin-left: 14rpx; 
+  font-size: 36rpx;
+}
+.priceNumber{
+font-size: 70rpx;
+ position: absolute;
+ margin-left: 50rpx;
+ margin-top: 34rpx;
+}
+.topRounded16{
+  width: 32rpx;
+  height: 32rpx;
+  background: #F0F0F0;
+  position:fixed;
+  margin-left: 276rpx;
+  border-radius:16rpx; 
+  margin-top: -16rpx;
+}
+.bottomRounded8{
+  width: 16rpx;
+  height: 16rpx;
+  background: #F0F0F0;
+  position:fixed;
+  border-radius: 50%;
+  margin-left: 284rpx;
+  margin-top: 152rpx;
+}
+.yhjInfBox{
+  width: 430rpx;
+  height: 192rpx;
+  position: absolute;
+  margin-left: 292rpx;
+}
+.yhjNameAndPeriodBox{
+  width: 430rpx;
+  height: 44rpx;
+  position: absolute;
+  margin-top: 24rpx;
+} 
+.yhjName{
+ font-size: 32rpx;
+ float: left;
+ height: 44rpx;
+ margin-left: 24rpx;
+ max-width: 230rpx;
+ overflow: hidden;
+}
+.periodxxx{
+font-size: 20rpx;
+float: left;
+color: red;
+height: 28rpx;
+margin-top: 12rpx;
+margin-left:8rpx; 
+max-width: 145rpx;
+overflow: hidden;
+}
+.StopTime{
+  height: 28rpx;
+  font-size: 20rpx;
+  position: absolute;
+  margin-top: 76rpx;
+  margin-left: 24rpx;
+  max-width: 230rpx;
+  overflow-y: hidden;
+}
+.sc_yhj_xz{
+  height: 28rpx;
+  font-size: 20rpx;
+  position: absolute;
+  margin-top: 76rpx;
+  margin-left: 24rpx;
+  max-width: 230rpx;
+  overflow-y: hidden;
+}
+.userXZ{
+  font-size: 20rpx;
+  position: absolute;
+  margin-top: 120rpx;
+  margin-left: 24rpx;
+  max-width: 230rpx;
+  overflow-y: hidden;
+  height: 28rpx;
+  border-radius: 6rpx;
+  text-align: center;
+  line-height: 28rpx;
+}
+.userNow{
+ position: absolute;
+ width: 126rpx;
+ height: 46rpx;
+ font-size: 24rpx;
+ text-align: center;
+ line-height: 46rpx;
+ background: #FFC56C;
+ margin-top: 74rpx;
+ margin-left: 280rpx;
+ border-radius: 6rpx;
+}
+.state2{
+width: 108rpx;
+height: 108rpx;
+position: absolute;
+margin-top:28rpx;
+margin-left: 280rpx; 
+}

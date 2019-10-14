@@ -1,0 +1,24 @@
+<!--pages/user/userMoneyZD/userMoneyZD.wxml 账单记录界面-->
+
+<!-- 导航栏 -->
+<view class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
+ <view class="backs" bindtap="backs"> 
+  <image src="/images/icon_back.png"></image>
+ </view>
+ <view slot="content" class="title">账单记录</view>
+</view>
+
+<!-- 空白占位 -->
+<view class="placeholder1"></view>
+
+<!-- 账单记录详情 -->
+<view class="user_money_jl_box">
+ <!-- 记录说明和加减的金额 -->
+ <view class="user_zd_and_money_box">
+  <view class="user_zd_and_money_title">账户充值</view>
+  <view class="user_zd_and_money_money">￥188.00</view>
+  <view class="user_zd_and_money_jz">+</view>
+ </view>
+ <view class="time">2019-02-13 12:01:56</view>
+ <view class="order_code">201902131201456518</view>
+</view>

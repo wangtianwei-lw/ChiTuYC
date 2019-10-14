@@ -12,30 +12,30 @@
 
 <!-- 中间图片按钮 -->
 <view class="mainbox">
-    <view class="maylove">
-         <view class="lovecar love">我的爱车</view>
-         <view class="car love">车牌号</view>
-         <view class="addcar love">立即添加</view>
-    </view>
+     <view class="index_xiadan_box">
+         <image src="/images/index_xiadan.png"></image>
+         <view class="lovecar">下单流程指引</view>
+         <view class="addcar" bindtap="toXiaDan">点击查看</view>
+     </view>
 
     <view class="box">
 
-      <view class="pic">
+      <view class="pic" bindtap="toAIche">
         <image src="/images/home_menu_one.png"></image>
         <view class="font">爱车保养</view>
       </view>
       
-      <view class="pic">
+      <view class="pic" bindtap="toluntai">
         <image src="/images/home_menu_two.png"></image>
         <view class="font">轮胎更换</view>
       </view>
 
-      <view class="pic">
+      <view class="pic" bindtap="carWX">
         <image src="/images/home_menu_three.png"></image>
         <view class="font">汽车维修</view>
       </view>
 
-      <view class="pic">
+      <view class="pic" bindtap="tojiyou">
         <image src="/images/home_menu_four.png"></image>
         <view class="font">机油购买</view>
       </view>
@@ -45,7 +45,7 @@
         <view class="font">保险</view>
       </view>
 
-      <view class="pic two">
+      <view class="pic two" bindtap="toNodatad">
         <image src="/images/home_menu_six.png"></image>
         <view class="font">道路救援</view>
       </view>
@@ -61,6 +61,12 @@
       </view>
 
     </view>
+ <view class="maylove">
+         <image src="/images/index_my_car.png"></image>
+         <view class="lovecar">我的爱车</view>
+         <view class="car">实时监控车辆异常</view>
+         <view class="addcar" bindtap="addCar">立即添加</view>
+ </view>
 
 </view>
 <!-- 星级店铺 -->
@@ -72,7 +78,7 @@
   </view>
  </view>
  <scroll-view class="storebox" scroll-x="true">
-  <view class="store" wx:for="{{storeList}}" wx:key>
+  <view class="store" wx:for="{{storeList}}" wx:key bindtap="toStoreInf">
    <image  src="{{item.storeLogo}}">
    </image>
    <view class="storeinf">
@@ -85,7 +91,7 @@
 </view>
 <!-- app中间图片 -->
 <view class="apppic">
- <image src="http://image-chitu.test.upcdn.net/chitu/bannerImg/20190328174340011.png">
+ <image src="http://image-chitu.test.upcdn.net/chitu/bannerImg/20190328174340011.png" bindtap="toNodatas">
  </image>
 </view>
 
@@ -106,7 +112,7 @@
   </view>
 
   <view class="usergoodsbigpic">
-   <image src="http://image-chitu.test.upcdn.net/chitu/bannerImg/20190430193701202.jpg"></image>
+   <image src="http://image-chitu.test.upcdn.net/chitu/bannerImg/20190430193701202.jpg" bindtap="toNodata"></image>
   </view>
 
   <view class="usergoodsbottompic">
@@ -135,7 +141,7 @@
     </view>
   </view>
 
-  <view class="goodsinf">
+  <view class="goodsinf" bindtap="toGoodsInf">
     
     <view class="goodspic">
     <image   src="http://image-chitu.test.upcdn.net/chitu/goodsImg/20190529135451798.jpg">

@@ -5,7 +5,7 @@
 <!-- 背景图片 -->
 <image src="/images/wode_beijing.png"></image>
 
-<view class="userbasicinf">
+<view class="userbasicinf" bindtap="userInf">
 
 <view class="headurl"> 
  <image  src="http://image-chitu.test.upcdn.net/chitu/couponImg/20190724134658395.jpg"></image>
@@ -33,22 +33,22 @@
 
 <view class="my">
 
-<view class="box">
+<view class="box" bindtap="collcetion">
  <view class="number">100</view>
  <view class="title">我的收藏</view>
 </view>
 
-<view class="box">
+<view class="box" bindtap="car">
  <view class="number">100</view>
  <view class="title">我的车辆</view>
 </view>
 
-<view class="box">
+<view class="box" bindtap="to_user_money">
 <view class="number">100.00</view>
 <view class="title">余额</view>
 </view>
 
-<view class="box">
+<view class="box" bindtap="toYHJ">
 <view class="number">100</view>
 <view class="title">优惠券</view>
 </view>
@@ -105,7 +105,7 @@
 
 <!-- 我的推广收益 -->
 <view class="promotes">
- <image src="/images/generalize_pic.png"></image>
+ <image src="/images/generalize_pic.png" bindtap="totuiguang"></image>
 </view>
 
 <!-- 我的工具 -->
@@ -115,7 +115,7 @@
 
  <view class="toolbox">
 
-  <view class="tool">
+  <view class="tool" bindtap="tomaintenanceManual">
    <image src="/images/mine_menu_one.png"></image>
    <view class="toolname">保养手册</view>
   </view>
@@ -135,7 +135,7 @@
    <image src="/images/mine_menu_five.png"></image>
    <view class="toolname">车况报告</view>
   </view>
-  <view class="tool">
+  <view class="tool" bindtap="feedback">
    <image src="/images/mine_menu_six.png"></image>
    <view class="toolname">问题反馈</view>
   </view>
@@ -143,7 +143,7 @@
    <image src="/images/mine_menu_seven.png"></image>
    <view class="toolname">保险查询</view>
   </view>
-  <view class="tool">
+  <view class="tool" bindtap="toMyTG">
    <image src="/images/mine_menu_eight.png"></image>
    <view class="toolname">我的推广</view>
   </view>

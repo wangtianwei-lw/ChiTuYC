@@ -14,7 +14,7 @@
   margin-left:304rpx; 
   font-size:36rpx; 
   color:rgba(3,3,3,1);
-  width: 144rpx;
+  min-width: 144rpx;
   height: 76rpx;
   text-align: center; 
   line-height: 76rpx;
@@ -52,7 +52,11 @@
 }  
 .placeholder12{
   width: 100%;
-  height: 12rpx;
+  height: 12rpx;  
+}
+.placeholder12s{
+  width: 100%;
+  height: 12rpx;background: #F6F6F6;
 }
 .placeholder8{
   width: 100%;
@@ -61,6 +65,41 @@
 .placeholder20{
   width: 100%;
   height: 20rpx;
+  background: #F6F6F6;
+}
+.placeholder2{
+  width: 100%;
+  height: 2rpx;
+  background: #F6F6F6;
+}
+.placeholder1{
+  width: 100%;
+  height: 2rpx;
+  background: #F6F6F6;
+}
+.placeholder26{
+  width: 100%;
+  height: 20rpx;
+  background: #F6F6F6;
+}
+.placeholder10{
+  width: 100%;
+  height: 10rpx;
+  background: #F6F6F6;
+}
+.placeholder16{
+  width: 100%;
+  height: 10rpx;
+  background: #F6F6F6;
+}
+.placeholder18{
+  width: 100%;
+  height: 10rpx;
+  background: #F6F6F6;
+}
+.placeholder24{
+  width: 100%;
+  height: 24rpx;
   background: #F6F6F6;
 }
 /* 高度一致的 */
@@ -82,4 +121,74 @@
 .leftjian{
   padding-left: 10rpx;
   padding-right: 10rpx;
+}
+.bj_order_money{
+  border-bottom: 2rpx solid #F6F6F6;
+}
+
+
+/* ==================
+         模态窗口
+ ==================== */
+
+.cu-modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1110;
+	opacity: 0;
+	outline: 0;
+	text-align: center;
+	-ms-transform: scale(1.185);
+	transform: scale(1.185);
+	backface-visibility: hidden;
+	perspective: 2000rpx;
+	background: rgba(0, 0, 0, 0.6);
+	transition: all 0.3s ease-in-out 0s;
+	pointer-events: none;
+}
+
+.cu-modal::before {
+	content: "\200B";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.cu-modal.show {
+	opacity: 1;
+	transition-duration: 0.3s;
+	-ms-transform: scale(1);
+	transform: scale(1);
+	overflow-x: hidden;
+	overflow-y: auto;
+	pointer-events: auto;
+}
+
+.cu-dialog {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: auto;
+	margin-right: auto;
+	width: 680rpx;
+	max-width: 100%;
+	background-color: #f8f8f8;
+	border-radius: 10rpx;
+	overflow: hidden;
+}
+
+.cu-modal.bottom-modal::before {
+	vertical-align: bottom;
+}
+
+.cu-modal.bottom-modal .cu-dialog {
+	width: 100%;
+	border-radius: 0;
+}
+
+.cu-modal.bottom-modal.show {
+	margin-bottom: 0;
 }

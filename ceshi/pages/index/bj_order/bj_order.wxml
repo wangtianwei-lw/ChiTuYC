@@ -1,0 +1,54 @@
+<!--pages/index/bj_order/bj_order.wxml-->
+
+<!-- 导航栏 -->
+<view class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
+ <view class="backs" bindtap="backs"> 
+  <image src="/images/icon_back.png"></image>
+ </view>
+ <view slot="content" class="title">确认订单</view>
+</view>
+
+<!-- 空白占位 -->
+<view class="placeholder24"></view>
+
+<view class="store-inf_box">
+ <view class="store_inf_main_box" bindtap="orderChooseStore">
+  <image class="store_pic" src="/images/order_details_bg.png"></image>
+  <view class="bj_store_name">广峰汽修店a啊啊啊啊啊啊啊啊</view>
+  <image src="/images/location_two_pic.png" class="location"></image>
+  <view class="store_addr">杭州市西湖区三墩杭州市西湖区三墩杭州市西湖区三墩杭州市西湖区三墩</view>
+  <view class="bj_order_distance">1995.12km</view>
+  <image src="/images/right.png" class="right_pic"></image>
+ </view>
+</view>
+
+<!-- 选择的钣金的面 -->
+<view class="order_bj_box">
+ <view class="service_type">服务类型</view>
+ <view class="moudle_box">
+ <view class="moudle">前保险杠</view>
+ <view class="moudle">后保险杠</view>
+ <view class="moudle">左前翼子板</view>
+ <view class="moudle">右前翼子板</view>
+ <view class="moudle">左后翼子板</view>
+ <view class="moudle">右后翼子板</view>
+ <view class="moudle">左前车门</view>
+ <view class="moudle">右前车门</view>
+ <view class="moudle">左后车门</view>
+</view>
+</view>
+
+
+<!-- 预约到店时间 -->
+<view class="user_inf_box">
+ <view class="title_box nosame">到店时间</view>
+ <view class="user_inf_right_box">
+  <view class="nicheng">2019-07-10 16：30</view>
+  <image src="/images/arrow_right_pic.png"></image>
+ </view>
+</view>
+
+<!-- 底部购买栏 -->
+<view class="money_And_Buy_Now">
+ <view class="buy_now" bindtap="orderSuccess">提交订单</view>
+</view>

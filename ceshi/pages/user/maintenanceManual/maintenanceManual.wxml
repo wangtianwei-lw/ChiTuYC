@@ -1,0 +1,10 @@
+<!--pages/user/maintenanceManual/maintenanceManual.wxml 保养手册-->
+
+<!-- 导航栏 -->
+<view class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
+ <view class="backs" bindtap="backs"> 
+  <image src="/images/icon_back.png"></image>
+ </view>
+ <view slot="content" class="title">保养手册</view>
+</view>
+

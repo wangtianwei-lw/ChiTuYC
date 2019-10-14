@@ -1,0 +1,35 @@
+/* pages/user/myTGsy/myTGsy.wxss */
+.tg_in_box{
+  width: 100%;
+  height: 120rpx;
+}
+.name_and_phone_box{
+  float: left;
+  margin-left: 32rpx;
+}
+.tg_in_name{
+  font-size: 28rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  position: absolute;
+  margin-top: 20rpx;
+  color: #333333;
+  max-width: 450rpx;
+  overflow: hidden;
+}
+.tg_in_phone{
+  font-size: 24rpx;
+  height: 34rpx;
+  line-height: 34rpx;
+  position: absolute;
+  margin-top: 70rpx;
+  color: #999999;
+}
+.money{
+  font-size: 54rpx;
+  color: #F03D3D;
+  height: 120rpx;
+  line-height: 120rpx;
+  float: right;
+  margin-right: 31rpx;
+}

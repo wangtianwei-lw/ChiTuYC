@@ -1,0 +1,149 @@
+/* pages/index/chooseBJ/chooseBJ.wxss */
+.goodsDetailsHtml{
+  width: 720rpx;
+  margin-left: 15rpx;
+}
+.goodsDetailsHtml image{
+float: left;
+width: 100%;
+}
+.cell_and_buy_box{
+  width: 100%;
+  height: 84rpx;
+  position: fixed;
+  bottom: 0rpx;
+  background: white;
+}
+.buy_box{
+width: 280rpx;
+height: 84rpx;
+font-size: 32rpx;
+color: white;
+background: #F03D3D;
+float: right;
+text-align: center;
+line-height: 84rpx;
+}
+.cell_box{
+  width: 162rpx;
+  height: 52rpx;
+  float: left;
+  margin-left: 32rpx;
+  margin-top: 16rpx;
+  background: #FFC56C;
+  border-radius: 10rpx;
+}
+.cell_title{
+  font-size: 24rpx;
+  color: white;
+  float: right;
+  line-height: 52rpx;
+  margin-right: 16rpx;
+}
+.cell_box image{
+width: 26rpx;
+height: 26rpx;
+float: left;
+margin-top: 14rpx;
+margin-left: 16rpx;
+}
+.car_modle_box{
+  width: 100%;
+  height: 320rpx;
+  background: #F6F6F6;
+}
+.car_box{
+  background: white;
+  height: 320rpx;
+  width: 686rpx;
+  position: absolute;
+  margin-left: 32rpx;
+}
+.car_box image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.moudle_box{
+  width: 686rpx;
+  margin-left: 32rpx;
+}
+.moudle{
+width: 200rpx;
+height: 70rpx;
+background: #F6F6F6;
+border-radius: 10rpx;
+font-size: 32rpx;
+line-height: 70rpx;
+text-align: center;
+float: left;
+margin-left: 28rpx;
+margin-top: 14rpx;
+margin-bottom: 14rpx;
+}
+.bj_jg_show{
+  font-size: 36rpx;
+  width: 100%;
+  height: 104rpx;
+  background: #F6F6F6;
+  text-align: center;
+  line-height: 104rpx;
+}
+.show_box{
+  height: 426rpx;
+  width: 100%;
+  background: #F6F6F6;
+}
+.show_inf_box{
+  width: 686rpx;
+  height: 168rpx;
+  margin-left: 32rpx;
+  background: white;
+}
+.inf_text{
+  width: 562rpx;
+  height: 120rpx;
+  position: absolute;
+  margin-left: 22rpx;
+  margin-top: 24rpx;
+  font-size: 24rpx;
+  color: #F03D3D;
+  line-height: 40rpx;
+}
+.show_inf_box image{
+width: 67rpx;
+height: 159rpx;
+position: absolute;
+margin-left: 598rpx;
+margin-top: 4rpx;
+}
+.jx_show{
+  width: 100%;
+  height: 154rpx;
+  font-size: 24rpx;
+  line-height: 154rpx;
+  text-align: center;
+}
+
+.texts::before,.texts::after{
+  display: table-cell;
+  content: "";
+  width: 50%;
+  background: linear-gradient(#D8D8D8, #D8D8D8) repeat-x center;
+  background-size: 0.1rem 0.1rem;
+}
+.texts{
+  display: table;
+  width: auto;
+  white-space: nowrap;
+  border-spacing: 0.5rem 0;
+  margin-left: 28rpx;
+  margin-right: 28rpx
+}
+.moudles{
+  background: #FFC56C;
+  color: white;
+}
+.shows{
+  display: none;
+}

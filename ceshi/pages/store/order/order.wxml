@@ -99,5 +99,5 @@
   <view class="payMoneySjTitle">实付金额：</view>
   <view class="payMoneySjMoney">￥140.00</view>
  </view>
- <view class="payNow">立即支付</view>
+ <view class="payNow">去支付</view>
 </view>

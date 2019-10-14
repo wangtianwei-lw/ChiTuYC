@@ -17,7 +17,8 @@ Page({
     presentPrice:[118.00],
     courier:[100],
     buyNumber:[1200],
-    number:[2],
+    usernumber:2,
+    goodsnumber:1,
     evalPicUrlList: [
       { evalPicUrl: 'http://pic16.nipic.com/20111006/6239936_092702973000_2.jpg' },
       { evalPicUrl: 'http://pic16.nipic.com/20111006/6239936_092702973000_2.jpg' },
@@ -68,4 +69,31 @@ Page({
       url: '../order/order'
     })
   }, 
+  jian(e) {
+    var goodsnumber = e.currentTarget.dataset.goodsnumber;
+    var goodsnumbers;
+    if(goodsnumber==1){
+      this.setData({
+        goodsnumber: 1,
+      });
+    }else{
+      goodsnumbers=goodsnumber-1;
+      this.setData({
+        goodsnumber: goodsnumbers,
+      });
+    }
+  },
+  add(e) {
+    var goodsnumber = e.target.dataset.goodsnumber;
+    var goodsnumbers;
+    var goodsnumbers;
+    if (goodsnumber < 999&&goodsnumber>=1) {
+      goodsnumbers = goodsnumber + 1;
+      this.setData({
+        goodsnumber: goodsnumbers,
+      });
+    } else {
+      goodsnumber:999;
+    }
+  },
 })

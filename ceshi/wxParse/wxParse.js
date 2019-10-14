@@ -33,12 +33,12 @@ function wxParse(bindName = 'wxParseData', type='html', data='<div class="color:
   var transData = {};//存放转化后的数据
   if (type == 'html') {
     transData = HtmlToJson.html2json(data, bindName);
-    console.log(JSON.stringify(transData, ' ', ' '));
+    // console.log(JSON.stringify(transData, ' ', ' '));
   } else if (type == 'md' || type == 'markdown') {
     var converter = new showdown.Converter();
     var html = converter.makeHtml(data);
     transData = HtmlToJson.html2json(html, bindName);
-    console.log(JSON.stringify(transData, ' ', ' '));
+    // console.log(JSON.stringify(transData, ' ', ' '));
   }
   transData.view = {};
   transData.view.imagePadding = 0;
@@ -49,20 +49,20 @@ function wxParse(bindName = 'wxParseData', type='html', data='<div class="color:
   bindData[bindName] = transData;
   that.setData(bindData)
   that.wxParseImgLoad = wxParseImgLoad;
-  that.wxParseImgTap = wxParseImgTap;
+  // that.wxParseImgTap = wxParseImgTap;
 }
 // 图片点击事件
-function wxParseImgTap(e) {
-  var that = this;
-  var nowImgUrl = e.target.dataset.src;
-  var tagFrom = e.target.dataset.from;
-  if (typeof (tagFrom) != 'undefined' && tagFrom.length > 0) {
-    wx.previewImage({
-      current: nowImgUrl, // 当前显示图片的http链接
-      urls: that.data[tagFrom].imageUrls // 需要预览的图片http链接列表
-    })
-  }
-}
+// function wxParseImgTap(e) {
+//   var that = this;
+//   var nowImgUrl = e.target.dataset.src;
+//   var tagFrom = e.target.dataset.from;
+//   if (typeof (tagFrom) != 'undefined' && tagFrom.length > 0) {
+//     wx.previewImage({
+//       current: nowImgUrl, // 当前显示图片的http链接
+//       urls: that.data[tagFrom].imageUrls // 需要预览的图片http链接列表
+//     })
+//   }
+// }
 
 /**
  * 图片视觉宽高计算函数区 

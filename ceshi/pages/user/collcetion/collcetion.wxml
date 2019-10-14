@@ -1,0 +1,90 @@
+<!--pages/user/collcetion/collcetion.wxml 收藏界面-->
+
+<!-- 导航栏 -->
+<view class="navbars" style="margin-top:{{Custom.top+StatusBar}}rpx;">
+ <view class="backs" bindtap="backs"> 
+  <image src="/images/icon_back.png"></image>
+ </view>
+ <view slot="content" class="title">我的收藏</view>
+</view>
+
+<!-- tab选项卡 -->
+<view class="tabNav">
+    <view wx:for="{{navTab}}" wx:key="index" data-idx="{{index}}" bindtap="currentTab" class="{{currentTab==index ? 'cur' : ''}}">
+     <text class="tab">{{item}}</text>
+    </view>
+</view>
+
+<!-- 店铺列表界面 -->
+<view class="StoreMainBox" wx:for="{{allStoreList}}" wx:key>
+<view class="storelistbox" bindtap="bindViewTap" >
+<view class="storelogo">
+ <image src="{{item.storeLogo}}"></image>
+</view>
+<view class="storeinfbox">
+ <view class="storeListStoreName">
+  <image src="/images/location_two_pic.png"></image>
+  <view class="storename">
+ {{item.storeName}}
+  </view>
+ </view>
+</view>
+<view class="storeAddr">
+{{item.storeAddr}}
+</view>
+<view class="distance">
+距离{{item.distance}}km
+</view>
+<view class="star">
+ <image src="/images/star_open_pic.png"></image>
+ <image src="/images/star_open_pic.png"></image>
+ <image src="/images/star_open_pic.png"></image>
+ <image src="/images/star_open_pic.png"></image>
+ <image src="/images/star_open_pic.png"></image>
+</view>
+<view class="buy">
+ <view class="buyNumber">{{item.buyNumber}}</view>
+ <view class="fixed">人购买</view>
+</view>
+</view>
+</view>
+<!-- 产品详情 -->
+<view class="goodsinf" bindtap="toGoodsInf">
+    
+    <view class="goodspic">
+    <image   src="http://image-chitu.test.upcdn.net/chitu/goodsImg/20190529135451798.jpg">
+    </image>
+    </view>
+
+    <view class="goodsname"> 
+    赤兔通统一润滑油(含机油+机滤+工时)+++++++++++++++++++++++++++++++++++++++++++++++++
+    </view>
+
+    <view class="buy">
+    已售1110
+    </view>  
+    <view class="biaoqian">
+     <view class="biaoqian_title">矿物质机油</view>
+     <view class="biaoqian_title">矿物质机油</view>
+     <view class="biaoqian_title">矿物质机油</view>
+     <view class="biaoqian_title">矿物质机油</view>
+     <view class="biaoqian_title">矿物质机油</view>
+     <view class="biaoqian_title">矿物</view>     
+    </view>
+    
+     <view class="moneyuse">￥138.00</view>
+
+     <view class="moneynotuse">￥178.00</view>
+
+     <view class="servicebox">
+      <view class="service">安装服务</view>
+      <view class="service">安装服务</view>
+      <view class="service">服务 </view>
+     </view> 
+
+     <view class="disc">
+      正品保证  中国人寿保险投保测试测试车测试测试测试从测试测试
+     </view>        
+
+  </view>
+

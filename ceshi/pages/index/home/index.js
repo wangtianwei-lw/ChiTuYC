@@ -27,6 +27,61 @@ Page({
       cardCur: e.detail.current
     })
   },
+  carWX: function () {
+    wx.navigateTo({
+      url: '../carWX/carWX',
+    })
+  },
+  addCar: function () {
+    wx.navigateTo({
+      url: '../../user/addCar/addCar',
+    })
+  },
+  toNodata: function(){
+    wx.navigateTo({
+      url: '../../public/noData/noData?title=赤兔通润滑油',
+    })
+  },
+  toNodatas: function () {
+    wx.navigateTo({
+      url: '../../public/noData/noData?title=加入我们',
+    })
+  },
+  toNodatad: function () {
+    wx.navigateTo({
+      url: '../../public/noData/noData?title=道路救援',
+    })
+  },
+  toXiaDan: function () {
+    wx.navigateTo({
+      url: '../../public/noData/noData?title=下单流程',
+    })
+  },
+  toGoodsInf: function () {
+    wx.navigateTo({
+      url: '../../store/goodsInf/goodsInf',
+    })
+  },
+  toStoreInf: function () {
+    wx.navigateTo({
+      url: '../../store/storeInf/storeInf',
+    })
+  },
+  toAIche: function () {
+    wx.navigateTo({
+      url: '../chooseGoods/chooseGoods?title=爱车保养',
+    })
+  },
+  toluntai: function () {
+    wx.navigateTo({
+      url: '../chooseGoods/chooseGoods?title=轮胎更换',
+    })
+  },
+  tojiyou: function () {
+    wx.navigateTo({
+      url: '../chooseGoods/chooseGoods?title=机油购买',
+    })
+  },
   // onLoad: function () {
   //   var city = '330100';//获取到全局变量
   //   wx.request({
